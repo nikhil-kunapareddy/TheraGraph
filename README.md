@@ -106,7 +106,32 @@ uncertainty decile and scaffold familiarity.
 
 Measured, offline, on the committed MoleculeNet snapshots:
 
-<!-- METRICS_TABLE -->
+| Endpoint | Dataset | Model | Primary metric | **Scaffold split** | 95% CI | Secondary | Random split | Optimism |
+|---|---|---|---|---|---|---|---|---|
+| `solubility` | ESOL | random_forest | RMSE (log mol/L) | **0.889** | 0.751–1.026 | R2 0.887 | 0.593 | +33.27% |
+| `solubility` | ESOL | gin | RMSE (log mol/L) | **1.059** | 0.876–1.245 | R2 0.840 | 0.668 | +36.88% |
+| `bbb_permeability` | BBBP | random_forest | ROC-AUC | **0.802** | 0.686–0.898 | PR-AUC 0.956 | 0.923 | +15.1% |
+| `bbb_permeability` | BBBP | gin | ROC-AUC | **0.640** | 0.528–0.745 | PR-AUC 0.929 | 0.900 | +40.53% |
+| `lipophilicity` | Lipophilicity | random_forest | RMSE (logD) | **0.893** | 0.832–0.959 | R2 0.464 | 0.743 | +16.81% |
+| `lipophilicity` | Lipophilicity | gin | RMSE (logD) | **0.731** | 0.673–0.786 | R2 0.641 | 0.597 | +18.25% |
+| `clinical_toxicity` | ClinTox | random_forest | ROC-AUC | **0.842** | 0.698–0.949 | PR-AUC 0.226 | 0.531 | none |
+| `clinical_toxicity` | ClinTox | gin | ROC-AUC | **0.749** | 0.574–0.896 | PR-AUC 0.243 | 0.496 | none |
+
+* **`solubility`** — random_forest leads on rmse, but its confidence interval overlaps gin — treat the difference as unproven. Test fold 112 molecules, 66 scaffolds, 0 shared with train.
+* **`bbb_permeability`** — random_forest leads on roc_auc, but its confidence interval overlaps gin — treat the difference as unproven. Test fold 197 molecules, 197 scaffolds, 0 shared with train.
+* **`lipophilicity`** — gin leads on rmse with non-overlapping confidence intervals. Test fold 420 molecules, 420 scaffolds, 0 shared with train.
+* **`clinical_toxicity`** — random_forest leads on roc_auc, but its confidence interval overlaps gin — treat the difference as unproven. Test fold 143 molecules, 143 scaffolds, 0 shared with train.
+
+The graph model wins where there is data to win with — GIN beats the baseline on
+Lipophilicity (4,200 molecules) with non-overlapping intervals, ties on ESOL (1,117) and
+loses on BBBP — which is why both families are trained and compared rather than one being
+assumed better. "Unproven" appears three times out of four because on a 112-molecule test
+fold the bootstrap intervals genuinely overlap. And ClinTox's ROC-AUC of 0.842 is
+flattering: at a 7.5% positive-class base rate the PR-AUC is 0.226, and at the default
+threshold the model predicts "not toxic" for everything — it ranks usefully and decides
+nothing. [docs/ml.md](docs/ml.md#reading-that-table) reads all of this out, including the
+finding that the GNN's MC-dropout uncertainty is over-confident at this data scale while
+the forest's tree variance is conservative.
 
 ### 5. Transparent multi-objective prioritisation
 
@@ -178,7 +203,7 @@ backend/
     jobs/          durable queue + worker
     mcp_server/    the same tools over MCP
     tests_support/ the in-process demo corpus (shipped: CI and the CLI use it)
-  tests/           unit · integration · api · ml · agent · e2e   (428 tests)
+  tests/           unit · integration · api · ml · agent · e2e   (442 tests)
   alembic/         migrations, dialect-agnostic
 frontend/
   src/{pages,components,lib,types}                                (43 tests)
@@ -195,7 +220,7 @@ deploy/            nginx configuration for the SPA + API proxy
 ```bash
 make help              # every target, described
 make check             # lint + typecheck + tests, everything CI runs
-make test              # 428 backend + 43 frontend tests
+make test              # 442 backend + 43 frontend tests
 make coverage          # backend coverage report
 make evals             # the agent evaluation suite, with its CI thresholds
 make demo              # bootstrap → seed → train → evals, from scratch, offline
@@ -209,7 +234,7 @@ make docker-up         # the full stack
 |---|---|
 | **Backend** | Python 3.11, FastAPI, SQLAlchemy 2.0 async, PostgreSQL 16, Redis, Alembic, PyTorch, scikit-learn, RDKit, S3/MinIO |
 | **Frontend** | React 18, TypeScript, Vite, Tailwind, TanStack Query, Recharts, smiles-drawer |
-| **Tests** | 428 backend (unit, integration, API, database, ML pipeline, agent, end-to-end) at 77% coverage, 30 modules at 100%; 43 frontend |
+| **Tests** | 442 backend (unit, integration, API, database, CLI, ML pipeline, agent, end-to-end) at 79% coverage, 30 modules at 100%; 43 frontend |
 | **Quality gates** | ruff lint + format, mypy (strict, zero errors across 116 modules), eslint (zero warnings), `tsc --noEmit`, `alembic check` on both dialects, and the agent eval thresholds |
 | **CI** | 6 offline jobs: backend, backend-on-PostgreSQL, migrations round-trip, frontend, agent evals, container images |
 | **Deploy** | Multi-stage Docker images running as non-root, Compose for local and a fail-closed production overlay, health checks, structured logs, Prometheus metrics, optional OpenTelemetry |

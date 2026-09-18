@@ -95,10 +95,11 @@ information" and "zero overlap" are different claims.
 
 ## Metrics
 
-**Regression:** RMSE (primary), MAE, R², Spearman ρ, plus prediction-interval coverage —
-the fraction of test molecules whose true value falls inside the model's own 95%
-interval. A model claiming ±0.5 that is right 60% of the time is miscalibrated, and the
-coverage number is what says so.
+**Regression:** RMSE (primary), MAE, median and max absolute error, R², Pearson and
+Spearman ρ, and bias. Separately, under calibration: **prediction-interval coverage** —
+the fraction of test molecules whose true value falls inside `prediction ± 1.96σ`. A
+model claiming ±0.5 that is right 60% of the time is miscalibrated, and the coverage
+number is what says so.
 
 **Classification:** ROC-AUC (primary), PR-AUC with the positive-class base rate next to
 it (PR-AUC of 0.7 means something different at 10% prevalence than at 50%), balanced
@@ -118,23 +119,43 @@ result, and the report says so instead of declaring a winner.
 
 ## Calibration
 
-Classifier probabilities are calibrated on the validation split. Platt scaling and
+**Classifiers.** Probabilities are calibrated on the validation split. Platt scaling and
 isotonic regression are both fitted, and the one with the better validation Brier score
 wins — **unless neither beats the uncalibrated model**, in which case calibration is
 refused and the model is served raw. Applying a calibrator that makes things worse is a
-common and invisible failure.
+common and invisible failure, and on ClinTox it is exactly what happened: neither method
+improved the Brier score, so that model is served uncalibrated.
 
 Reported either way: expected calibration error (ECE, 10 bins), maximum calibration
 error (MCE), Brier score, and the reliability curve the Model Evaluation view plots.
+Measured on the scaffold splits: BBBP ECE 0.071 / Brier 0.095, ClinTox ECE 0.038 /
+Brier 0.052.
+
+**Regressors.** There is no probability to calibrate, so what is measured instead is
+whether the uncertainty behaves like an error bar — and the verdict is computed from the
+observed coverage rather than being a fixed sentence:
+
+| Model | Coverage at 95% nominal | Verdict |
+|---|---|---|
+| `solubility` random_forest | 99.1% | conservative — wider than needed, the safer direction |
+| `solubility` gin | 56.2% | **over-confident** — treat the error bars as a lower bound |
+| `lipophilicity` random_forest | 98.3% | conservative |
+| `lipophilicity` gin | 47.4% | **over-confident** |
+
+That is a real and useful finding, and it is the reason the two families are not
+interchangeable in the ranking engine: at this data scale the Random Forest's tree
+variance is a trustworthy (if cautious) error bar, while 20-pass MC dropout on a
+4-layer GIN substantially understates its own error.
 
 ## Uncertainty and the applicability domain
 
 Two independent things determine whether a prediction should be believed:
 
-**Ensemble spread** — tree variance or MC-dropout standard deviation. On ESOL the
-uncertainty estimate is usable: the lowest-uncertainty decile has mean absolute error
-0.293 while the highest has 1.079, a rank correlation of 0.53 between predicted
-uncertainty and actual error.
+**Ensemble spread** — tree variance or MC-dropout standard deviation. On ESOL the Random
+Forest's estimate is usable: mean absolute error rises from **0.266** in the
+lowest-uncertainty decile to **1.007** in the highest, with a correlation of **0.527**
+between predicted uncertainty and actual error. The GIN's, on the same split, correlates
+at only 0.104 — it produces a number, but that number does not rank its own errors.
 
 **Applicability domain** — the maximum Tanimoto similarity between the query molecule
 and any training molecule. Below **0.35** the molecule is flagged out-of-domain; at
@@ -180,7 +201,58 @@ asking twice does not create two rows or two inference costs.
 From `theragraph ml train`, offline, on the committed MoleculeNet snapshots. **Scaffold
 split is the headline; the random column is the optimism reference.**
 
-<!-- METRICS_TABLE -->
+| Endpoint | Dataset | Model | Primary metric | **Scaffold split** | 95% CI | Secondary | Random split | Optimism |
+|---|---|---|---|---|---|---|---|---|
+| `solubility` | ESOL | random_forest | RMSE (log mol/L) | **0.889** | 0.751–1.026 | R2 0.887 | 0.593 | +33.27% |
+| `solubility` | ESOL | gin | RMSE (log mol/L) | **1.059** | 0.876–1.245 | R2 0.840 | 0.668 | +36.88% |
+| `bbb_permeability` | BBBP | random_forest | ROC-AUC | **0.802** | 0.686–0.898 | PR-AUC 0.956 | 0.923 | +15.1% |
+| `bbb_permeability` | BBBP | gin | ROC-AUC | **0.640** | 0.528–0.745 | PR-AUC 0.929 | 0.900 | +40.53% |
+| `lipophilicity` | Lipophilicity | random_forest | RMSE (logD) | **0.893** | 0.832–0.959 | R2 0.464 | 0.743 | +16.81% |
+| `lipophilicity` | Lipophilicity | gin | RMSE (logD) | **0.731** | 0.673–0.786 | R2 0.641 | 0.597 | +18.25% |
+| `clinical_toxicity` | ClinTox | random_forest | ROC-AUC | **0.842** | 0.698–0.949 | PR-AUC 0.226 | 0.531 | none |
+| `clinical_toxicity` | ClinTox | gin | ROC-AUC | **0.749** | 0.574–0.896 | PR-AUC 0.243 | 0.496 | none |
+
+* **`solubility`** — random_forest leads on rmse, but its confidence interval overlaps gin — treat the difference as unproven. Test fold 112 molecules, 66 scaffolds, 0 shared with train.
+* **`bbb_permeability`** — random_forest leads on roc_auc, but its confidence interval overlaps gin — treat the difference as unproven. Test fold 197 molecules, 197 scaffolds, 0 shared with train.
+* **`lipophilicity`** — gin leads on rmse with non-overlapping confidence intervals. Test fold 420 molecules, 420 scaffolds, 0 shared with train.
+* **`clinical_toxicity`** — random_forest leads on roc_auc, but its confidence interval overlaps gin — treat the difference as unproven. Test fold 143 molecules, 143 scaffolds, 0 shared with train.
+
+### Reading that table
+
+Four things in it are worth saying out loud, because the table alone lets a reader draw
+the wrong conclusion.
+
+**The graph model wins where there is data to win with.** GIN beats the baseline on
+Lipophilicity (4,200 molecules) with non-overlapping confidence intervals, ties it on
+ESOL (1,117) and loses on BBBP (1,961, and imbalanced). That is the expected
+relationship between dataset size and a graph network's advantage, and it is why
+shipping only a GNN — or only a baseline — would have been the wrong call. Both are
+trained, both are registered, and the comparison is reported rather than assumed.
+
+**"Unproven" appears three times out of four, and that is the honest reading.** On a
+112-molecule test fold, a 0.17 RMSE difference has overlapping bootstrap intervals. The
+comparison says so instead of declaring a winner, which is what the intervals are for.
+
+**ClinTox's ROC-AUC flatters it; everything else says so.** The positive class is 7.5% of
+the dataset (112 of 1,484 molecules), and 5.6% of this scaffold-split test fold. ROC-AUC
+0.842 sounds strong. But PR-AUC is 0.226 against that base rate — a ~4x lift, real signal
+— and at the default threshold the confusion matrix is 135 true negatives, 8 false
+negatives, **zero** true positives: MCC 0.0, recall 0.0, balanced accuracy 0.5. The model
+*ranks* toxicity usefully and *decides* nothing at 0.5. Reporting only the AUC would hide
+that completely, which is why the threshold metrics and the confusion matrix are reported
+next to it.
+
+**ClinTox is also the case where the random split is *worse*.** With so few positives, a
+random test fold can end up close to chance (0.531), which is not "the scaffold split was
+harder" — it is an unstable estimate. The optimism column reads `none` rather than
+printing a percentage that would imply the opposite of the truth.
+
+Two more results that do not fit in the table. On ClinTox, calibration was **refused** —
+neither Platt scaling nor isotonic regression beat the uncalibrated model on the
+validation Brier score, so it is served raw. And on both regression endpoints the GIN's
+MC-dropout uncertainty is badly over-confident (56% and 47% coverage against a 95%
+nominal) while the Random Forest's is conservative (99% and 98%). Both are the designed
+behaviour firing on real data rather than a hypothetical.
 
 ## Running training
 

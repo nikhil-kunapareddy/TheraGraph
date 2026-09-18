@@ -35,7 +35,7 @@ A random split on molecular data puts analogues on both sides of the line and me
 interpolation within chemical series. Reporting it as "the" accuracy is the single most
 common way ML-for-chemistry results are overstated.
 
-TheraGraph trains both — on the same data, separately — and reports the gap:
+TheraGraph trains both — on the same data, separately — and reports the gap. On ESOL:
 
 ```
 random_forest: scaffold RMSE 0.889, random RMSE 0.593 → 33.3% optimism
@@ -45,6 +45,14 @@ gin:           scaffold RMSE 1.059, random RMSE 0.668 → 36.9% optimism
 The UI shows the scaffold number. The random number is present, labelled, and adjacent,
 because a reader who has only ever seen random splits needs to see the size of the
 difference.
+
+This is also what makes the two-family comparison worth having rather than decorative.
+Measured across the four endpoints, the graph model wins on the largest dataset
+(Lipophilicity, 4,200 molecules, non-overlapping intervals), ties on ESOL (1,117) and
+loses on BBBP (1,961, imbalanced) — and its MC-dropout uncertainty is over-confident on
+both regression endpoints (56% and 47% coverage against a 95% nominal) where the forest's
+tree variance is conservative (99% and 98%). Neither family is simply better, which is
+precisely the thing an evaluation is for.
 
 ### 4. The corpus is finite and says so
 
@@ -184,7 +192,7 @@ is worse than no interval.
 
 ### Testing
 
-* **428 backend tests, 77% line coverage.** The gaps are concentrated in error paths of
+* **442 backend tests, 79% line coverage.** The gaps are concentrated in error paths of
   the external connectors — the code that handles an upstream API returning malformed
   data at a particular stage. Those paths are exercised by fixtures where the fixture
   exists.
