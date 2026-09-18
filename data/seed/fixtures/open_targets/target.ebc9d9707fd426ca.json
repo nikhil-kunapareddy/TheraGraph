@@ -1,0 +1,1990 @@
+{
+  "operation": "target",
+  "params": {
+    "ensemblId": "ENSG00000087085"
+  },
+  "recorded_at": "2026-09-18T03:31:13.784860+00:00",
+  "response": {
+    "data": {
+      "target": {
+        "approvedName": "acetylcholinesterase (Yt blood group)",
+        "approvedSymbol": "ACHE",
+        "biotype": "protein_coding",
+        "dbXrefs": [
+          {
+            "id": "108",
+            "source": "HGNC"
+          },
+          {
+            "id": "1B41",
+            "source": "PDB"
+          },
+          {
+            "id": "1F8U",
+            "source": "PDB"
+          },
+          {
+            "id": "1VZJ",
+            "source": "PDB"
+          },
+          {
+            "id": "2X8B",
+            "source": "PDB"
+          },
+          {
+            "id": "3LII",
+            "source": "PDB"
+          },
+          {
+            "id": "4BDT",
+            "source": "PDB"
+          },
+          {
+            "id": "4EY4",
+            "source": "PDB"
+          },
+          {
+            "id": "4EY5",
+            "source": "PDB"
+          },
+          {
+            "id": "4EY6",
+            "source": "PDB"
+          },
+          {
+            "id": "4EY7",
+            "source": "PDB"
+          },
+          {
+            "id": "4EY8",
+            "source": "PDB"
+          },
+          {
+            "id": "4M0E",
+            "source": "PDB"
+          },
+          {
+            "id": "4M0F",
+            "source": "PDB"
+          },
+          {
+            "id": "4PQE",
+            "source": "PDB"
+          },
+          {
+            "id": "5FOQ",
+            "source": "PDB"
+          },
+          {
+            "id": "5FPQ",
+            "source": "PDB"
+          },
+          {
+            "id": "5HF5",
+            "source": "PDB"
+          },
+          {
+            "id": "5HF6",
+            "source": "PDB"
+          },
+          {
+            "id": "5HF8",
+            "source": "PDB"
+          },
+          {
+            "id": "5HF9",
+            "source": "PDB"
+          },
+          {
+            "id": "5HFA",
+            "source": "PDB"
+          },
+          {
+            "id": "5HQ3",
+            "source": "PDB"
+          },
+          {
+            "id": "6CQT",
+            "source": "PDB"
+          },
+          {
+            "id": "6CQU",
+            "source": "PDB"
+          },
+          {
+            "id": "6CQV",
+            "source": "PDB"
+          },
+          {
+            "id": "6CQW",
+            "source": "PDB"
+          },
+          {
+            "id": "6CQX",
+            "source": "PDB"
+          },
+          {
+            "id": "6CQY",
+            "source": "PDB"
+          },
+          {
+            "id": "6CQZ",
+            "source": "PDB"
+          },
+          {
+            "id": "6F25",
+            "source": "PDB"
+          },
+          {
+            "id": "6NEA",
+            "source": "PDB"
+          },
+          {
+            "id": "6NTG",
+            "source": "PDB"
+          },
+          {
+            "id": "6NTH",
+            "source": "PDB"
+          },
+          {
+            "id": "6NTK",
+            "source": "PDB"
+          },
+          {
+            "id": "6NTL",
+            "source": "PDB"
+          },
+          {
+            "id": "6NTM",
+            "source": "PDB"
+          },
+          {
+            "id": "6NTN",
+            "source": "PDB"
+          },
+          {
+            "id": "6NTO",
+            "source": "PDB"
+          },
+          {
+            "id": "6O4W",
+            "source": "PDB"
+          },
+          {
+            "id": "6O4X",
+            "source": "PDB"
+          },
+          {
+            "id": "6O50",
+            "source": "PDB"
+          },
+          {
+            "id": "6O52",
+            "source": "PDB"
+          },
+          {
+            "id": "6O5R",
+            "source": "PDB"
+          },
+          {
+            "id": "6O5S",
+            "source": "PDB"
+          },
+          {
+            "id": "6O5V",
+            "source": "PDB"
+          },
+          {
+            "id": "6O66",
+            "source": "PDB"
+          },
+          {
+            "id": "6O69",
+            "source": "PDB"
+          },
+          {
+            "id": "6U34",
+            "source": "PDB"
+          },
+          {
+            "id": "6U37",
+            "source": "PDB"
+          },
+          {
+            "id": "6U3P",
+            "source": "PDB"
+          },
+          {
+            "id": "6WUV",
+            "source": "PDB"
+          },
+          {
+            "id": "6WUY",
+            "source": "PDB"
+          },
+          {
+            "id": "6WUZ",
+            "source": "PDB"
+          },
+          {
+            "id": "6WV1",
+            "source": "PDB"
+          },
+          {
+            "id": "6WVC",
+            "source": "PDB"
+          },
+          {
+            "id": "6WVO",
+            "source": "PDB"
+          },
+          {
+            "id": "6WVP",
+            "source": "PDB"
+          },
+          {
+            "id": "6WVQ",
+            "source": "PDB"
+          },
+          {
+            "id": "6ZWE",
+            "source": "PDB"
+          },
+          {
+            "id": "7D9O",
+            "source": "PDB"
+          },
+          {
+            "id": "7D9P",
+            "source": "PDB"
+          },
+          {
+            "id": "7D9Q",
+            "source": "PDB"
+          },
+          {
+            "id": "7E3D",
+            "source": "PDB"
+          },
+          {
+            "id": "7E3H",
+            "source": "PDB"
+          },
+          {
+            "id": "7P1N",
+            "source": "PDB"
+          },
+          {
+            "id": "7P1P",
+            "source": "PDB"
+          },
+          {
+            "id": "7RB5",
+            "source": "PDB"
+          },
+          {
+            "id": "7RB6",
+            "source": "PDB"
+          },
+          {
+            "id": "7RB7",
+            "source": "PDB"
+          },
+          {
+            "id": "7XN1",
+            "source": "PDB"
+          },
+          {
+            "id": "8AEN",
+            "source": "PDB"
+          },
+          {
+            "id": "8AEV",
+            "source": "PDB"
+          },
+          {
+            "id": "8DT2",
+            "source": "PDB"
+          },
+          {
+            "id": "8DT4",
+            "source": "PDB"
+          },
+          {
+            "id": "8DT5",
+            "source": "PDB"
+          },
+          {
+            "id": "8DT7",
+            "source": "PDB"
+          },
+          {
+            "id": "9F6R",
+            "source": "PDB"
+          },
+          {
+            "id": "9OMS",
+            "source": "PDB"
+          },
+          {
+            "id": "9OMT",
+            "source": "PDB"
+          },
+          {
+            "id": "CHEMBL220",
+            "source": "ChEMBL"
+          },
+          {
+            "id": "DB07846",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02673",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04617",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04614",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04615",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB07756",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB07701",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02404",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03814",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB08615",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02343",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02226",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03005",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04114",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03128",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01122",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB20407",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB19353",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03283",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB20756",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00411",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00122",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB14006",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB13511",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01245",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00944",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB08357",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB08996",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00449",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00843",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01057",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01010",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01364",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00898",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB15236",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00674",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00483",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB06525",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB12134",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04864",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03348",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB07555",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB11521",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00677",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04924",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB16213",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00166",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03359",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00772",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00358",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB13058",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00940",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02825",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02845",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB08167",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04021",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB05520",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00805",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01805",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03740",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04556",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01400",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB13750",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB13495",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04892",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00981",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB15317",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00733",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02166",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00545",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB19735",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00863",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00989",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00382",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04616",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB12816",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01199",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB13503",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04859",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB20074",
+            "source": "DrugBank"
+          },
+          {
+            "id": "R-HSA-112311",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-1483191",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-422085",
+            "source": "Reactome"
+          },
+          {
+            "id": "IPR029058",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR050654",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR014788",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR002018",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR019826",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR019819",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR000997",
+            "source": "InterPro"
+          },
+          {
+            "id": "SignalP-noTM",
+            "source": "signalP"
+          }
+        ],
+        "drugAndClinicalCandidates": {
+          "count": 32,
+          "rows": [
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL5095056",
+                "maximumClinicalStage": "UNKNOWN",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "BENZGALANTAMINE"
+              },
+              "id": "01903a98226ce5a6a2ca4e793b00fbc746e1d3b838621998810e511a3a567cdc",
+              "maxClinicalStage": "UNKNOWN"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL659",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "GALANTAMINE"
+              },
+              "id": "071fa55baecbc71d4dedbc11884242e0e3654397839d6d63f837d48459371688",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL2105345",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Butyrylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "PROPANIDID"
+              },
+              "id": "0c5965ada03c4b824d78d3a600591cfcb9f5d6bbe8c0985a994b371ecb66e7a4",
+              "maxClinicalStage": "UNKNOWN"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL211471",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "NEOSTIGMINE METHYLSULFATE"
+              },
+              "id": "0c9784e720be02ac630d2813dfe721c82b3d0d791dba6d3fa670b2d71e608757",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL278819",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "AGONIST",
+                      "mechanismOfAction": "Dopamine D1 and D2 receptor agonist"
+                    },
+                    {
+                      "actionType": "AGONIST",
+                      "mechanismOfAction": "Muscarinic acetylcholine receptor M1 agonist"
+                    },
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Serotonin 2 (5-HT2) receptor antagonist"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Monoamine oxidase A inhibitor"
+                    },
+                    {
+                      "actionType": "AGONIST",
+                      "mechanismOfAction": "Dopamine D1 and D2 receptor agonist"
+                    },
+                    {
+                      "actionType": "AGONIST",
+                      "mechanismOfAction": "Muscarinic acetylcholine receptor M1 agonist"
+                    },
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Serotonin 2 (5-HT2) receptor antagonist"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Monoamine oxidase A inhibitor"
+                    }
+                  ]
+                },
+                "name": "MINAPRINE"
+              },
+              "id": "12c1cd878ee2d89d7eaf9cd5aba1117bfd5c47f9cb5dec08c669dc9969a0f41e",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL95",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cholinesterases; ACHE & BCHE inhibitor"
+                    }
+                  ]
+                },
+                "name": "TACRINE"
+              },
+              "id": "194bb21a955e030c885e7bcc807196547cdd4efdcc5515b767e5a222054eb8f0",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL2107457",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Dopamine D2 receptor antagonist"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "ITOPRIDE"
+              },
+              "id": "269708816648b7bd7c65d4d551b6b6a336ff86a7352ae3b2f5e6ad01cd640716",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1200514",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "DEMECARIUM BROMIDE"
+              },
+              "id": "2b42792b8fa33da0e2ae9c9f4621efa7044afffdfb19940e12cc0eac6f8bfb79",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL395280",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "HUPERZINE A"
+              },
+              "id": "3187f6b9a3235d5b0aee6030f46add4fb1070c9b95725fda2a77caede12e0ee4",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL2107308",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "ACOTIAMIDE HYDROCHLORIDE"
+              },
+              "id": "37d382d38367f5ffd19e58fddece35703d92d774e978e591a08e6c62d9fd1b16",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL94",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "PHYSOSTIGMINE"
+              },
+              "id": "552ae0d4638d5e20d9d86526d917aaa4f69cc3a811ec2b9afa26766538cb85b2",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1420",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ACTIVATOR",
+                      "mechanismOfAction": "Acetylcholinesterase activator"
+                    }
+                  ]
+                },
+                "name": "PRALIDOXIME"
+              },
+              "id": "5a65c44b91d2b98bf7dc2100c35ac0f2408391181f6bb76d0865734d5dd46d27",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1652",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "AMBENONIUM"
+              },
+              "id": "5cfdff57d7334ee968ef9514ff47e28a90a46a5e1c4c76aa727374cd9f10f008",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1201229",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "DEMECARIUM"
+              },
+              "id": "610fd82847ab0eb6dacd66f867e2b5d714565c01a06b08b340a08cc91f3b6320",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1678",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "DONEPEZIL HYDROCHLORIDE"
+              },
+              "id": "630b0b7036eaf87def7a54c7736990a66f9add0ef943b6b091f5929aa6d571a5",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1555",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "GALANTAMINE HYDROBROMIDE"
+              },
+              "id": "651b14e7774215e0499879312259ba08b62e77fe62db18869f5d0f7d6500b45c",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1201341",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "ECHOTHIOPHATE"
+              },
+              "id": "6a499be80f2416b07d5cd84f23a5bab42baf020dd6888ad7a83220a5945b96fc",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1201092",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cholinesterases; ACHE & BCHE inhibitor"
+                    }
+                  ]
+                },
+                "name": "RIVASTIGMINE TARTRATE"
+              },
+              "id": "732e16420c2d848fdc4ae5395de44c0b0e122c8dc167ecbbd837dfbec545bf6e",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL338975",
+                "maximumClinicalStage": "UNKNOWN",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "PHYSOSTIGMINE SALICYLATE"
+              },
+              "id": "7571ee43b73bdbfa472afffadee4ed1ed5274119ab963f76b1d4d20100628bec",
+              "maxClinicalStage": "UNKNOWN"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1025",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "ISOFLUROPHATE"
+              },
+              "id": "767378d6d7c58c686c87065e9b3cea5b0819c169f366f4f10058e725add0ec39",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL636",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cholinesterases; ACHE & BCHE inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cholinesterases; ACHE & BCHE inhibitor"
+                    }
+                  ]
+                },
+                "name": "RIVASTIGMINE"
+              },
+              "id": "83885b551557979cb75d236cf5e32da918ef18216ec71a645f491ba74c651490",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL2107723",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "ACOTIAMIDE"
+              },
+              "id": "8f912fc61a87f1e305fe70e80a9c7e4d1684a730308a8e16951572d190881b8b",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL812",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "PYRIDOSTIGMINE BROMIDE"
+              },
+              "id": "97a757ce115fe5be1603706719376ac49507c7d4a8b8b447edeae22a41ab1a56",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1200933",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "HEXAFLUORENIUM BROMIDE"
+              },
+              "id": "9a345a0b4a19e698c0da657d0eb2393bdd934af42ea22ce1ce049570b399f96e",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1200367",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "ECHOTHIOPHATE IODIDE"
+              },
+              "id": "9b89253428d05be444a5bd4b87418cdaa785c27ec71f6aa94a64d0005e5e15cf",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1115",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "PYRIDOSTIGMINE"
+              },
+              "id": "b3151fe29862249a617b75dd87ddb8f835327dd399d1f79ead46e3b03542219a",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL748",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ACTIVATOR",
+                      "mechanismOfAction": "Acetylcholinesterase activator"
+                    }
+                  ]
+                },
+                "name": "PRALIDOXIME CHLORIDE"
+              },
+              "id": "be2919cb4d9eaf5e27ce78692c9432ce2b328c8126217ff5af529a5a9f944b51",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL278020",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "NEOSTIGMINE"
+              },
+              "id": "d1e3409324d27bc46ad4bae45f794803d1a89a9999425681d903c4bd6c5fb384",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1104",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "EDROPHONIUM"
+              },
+              "id": "d417eb25f9749b0e47413ffe528401834da6d51f90116e9c58bc667cb8a26266",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL502",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "DONEPEZIL"
+              },
+              "id": "dc3716c7cfecf1d9f5cc77e2434a8a2b1588882285992ac45978f308d399ce1f",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1364551",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "AGONIST",
+                      "mechanismOfAction": "Dopamine D1 and D2 receptor agonist"
+                    },
+                    {
+                      "actionType": "AGONIST",
+                      "mechanismOfAction": "Muscarinic acetylcholine receptor M1 agonist"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Monoamine oxidase A inhibitor"
+                    },
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Serotonin 2 (5-HT2) receptor antagonist"
+                    }
+                  ]
+                },
+                "name": "MINAPRINE HYDROCHLORIDE"
+              },
+              "id": "eabe7b5ef62ca48b94aa5400bf99478bd8847ac43cd959adf3ccff9f8bb35cf3",
+              "maxClinicalStage": "UNKNOWN"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL6068431",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "BENZGALANTAMINE GLUCONATE"
+              },
+              "id": "f4a6fdf7abe7a1a9f844313eb50ef7284f48167db83378dd4f61b96fef1e8fd0",
+              "maxClinicalStage": "APPROVAL"
+            }
+          ]
+        },
+        "functionDescriptions": [
+          "Hydrolyzes rapidly the acetylcholine neurotransmitter released into the synaptic cleft allowing to terminate the signal transduction at the neuromuscular junction. Role in neuronal apoptosis. {ECO:0000269|PubMed:11985878, ECO:0000269|PubMed:1517212, ECO:0000269|PubMed:1748670, ECO:0000269|PubMed:2714437}."
+        ],
+        "genomicLocation": {
+          "chromosome": "7",
+          "end": 100897022,
+          "start": 100889994,
+          "strand": -1
+        },
+        "id": "ENSG00000087085",
+        "proteinIds": [
+          {
+            "id": "P22303",
+            "source": "uniprot_swissprot"
+          },
+          {
+            "id": "A0A498U6H7",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "C9J2S3",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "C9JD78",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "C9JZL6",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "F8WAR7",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "F8WD34",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "F8WD68",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "ENSP00000241069",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000303211",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000390004",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000394976",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000396360",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000397143",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000399725",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000400933",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000403474",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000404865",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000410380",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000414858",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000415901",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000564962",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000564963",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000564964",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000564965",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000564966",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000564967",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000564968",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000564969",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000564970",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000602325",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000602326",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000626420",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000626421",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000626422",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "A4D2E2",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "B7ZKZ0",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "D6W5X7",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q16169",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q29S23",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q2M324",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q504V3",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q53F46",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q86TM9",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q86YX9",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q9BXP7",
+            "source": "uniprot_obsolete"
+          }
+        ],
+        "safetyLiabilities": [
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "increased salivation",
+            "eventId": "GO_0046878",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "death",
+            "eventId": "EFO_0000480",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "bronchoconstriction",
+            "eventId": "EFO_0009836",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "muscle relaxation",
+            "eventId": "",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "coma",
+            "eventId": "HP_0001259",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Bowes et al. (2012)",
+            "event": "decreased blood pressure",
+            "eventId": "MONDO_0005468",
+            "literature": "23197038"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "increased defecation",
+            "eventId": "GO_2000294",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Bowes et al. (2012)",
+            "event": "increased respiratory secretions",
+            "eventId": "EFO_0009835",
+            "literature": "23197038"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "foot drop",
+            "eventId": "HP_0009027",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "vomiting",
+            "eventId": "HP_0002017",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "peripheral neuropathy",
+            "eventId": "MONDO_0005244",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "increased urine excretion",
+            "eventId": "HP_0000103",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "decreased pupil diameter",
+            "eventId": "HP_0000616",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "mood change",
+            "eventId": "MONDO_0005371",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "cognitive deficit",
+            "eventId": "HP_0100543",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "AOP-Wiki",
+            "event": "Decrease, Population growth rate",
+            "eventId": "",
+            "literature": null
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "apnea",
+            "eventId": "HP_0002104",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "autonomic dysfunction",
+            "eventId": "HP_0012332",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "ataxia",
+            "eventId": "MONDO_0000437",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "lacrimation",
+            "eventId": "HP_0000632",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "tingling/weakness in limbs",
+            "eventId": "MONDO_0044967",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "increased then decreased heart rate",
+            "eventId": "HP_0031860",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "increased bronchial secretions",
+            "eventId": "EFO_0009835",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "convulsions",
+            "eventId": "EFO_0009853",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Bowes et al. (2012)",
+            "event": "decreased gastrointestinal motility",
+            "eventId": "HP_0002579",
+            "literature": "23197038"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "diarrhea",
+            "eventId": "HP_0002014",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "AOP-Wiki",
+            "event": "Increased Mortality",
+            "eventId": "",
+            "literature": null
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "increased then decreased blood pressure",
+            "eventId": "HP_0030972",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Bowes et al. (2012)",
+            "event": "decreased heart rate",
+            "eventId": "HP_0001662",
+            "literature": "23197038"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "blurred vision",
+            "eventId": "HP_0000622",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "ToxCast",
+            "event": "regulation of catalytic activity",
+            "eventId": "",
+            "literature": null
+          },
+          {
+            "datasource": "Bowes et al. (2012)",
+            "event": "bronchoconstriction",
+            "eventId": "EFO_0009836",
+            "literature": "23197038"
+          },
+          {
+            "datasource": "Bowes et al. (2012)",
+            "event": "increased gastrointestinal motility",
+            "eventId": "HP_0030895",
+            "literature": "23197038"
+          }
+        ],
+        "subcellularLocations": [
+          {
+            "location": "Synapse",
+            "termSL": "SL-0258"
+          },
+          {
+            "location": "Secreted",
+            "termSL": "SL-0243"
+          },
+          {
+            "location": "Cell membrane ; Peripheral membrane protein",
+            "termSL": "SL-0039"
+          },
+          {
+            "location": "Nucleus",
+            "termSL": "SL-0191"
+          },
+          {
+            "location": "Cell membrane ; Lipid- anchor, GPI-anchor ; Extracellular side",
+            "termSL": "SL-0039"
+          },
+          {
+            "location": "Golgi apparatus",
+            "termSL": "SL-0132"
+          },
+          {
+            "location": "Vesicles",
+            "termSL": "SL-0498"
+          }
+        ],
+        "synonyms": [
+          {
+            "label": "Acetylcholinesterase",
+            "source": "uniprot"
+          },
+          {
+            "label": "AChE",
+            "source": "uniprot"
+          },
+          {
+            "label": "ACHE",
+            "source": "uniprot"
+          },
+          {
+            "label": "Yt blood group",
+            "source": "HGNC"
+          },
+          {
+            "label": "ACEE",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "ARACHE",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "N-ACHE",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "YT",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "acetylcholinesterase",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "Yt blood group",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "acetylcholinesterase (Cartwright blood group)",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "apoptosis-related acetylcholinesterase",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "ACHE",
+            "source": "NCBI_entrez"
+          }
+        ],
+        "targetClass": [
+          {
+            "id": 646,
+            "label": "Enzyme",
+            "level": "l1"
+          },
+          {
+            "id": 646,
+            "label": "Hydrolase",
+            "level": "l2"
+          }
+        ],
+        "tractability": [
+          {
+            "label": "Approved Drug",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Structure with Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Pocket",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Med-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Druggable Family",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt loc high conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "GO CC high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt loc med conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt SigP or TMHMM",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Human Protein Atlas loc",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Literature",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "UniProt Ubiquitination",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Database Ubiquitination",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Half-life Data",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Small Molecule Binder",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "OC",
+            "value": false
+          }
+        ]
+      }
+    }
+  },
+  "source": "open_targets"
+}

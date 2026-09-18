@@ -1,0 +1,412 @@
+{
+  "operation": "disease",
+  "params": {
+    "efoId": "MONDO_0004975",
+    "size": 12
+  },
+  "recorded_at": "2026-09-18T03:31:13.008636+00:00",
+  "response": {
+    "data": {
+      "disease": {
+        "associatedTargets": {
+          "count": 13367,
+          "rows": [
+            {
+              "datatypeScores": [
+                {
+                  "id": "genetic_literature",
+                  "score": 0.607930797611621
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9774319311654196
+                },
+                {
+                  "id": "affected_pathway",
+                  "score": 0.607930797611621
+                },
+                {
+                  "id": "literature",
+                  "score": 0.9972044799896909
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9229130829216265
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.47538638787264004
+                }
+              ],
+              "score": 0.8722092478154398,
+              "target": {
+                "approvedName": "amyloid beta precursor protein",
+                "approvedSymbol": "APP",
+                "biotype": "protein_coding",
+                "id": "ENSG00000142192"
+              }
+            },
+            {
+              "datatypeScores": [
+                {
+                  "id": "rna_expression",
+                  "score": 0.04988096311450684
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.8880632854712809
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.6198003630709226
+                },
+                {
+                  "id": "literature",
+                  "score": 0.9854793952535105
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.954428889898166
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.6968061402275691
+                }
+              ],
+              "score": 0.8669875850999414,
+              "target": {
+                "approvedName": "presenilin 1",
+                "approvedSymbol": "PSEN1",
+                "biotype": "protein_coding",
+                "id": "ENSG00000080815"
+              }
+            },
+            {
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.8837535724620864
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9105699129172259
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.7717343736347523
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.6198003630709226
+                }
+              ],
+              "score": 0.8180840856428299,
+              "target": {
+                "approvedName": "presenilin 2",
+                "approvedSymbol": "PSEN2",
+                "biotype": "protein_coding",
+                "id": "ENSG00000143801"
+              }
+            },
+            {
+              "datatypeScores": [
+                {
+                  "id": "rna_expression",
+                  "score": 0.017251532679053088
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.607930797611621
+                },
+                {
+                  "id": "affected_pathway",
+                  "score": 0.2670020417823128
+                },
+                {
+                  "id": "literature",
+                  "score": 0.9992053836614199
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8893909787398722
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.4096062934202789
+                }
+              ],
+              "score": 0.7699520237898497,
+              "target": {
+                "approvedName": "apolipoprotein E",
+                "approvedSymbol": "APOE",
+                "biotype": "protein_coding",
+                "id": "ENSG00000130203"
+              }
+            },
+            {
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.8753913488946691
+                },
+                {
+                  "id": "affected_pathway",
+                  "score": 0.5815977506239859
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.5374519955132447
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.987009594803747
+                }
+              ],
+              "score": 0.7043366601565315,
+              "target": {
+                "approvedName": "glutamate ionotropic receptor NMDA type subunit 1",
+                "approvedSymbol": "GRIN1",
+                "biotype": "protein_coding",
+                "id": "ENSG00000176884"
+              }
+            },
+            {
+              "datatypeScores": [
+                {
+                  "id": "rna_expression",
+                  "score": 0.04768036208430157
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.3647584785669727
+                },
+                {
+                  "id": "literature",
+                  "score": 0.9814515094446923
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.7564204272164786
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.3268843898757687
+                }
+              ],
+              "score": 0.6861184602782842,
+              "target": {
+                "approvedName": "sortilin related receptor 1",
+                "approvedSymbol": "SORL1",
+                "biotype": "protein_coding",
+                "id": "ENSG00000137642"
+              }
+            },
+            {
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.3021303714107068
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.289131887344087
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.5028880551160951
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.987009594803747
+                }
+              ],
+              "score": 0.6827426189622511,
+              "target": {
+                "approvedName": "glutamate ionotropic receptor NMDA type subunit 3B",
+                "approvedSymbol": "GRIN3B",
+                "biotype": "protein_coding",
+                "id": "ENSG00000116032"
+              }
+            },
+            {
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9475694665139466
+                },
+                {
+                  "id": "affected_pathway",
+                  "score": 0.877437422074483
+                },
+                {
+                  "id": "rna_expression",
+                  "score": 0.08977986793197987
+                }
+              ],
+              "score": 0.6802600483000536,
+              "target": {
+                "approvedName": "cyclin dependent kinase 5",
+                "approvedSymbol": "CDK5",
+                "biotype": "protein_coding",
+                "id": "ENSG00000164885"
+              }
+            },
+            {
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9406969958371513
+                },
+                {
+                  "id": "rna_expression",
+                  "score": 0.02040312242200407
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.7592810732933327
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.607930797611621
+                }
+              ],
+              "score": 0.6627156408281735,
+              "target": {
+                "approvedName": "ADAM metallopeptidase domain 10",
+                "approvedSymbol": "ADAM10",
+                "biotype": "protein_coding",
+                "id": "ENSG00000137845"
+              }
+            },
+            {
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9357749601612098
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.5289747376767766
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9956708086829915
+                }
+              ],
+              "score": 0.6408894927590979,
+              "target": {
+                "approvedName": "acetylcholinesterase (Yt blood group)",
+                "approvedSymbol": "ACHE",
+                "biotype": "protein_coding",
+                "id": "ENSG00000087085"
+              }
+            },
+            {
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.8917511238282677
+                },
+                {
+                  "id": "rna_expression",
+                  "score": 0.03279389384323798
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.5021811171583134
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.987009594803747
+                }
+              ],
+              "score": 0.6341731366460872,
+              "target": {
+                "approvedName": "glutamate ionotropic receptor NMDA type subunit 2B",
+                "approvedSymbol": "GRIN2B",
+                "biotype": "protein_coding",
+                "id": "ENSG00000273079"
+              }
+            },
+            {
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9433416373339005
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9847869245008808
+                }
+              ],
+              "score": 0.6273566221895482,
+              "target": {
+                "approvedName": "butyrylcholinesterase",
+                "approvedSymbol": "BCHE",
+                "biotype": "protein_coding",
+                "id": "ENSG00000114200"
+              }
+            }
+          ]
+        },
+        "description": "A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.",
+        "id": "MONDO_0004975",
+        "name": "Alzheimer disease",
+        "parents": [
+          {
+            "id": "MONDO_0005574",
+            "name": "tauopathy"
+          },
+          {
+            "id": "MONDO_0001627",
+            "name": "dementia"
+          }
+        ],
+        "synonyms": [
+          {
+            "relation": "hasExactSynonym",
+            "terms": [
+              "AD",
+              "Alzheimer dementia",
+              "Alzheimer disease",
+              "Alzheimer's dementia",
+              "Alzheimer's disease",
+              "Alzheimers dementia",
+              "Alzheimers disease",
+              "presenile and senile dementia"
+            ]
+          },
+          {
+            "relation": "hasRelatedSynonym",
+            "terms": []
+          },
+          {
+            "relation": "hasNarrowSynonym",
+            "terms": [
+              "Alzheimer disease, familial"
+            ]
+          },
+          {
+            "relation": "hasBroadSynonym",
+            "terms": []
+          }
+        ],
+        "therapeuticAreas": [
+          {
+            "id": "MONDO_0002025",
+            "name": "psychiatric disorder"
+          },
+          {
+            "id": "MONDO_0005071",
+            "name": "nervous system disorder"
+          },
+          {
+            "id": "EFO_0000651",
+            "name": "phenotype"
+          }
+        ]
+      }
+    }
+  },
+  "source": "open_targets"
+}

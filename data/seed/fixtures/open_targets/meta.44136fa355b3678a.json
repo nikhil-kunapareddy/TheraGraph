@@ -1,0 +1,22 @@
+{
+  "operation": "meta",
+  "params": {},
+  "recorded_at": "2026-09-18T02:49:46.247637+00:00",
+  "response": {
+    "data": {
+      "meta": {
+        "apiVersion": {
+          "x": "26",
+          "y": "6",
+          "z": "3"
+        },
+        "dataVersion": {
+          "iteration": null,
+          "month": "06",
+          "year": "26"
+        }
+      }
+    }
+  },
+  "source": "open_targets"
+}

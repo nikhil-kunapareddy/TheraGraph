@@ -1,0 +1,487 @@
+{
+  "operation": "target",
+  "params": {
+    "ensemblId": "ENSG00000137642"
+  },
+  "recorded_at": "2026-09-18T02:49:47.953137+00:00",
+  "response": {
+    "data": {
+      "target": {
+        "approvedName": "sortilin related receptor 1",
+        "approvedSymbol": "SORL1",
+        "biotype": "protein_coding",
+        "dbXrefs": [
+          {
+            "id": "11185",
+            "source": "HGNC"
+          },
+          {
+            "id": "2DM4",
+            "source": "PDB"
+          },
+          {
+            "id": "3G2S",
+            "source": "PDB"
+          },
+          {
+            "id": "3G2T",
+            "source": "PDB"
+          },
+          {
+            "id": "3WSX",
+            "source": "PDB"
+          },
+          {
+            "id": "3WSY",
+            "source": "PDB"
+          },
+          {
+            "id": "3WSZ",
+            "source": "PDB"
+          },
+          {
+            "id": "7VT0",
+            "source": "PDB"
+          },
+          {
+            "id": "R-HSA-977225",
+            "source": "Reactome"
+          },
+          {
+            "id": "IPR011042",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR003961",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR036116",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR057841",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR013783",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR036055",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR023415",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR000033",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR002172",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR031777",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR031778",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR006581",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR050310",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR015943",
+            "source": "InterPro"
+          },
+          {
+            "id": "SignalP-noTM",
+            "source": "signalP"
+          }
+        ],
+        "drugAndClinicalCandidates": {
+          "count": 0,
+          "rows": []
+        },
+        "functionDescriptions": [
+          "Sorting receptor that directs several proteins to their correct location within the cell (Probable). Along with AP-1 complex, involved Golgi apparatus - endosome sorting (PubMed:17646382). Sorting receptor for APP, regulating its intracellular trafficking and processing into amyloidogenic-beta peptides. Retains APP in the trans- Golgi network, hence preventing its transit through late endosomes where amyloid beta peptides Abeta40 and Abeta42 are generated (PubMed:16174740, PubMed:16407538, PubMed:17855360, PubMed:24523320). May also sort newly produced amyloid-beta peptides to lysosomes for catabolism (PubMed:24523320). Does not affect APP trafficking from the endoplasmic reticulum to Golgi compartments (PubMed:17855360). Sorting receptor for the BDNF receptor NTRK2/TRKB that facilitates NTRK2 trafficking between synaptic plasma membranes, postsynaptic densities and cell soma, hence positively regulates BDNF signaling by controlling the intracellular location of its receptor (PubMed:23977241). Sorting receptor for GDNF that promotes GDNF regulated, but not constitutive secretion (PubMed:21994944). Sorting receptor for the GDNF-GFRA1 complex, directing it from the cell surface to endosomes. GDNF is then targeted to lysosomes and degraded, while its receptor GFRA1 recycles back to the cell membrane, resulting in a GDNF clearance pathway. The SORL1-GFRA1 complex further targets RET for endocytosis, but not for degradation, affecting GDNF-induced neurotrophic activities (PubMed:23333276). Sorting receptor for ERBB2/HER2. Regulates ERBB2 subcellular distribution by promoting its recycling after internalization from endosomes back to the plasma membrane, hence stimulating phosphoinositide 3-kinase (PI3K)-dependent ERBB2 signaling. In ERBB2-dependent cancer cells, promotes cell proliferation (PubMed:31138794). Sorting receptor for lipoprotein lipase LPL. Promotes LPL localization to endosomes and later to the lysosomes, leading to degradation of newly synthesized LPL (PubMed:21385844). Potential sorting receptor for APOA5, inducing APOA5 internalization to early endosomes, then to late endosomes, wherefrom a portion is sent to lysosomes and degradation, another portion is sorted to the trans-Golgi network (PubMed:18603531). Sorting receptor for the insulin receptor INSR. Promotes recycling of internalized INSR via the Golgi apparatus back to the cell surface, thereby preventing lysosomal INSR catabolism, increasing INSR cell surface expression and strengthening insulin signal reception in adipose tissue. Does not affect INSR internalization (PubMed:27322061). Plays a role in renal ion homeostasis, controlling the phospho-regulation of SLC12A1/NKCC2 by STK39/SPAK kinase and PPP3CB/calcineurin A beta phosphatase, possibly through intracellular sorting of STK39 and PPP3CB (By similarity). Stimulates, via the N-terminal ectodomain, the proliferation and migration of smooth muscle cells, possibly by increasing cell surface expression of the urokinase receptor uPAR/PLAUR. This may promote extracellular matrix proteolysis and hence facilitate cell migration (PubMed:14764453). By acting on the migration of intimal smooth muscle cells, may accelerate intimal thickening following vascular injury (PubMed:14764453). Promotes adhesion of monocytes (PubMed:23486467). Stimulates proliferation and migration of monocytes/macrophages (By similarity). Through its action on intimal smooth muscle cells and macrophages, may accelerate intimal thickening and macrophage foam cell formation in the process of atherosclerosis (By similarity). Regulates hypoxia-enhanced adhesion of hematopoietic stem and progenitor cells to the bone marrow stromal cells via a PLAUR-mediated pathway. This function is mediated by the N-terminal ectodomain (PubMed:23486467). Metabolic regulator, which functions to maintain the adequate balance between lipid storage and oxidation in response to changing environmental conditions, such as temperature and diet. The N-terminal ectodomain negatively regulates adipose tissue energy expenditure, acting through the inhibition the BMP/Smad pathway (By similarity). Sorting receptor that may regulate signaling by the heterodimeric neurotrophic cytokine CLCF1-CRLF1 bound to the CNTFR receptor by promoting the endocytosis of the tripartite complex CLCF1-CRLF1-CNTFR and lysosomal degradation (PubMed:26858303). May regulate IL6 signaling, decreasing cis signaling, possibly by interfering with IL6- binding to membrane-bound IL6R, while up-regulating trans signaling via soluble IL6R (PubMed:28265003). {ECO:0000250|UniProtKB:O88307, ECO:0000269|PubMed:14764453, ECO:0000269|PubMed:16174740, ECO:0000269|PubMed:16407538, ECO:0000269|PubMed:17646382, ECO:0000269|PubMed:17855360, ECO:0000269|PubMed:18603531, ECO:0000269|PubMed:21385844, ECO:0000269|PubMed:21994944, ECO:0000269|PubMed:23333276, ECO:0000269|PubMed:23486467, ECO:0000269|PubMed:23977241, ECO:0000269|PubMed:24523320, ECO:0000269|PubMed:26858303, ECO:0000269|PubMed:27322061, ECO:0000269|PubMed:28265003, ECO:0000269|PubMed:31138794, ECO:0000305}."
+        ],
+        "genomicLocation": {
+          "chromosome": "11",
+          "end": 121633763,
+          "start": 121452314,
+          "strand": 1
+        },
+        "id": "ENSG00000137642",
+        "proteinIds": [
+          {
+            "id": "Q92673",
+            "source": "uniprot_swissprot"
+          },
+          {
+            "id": "E9PKB0",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "E9PP43",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "E9PPB3",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "E9PS32",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "ENSP00000260197",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000432131",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000434634",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000435405",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000436447",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000575225",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000575226",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "B2RNX7",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q92856",
+            "source": "uniprot_obsolete"
+          }
+        ],
+        "safetyLiabilities": [],
+        "subcellularLocations": [
+          {
+            "location": "Golgi apparatus membrane ; Single-pass type I membrane protein",
+            "termSL": "SL-0134"
+          },
+          {
+            "location": "Golgi apparatus, trans-Golgi network membrane ; Single-pass type I membrane protein",
+            "termSL": "SL-0132"
+          },
+          {
+            "location": "Endosome membrane ; Single-pass type I membrane protein",
+            "termSL": "SL-0100"
+          },
+          {
+            "location": "Early endosome membrane ; Single-pass type I membrane protein",
+            "termSL": "SL-0093"
+          },
+          {
+            "location": "Recycling endosome membrane ; Single-pass type I membrane protein",
+            "termSL": "SL-0231"
+          },
+          {
+            "location": "Endoplasmic reticulum membrane ; Single-pass type I membrane protein",
+            "termSL": "SL-0097"
+          },
+          {
+            "location": "Endosome, multivesicular body membrane ; Single-pass type I membrane protein",
+            "termSL": "SL-0101"
+          },
+          {
+            "location": "Cell membrane ; Single-pass type I membrane protein",
+            "termSL": "SL-0039"
+          },
+          {
+            "location": "Cytoplasmic vesicle, secretory vesicle membrane ; Single-pass type I membrane protein",
+            "termSL": "SL-0088"
+          },
+          {
+            "location": "Secreted",
+            "termSL": "SL-0243"
+          }
+        ],
+        "synonyms": [
+          {
+            "label": "Sortilin-related receptor",
+            "source": "uniprot"
+          },
+          {
+            "label": "LDLR relative with 11 ligand-binding repeats",
+            "source": "uniprot"
+          },
+          {
+            "label": "LR11",
+            "source": "uniprot"
+          },
+          {
+            "label": "SorLA",
+            "source": "uniprot"
+          },
+          {
+            "label": "SORL1",
+            "source": "uniprot"
+          },
+          {
+            "label": "C11orf32",
+            "source": "uniprot"
+          },
+          {
+            "label": "gp250",
+            "source": "HGNC"
+          },
+          {
+            "label": "LR11",
+            "source": "HGNC"
+          },
+          {
+            "label": "LRP9",
+            "source": "HGNC"
+          },
+          {
+            "label": "SorLA",
+            "source": "HGNC"
+          },
+          {
+            "label": "SorLA-1",
+            "source": "HGNC"
+          },
+          {
+            "label": "Low-density lipoprotein receptor relative with 11 ligand-binding repeats",
+            "source": "uniprot"
+          },
+          {
+            "label": "SorLA-1",
+            "source": "uniprot"
+          },
+          {
+            "label": "Sorting protein-related receptor containing LDLR class A repeats",
+            "source": "uniprot"
+          },
+          {
+            "label": "LDLR relative with 11 ligand-binding repeats",
+            "source": "HGNC"
+          },
+          {
+            "label": "C11orf32",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "LR11",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "LRP9",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "SORLA",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "SorLA-1",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "gp250",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "sortilin-related receptor",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "LDLR relative with 11 ligand-binding repeats",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "low-density lipoprotein receptor relative with 11 ligand-binding repeats",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "mosaic protein LR11",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "sortilin-related receptor, L(DLR class) A repeats containing",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "sorting protein-related receptor containing LDLR class A repeats",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "SORL1",
+            "source": "NCBI_entrez"
+          }
+        ],
+        "targetClass": [],
+        "tractability": [
+          {
+            "label": "Approved Drug",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Structure with Ligand",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "High-Quality Ligand",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "High-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Med-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Druggable Family",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt loc high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt loc med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt SigP or TMHMM",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Human Protein Atlas loc",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Literature",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "UniProt Ubiquitination",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Database Ubiquitination",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Half-life Data",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Small Molecule Binder",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "OC",
+            "value": false
+          }
+        ]
+      }
+    }
+  },
+  "source": "open_targets"
+}

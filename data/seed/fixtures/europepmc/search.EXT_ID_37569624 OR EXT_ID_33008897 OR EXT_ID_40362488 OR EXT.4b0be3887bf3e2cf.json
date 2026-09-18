@@ -1,0 +1,3356 @@
+{
+  "operation": "search.EXT_ID:37569624 OR EXT_ID:33008897 OR EXT_ID:40362488 OR EXT",
+  "params": {
+    "format": "json",
+    "pageSize": 10,
+    "query": "EXT_ID:37569624 OR EXT_ID:33008897 OR EXT_ID:40362488 OR EXT_ID:35223832 OR EXT_ID:1520398 OR EXT_ID:12810495 OR EXT_ID:24278307 OR EXT_ID:10200318 OR EXT_ID:8001115 OR EXT_ID:15590058",
+    "resultType": "core",
+    "sort": "CITED desc"
+  },
+  "recorded_at": "2026-09-18T02:49:54.140836+00:00",
+  "response": {
+    "hitCount": 10,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 10,
+      "queryString": "EXT_ID:37569624 OR EXT_ID:33008897 OR EXT_ID:40362488 OR EXT_ID:35223832 OR EXT_ID:1520398 OR EXT_ID:12810495 OR EXT_ID:24278307 OR EXT_ID:10200318 OR EXT_ID:8001115 OR EXT_ID:15590058",
+      "resultType": "core",
+      "sort": "CITED desc",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "The beta-amyloid precursor protein (beta APP) gene of the mouse was disrupted by inserting into exon 2 a cassette containing a neomycin resistance gene and a putative transcription termination sequence. Contrary to expectation, brain and other tissues from mice homozygous for the insertion still contained beta APP-specific RNA, albeit at a level 5- to 10-fold lower than wild type and lacking the disrupted exon, which had been spliced out. The brain contained shortened beta APP-specific protein at a low level. Mutant mice were severely impaired in spatial learning and exploratory behavior and showed increased incidence of agenesis of the corpus callosum.",
+          "affiliation": "Institut f\u00fcr Molekularbiologie I, Universit\u00e4t Z\u00fcrich, Switzerland.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-9821-0342"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Institut f\u00fcr Molekularbiologie I, Universit\u00e4t Z\u00fcrich, Switzerland."
+                    }
+                  ]
+                },
+                "firstName": "U",
+                "fullName": "M\u00fcller U",
+                "initials": "U",
+                "lastName": "M\u00fcller"
+              },
+              {
+                "firstName": "N",
+                "fullName": "Cristina N",
+                "initials": "N",
+                "lastName": "Cristina"
+              },
+              {
+                "firstName": "Z W",
+                "fullName": "Li ZW",
+                "initials": "ZW",
+                "lastName": "Li"
+              },
+              {
+                "firstName": "D P",
+                "fullName": "Wolfer DP",
+                "initials": "DP",
+                "lastName": "Wolfer"
+              },
+              {
+                "firstName": "H P",
+                "fullName": "Lipp HP",
+                "initials": "HP",
+                "lastName": "Lipp"
+              },
+              {
+                "firstName": "T",
+                "fullName": "R\u00fclicke T",
+                "initials": "T",
+                "lastName": "R\u00fclicke"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-9821-0342"
+                },
+                "firstName": "S",
+                "fullName": "Brandner S",
+                "initials": "S",
+                "lastName": "Brandner"
+              },
+              {
+                "firstName": "A",
+                "fullName": "Aguzzi A",
+                "initials": "A",
+                "lastName": "Aguzzi"
+              },
+              {
+                "firstName": "C",
+                "fullName": "Weissmann C",
+                "initials": "C",
+                "lastName": "Weissmann"
+              }
+            ]
+          },
+          "authorString": "M\u00fcller U, Cristina N, Li ZW, Wolfer DP, Lipp HP, R\u00fclicke T, Brandner S, Aguzzi A, Weissmann C.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "RNA, Messenger",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Amyloid beta-Protein Precursor",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 248,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "related_data"
+            ]
+          },
+          "dateOfCompletion": "1995-01-24",
+          "dateOfCreation": "1994-12-02",
+          "dateOfRevision": "2019-07-05",
+          "doi": "10.1016/0092-8674(94)90066-3",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-01-29",
+          "firstPublicationDate": "1994-12-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/0092-8674(94)90066-3"
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "N",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "8001115",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "1994 Dec",
+            "issue": "5",
+            "journal": {
+              "essn": "1097-4172",
+              "isoabbreviation": "Cell",
+              "issn": "0092-8674",
+              "medlineAbbreviation": "Cell",
+              "nlmid": "0413066",
+              "title": "Cell"
+            },
+            "journalIssueId": 831223,
+            "monthOfPublication": 12,
+            "printPublicationDate": "1994-12-01",
+            "volume": "79",
+            "yearOfPublication": 1994
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Brain",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PA",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "pathology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Animals",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Mice",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Mice, Mutant Strains",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Amyloid beta-Protein Precursor",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "genetics"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "RNA, Messenger",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AN",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "analysis"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Mutagenesis, Insertional",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Behavior, Animal",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Exploratory Behavior",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Spatial Behavior",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Learning",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Gene Expression",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Base Sequence",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Homozygote",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Exons",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "genetics"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Molecular Sequence Data",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "755-765",
+          "pmid": "8001115",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "1994",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Behavioral and anatomical deficits in mice homozygous for a modified beta-amyloid precursor protein gene."
+        },
+        {
+          "abstractText": "In Alzheimer's disease, amyloid beta (Abeta) peptide is deposited in neuritic plaques in the brain. The Abeta peptide 1-42 or the fragment 25-35 are neurotoxic. We here review our recent explorations of the mechanisms of Abeta toxicity in hippocampal cultures. Abeta had no effect on intracellular calcium in neurons but caused striking changes in nearby astrocytes. The [Ca(2+)](c) signals started approximately 5-15 min after Abeta application and consisted of sporadic [Ca(2+)](c) pulses. These were entirely dependent on extracellular Ca(2+), independent of ER Ca(2+) stores and resulted from Ca(2+) influx, probably through Abeta-induced membrane channels. The Ca(2+) signals were closely associated with transient, episodic acidification which may reflect displacement of protons from binding sites or Ca(2+)/2H(+) exchange. Abeta caused an increased rate of generation of reactive oxygen species (ROS), also seen in astrocytes and not in neurons. The increased ROS generation was blocked by inhibitors of the NADPH oxidase, strongly suggesting that this enzyme, normally associated with immune cells, is expressed in astrocytes. ROS generation was also Ca(2+)-dependent, suggesting that Abeta activation of the enzyme may be secondary to the increase in [Ca(2+)](c). Abeta caused delayed neuronal death despite the fact that all responses were seen only in astrocytes. Neurons could not be protected by glutamate receptor antagonists, but were rescued by inhibition of the NADPH oxidase, by antioxidants and by increasing glutathione. These data suggest that Abeta causes Ca(2+)-dependent oxidative stress by activating an astrocytic NADPH oxidase, and that neuronal death follows through a failure of antioxidant support.",
+          "affiliation": "Department of Physiology, University College London, Gower Street WC1E 6BT, London, UK.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7646-7235"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-2548-4294"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Physiology, University College London, Gower Street WC1E 6BT, London, UK."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7646-7235"
+                },
+                "firstName": "Andrey Y",
+                "fullName": "Abramov AY",
+                "initials": "AY",
+                "lastName": "Abramov"
+              },
+              {
+                "firstName": "Laura",
+                "fullName": "Canevari L",
+                "initials": "L",
+                "lastName": "Canevari"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-2548-4294"
+                },
+                "firstName": "Michael R",
+                "fullName": "Duchen MR",
+                "initials": "MR",
+                "lastName": "Duchen"
+              }
+            ]
+          },
+          "authorString": "Abramov AY, Canevari L, Duchen MR.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Amyloid beta-Peptides",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 174,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "related_data",
+              "wikipedia"
+            ]
+          },
+          "dateOfCompletion": "2005-02-08",
+          "dateOfCreation": "2004-12-14",
+          "dateOfRevision": "2022-03-31",
+          "doi": "10.1016/j.bbamcr.2004.09.006",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-01-29",
+          "firstPublicationDate": "2004-12-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/j.bbamcr.2004.09.006"
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "15590058",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2004 Dec",
+            "issue": "1-3",
+            "journal": {
+              "essn": "1878-2434",
+              "isoabbreviation": "Biochim Biophys Acta",
+              "issn": "0006-3002",
+              "medlineAbbreviation": "Biochim Biophys Acta",
+              "nlmid": "0217513",
+              "title": "Biochimica et biophysica acta"
+            },
+            "journalIssueId": 1211183,
+            "monthOfPublication": 12,
+            "printPublicationDate": "2004-12-01",
+            "volume": "1742",
+            "yearOfPublication": 2004
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Astrocytes",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CY",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "cytology"
+                    },
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Neurons",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CY",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "cytology"
+                    },
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Cells, Cultured",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Animals",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Calcium Signaling",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "physiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Oxidative Stress",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Hydrogen-Ion Concentration",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Amyloid beta-Peptides",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "physiology"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "81-87",
+          "pmid": "15590058",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Review",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2004",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Calcium signals induced by amyloid beta peptide and their consequences in neurons and astrocytes in culture."
+        },
+        {
+          "abstractText": "We previously have reported corpus callosum defects in transgenic mice expressing the beta-amyloid precursor protein (betaAPP) with a deletion of exon 2 and at only 5% of normal levels. This finding indicates a possible involvement of betaAPP in the regulation or guidance of axon growth during neural development. To determine to what degree the betaAPP mutation interacts with genetic background alleles that predispose for forebrain commissure defects in some mouse lines, we have assessed the size of the forebrain commissures in a sample of 298 mice. Lines with mixed genetic background were compared with congenic lines obtained by backcrossing to the parental strains C57BL/6 and 129/SvEv. Mice bearing a null mutation of the betaAPP gene also were included in the analysis. We show that, independently of genetic background, both lack and underexpression of betaAPP are associated with reduced brain weight and reduced size of forebrain commissures, especially of the ventral hippocampal commissure. In addition, both mutations drastically increase the frequency and severity of callosal agenesis and hippocampal commissure defects in mouse lines with 129/SvEv or 129/Ola background.",
+          "affiliation": "Institute of Anatomy, University of Zurich, Winterthurerstrasse 190, CH-8057 Zurich, Switzerland.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0003-0369-4821"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Institute of Anatomy, University of Zurich, Winterthurerstrasse 190, CH-8057 Zurich, Switzerland."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-0369-4821"
+                },
+                "firstName": "F",
+                "fullName": "Magara F",
+                "initials": "F",
+                "lastName": "Magara"
+              },
+              {
+                "firstName": "U",
+                "fullName": "M\u00fcller U",
+                "initials": "U",
+                "lastName": "M\u00fcller"
+              },
+              {
+                "firstName": "Z W",
+                "fullName": "Li ZW",
+                "initials": "ZW",
+                "lastName": "Li"
+              },
+              {
+                "firstName": "H P",
+                "fullName": "Lipp HP",
+                "initials": "HP",
+                "lastName": "Lipp"
+              },
+              {
+                "firstName": "C",
+                "fullName": "Weissmann C",
+                "initials": "C",
+                "lastName": "Weissmann"
+              },
+              {
+                "firstName": "M",
+                "fullName": "Stagljar M",
+                "initials": "M",
+                "lastName": "Stagljar"
+              },
+              {
+                "firstName": "D P",
+                "fullName": "Wolfer DP",
+                "initials": "DP",
+                "lastName": "Wolfer"
+              }
+            ]
+          },
+          "authorString": "Magara F, M\u00fcller U, Li ZW, Lipp HP, Weissmann C, Stagljar M, Wolfer DP.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Amyloid beta-Protein Precursor",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 137,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "related_data"
+            ]
+          },
+          "dateOfCompletion": "1999-05-17",
+          "dateOfCreation": "1999-04-14",
+          "dateOfRevision": "2022-03-09",
+          "doi": "10.1073/pnas.96.8.4656",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2009-12-23",
+          "firstPublicationDate": "1999-04-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC16388"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-02",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1073/pnas.96.8.4656"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC16388"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC16388?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1073/pnas.96.8.4656"
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "10200318",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "1999 Apr",
+            "issue": "8",
+            "journal": {
+              "essn": "1091-6490",
+              "isoabbreviation": "Proc Natl Acad Sci U S A",
+              "issn": "0027-8424",
+              "medlineAbbreviation": "Proc Natl Acad Sci U S A",
+              "nlmid": "7505876",
+              "title": "Proceedings of the National Academy of Sciences of the United States of America"
+            },
+            "journalIssueId": 896629,
+            "monthOfPublication": 4,
+            "printPublicationDate": "1999-04-01",
+            "volume": "96",
+            "yearOfPublication": 1999
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Brain",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AH",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "anatomy & histology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Hippocampus",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AH",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "anatomy & histology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Prosencephalon",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AB",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "abnormalities"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Corpus Callosum",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AH",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "anatomy & histology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Axons",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "physiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Animals",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Mice, Inbred Strains",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Chimera",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Mice, Transgenic",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Mice",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Amyloid beta-Protein Precursor",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "genetics"
+                    },
+                    {
+                      "abbreviation": "PH",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "physiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Organ Size",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Crosses, Genetic",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Sequence Deletion",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Exons",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "4656-4661",
+          "pmcid": "PMC16388",
+          "pmid": "10200318",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "1999",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Genetic background changes the pattern of forebrain commissure defects in transgenic mice underexpressing the beta-amyloid-precursor protein."
+        },
+        {
+          "abstractText": "Protein N-glycosylation plays critical roles in controlling brain function, but little is known about human brain N-glycoproteome and its alterations in Alzheimer's disease (AD). Here, we report the first, large-scale, site-specific N-glycoproteome profiling study of human AD and control brains using mass spectrometry-based quantitative N-glycoproteomics. The study provided a system-level view of human brain N-glycoproteins and in vivo N-glycosylation sites and identified disease signatures of altered N-glycopeptides, N-glycoproteins, and N-glycosylation site occupancy in AD. Glycoproteomics-driven network analysis showed 13 modules of co-regulated N-glycopeptides/glycoproteins, 6 of which are associated with AD phenotypes. Our analyses revealed multiple dysregulated N-glycosylation-affected processes and pathways in AD brain, including extracellular matrix dysfunction, neuroinflammation, synaptic dysfunction, cell adhesion alteration, lysosomal dysfunction, endocytic trafficking dysregulation, endoplasmic reticulum dysfunction, and cell signaling dysregulation. Our findings highlight the involvement of N-glycosylation aberrations in AD pathogenesis and provide new molecular and system-level insights for understanding and treating AD.",
+          "affiliation": "Department of Pharmacology and Chemical Biology and Center for Neurodegenerative Disease, Emory University School of Medicine, Atlanta, GA 30322, USA.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0017-2182"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0817-0368"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-4536-273X"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-4700-1134"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Pharmacology and Chemical Biology and Center for Neurodegenerative Disease, Emory University School of Medicine, Atlanta, GA 30322, USA."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-4536-273X"
+                },
+                "firstName": "Qi",
+                "fullName": "Zhang Q",
+                "initials": "Q",
+                "lastName": "Zhang"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Center for Diagnostics and Therapeutics, Department of Chemistry, Georgia State University, Atlanta, GA 30303, USA."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-0017-2182"
+                },
+                "firstName": "Cheng",
+                "fullName": "Ma C",
+                "initials": "C",
+                "lastName": "Ma"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Pharmacology and Chemical Biology and Center for Neurodegenerative Disease, Emory University School of Medicine, Atlanta, GA 30322, USA. lli5@emory.edu lchin@emory.edu."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-0817-0368"
+                },
+                "firstName": "Lih-Shen",
+                "fullName": "Chin LS",
+                "initials": "LS",
+                "lastName": "Chin"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Pharmacology and Chemical Biology and Center for Neurodegenerative Disease, Emory University School of Medicine, Atlanta, GA 30322, USA. lli5@emory.edu lchin@emory.edu."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-4700-1134"
+                },
+                "firstName": "Lian",
+                "fullName": "Li L",
+                "initials": "L",
+                "lastName": "Li"
+              }
+            ]
+          },
+          "authorString": "Zhang Q, Ma C, Chin LS, Li L.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Glycoproteins",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Glycopeptides",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Proteome",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 111,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "supporting_data",
+              "related_data"
+            ]
+          },
+          "dateOfCompletion": "2022-04-13",
+          "dateOfCreation": "2020-10-03",
+          "dateOfRevision": "2022-04-13",
+          "dbCrossReferenceList": {
+            "dbName": [
+              "PRIDE"
+            ]
+          },
+          "doi": "10.1126/sciadv.abc5802",
+          "electronicPublicationDate": "2020-10-02",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2020-10-15",
+          "firstPublicationDate": "2020-10-02",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC7852392"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-04",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1126/sciadv.abc5802"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC7852392"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC7852392?pdf=render"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "P50 AG025688",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "P30 AG066511",
+                "orderIn": 0
+              },
+              {
+                "acronym": "NS",
+                "agency": "NINDS NIH HHS",
+                "grantId": "P30 NS055077",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "RF1 AG057965",
+                "orderIn": 0
+              },
+              {
+                "agency": "National Institutes of Health",
+                "grantId": "RF1AG057965",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "Y",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "Y",
+          "hasTMAccessionNumbers": "Y",
+          "hasTextMinedTerms": "Y",
+          "id": "33008897",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "Y",
+          "journalInfo": {
+            "dateOfPublication": "2020 Oct",
+            "issue": "40",
+            "journal": {
+              "essn": "2375-2548",
+              "isoabbreviation": "Sci Adv",
+              "issn": "2375-2548",
+              "medlineAbbreviation": "Sci Adv",
+              "nlmid": "101653440",
+              "title": "Science advances"
+            },
+            "journalIssueId": 3034260,
+            "monthOfPublication": 10,
+            "printPublicationDate": "2020-10-01",
+            "volume": "6",
+            "yearOfPublication": 2020
+          },
+          "language": "eng",
+          "license": "cc by-nc",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Alzheimer Disease",
+                "majorTopic_YN": "Y",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "genetics"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Glycopeptides",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AN",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "analysis"
+                    },
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Glycoproteins",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Proteome",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Proteomics",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Glycosylation",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "eabc5802",
+          "pmcid": "PMC7852392",
+          "pmid": "33008897",
+          "pubModel": "Electronic-Print",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2020",
+          "publicationStatus": "epublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Integrative glycoproteomics reveals protein N-glycosylation aberrations and glycoproteomic network alterations in Alzheimer's disease.",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "geo",
+              "doi"
+            ]
+          }
+        },
+        {
+          "abstractText": "We present prospective clinical and neuropathologic details of a pedigree segregating familial Alzheimer's disease (FAD) associated with a mutation (G----A substitution) at nucleotide 2149 in exon 17 of the amyloid precursor protein (APP) gene. This mutation, which is predicted to cause the missense substitution of isoleucine for valine at codon 717 of APP, cosegregated perfectly with the FAD trait (lod score = 3.49 at theta = 0.00). The earliest clinical manifestations of the disease relate to deficits in memory function, cognitive processing speed, and attention to complex cognitive sets. These changes occurred in the absence of changes in nonmemory language and visuospatial functions. The neuropathologic features of FAD associated with the APP717 mutation in this family include severe neuronal loss, abundant neurofibrillary tangles, amyloid plaques, and amyloid angiopathy. These results provide independent confirmation that mutations in the APP gene are linked to the FAD trait in some families.",
+          "affiliation": "Centre for Research in Neurodegenerative Disease, University of Toronto, ON, Canada.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-3797-1789"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Centre for Research in Neurodegenerative Disease, University of Toronto, ON, Canada."
+                    }
+                  ]
+                },
+                "firstName": "H",
+                "fullName": "Karlinsky H",
+                "initials": "H",
+                "lastName": "Karlinsky"
+              },
+              {
+                "firstName": "G",
+                "fullName": "Vaula G",
+                "initials": "G",
+                "lastName": "Vaula"
+              },
+              {
+                "firstName": "J L",
+                "fullName": "Haines JL",
+                "initials": "JL",
+                "lastName": "Haines"
+              },
+              {
+                "firstName": "J",
+                "fullName": "Ridgley J",
+                "initials": "J",
+                "lastName": "Ridgley"
+              },
+              {
+                "firstName": "C",
+                "fullName": "Bergeron C",
+                "initials": "C",
+                "lastName": "Bergeron"
+              },
+              {
+                "firstName": "M",
+                "fullName": "Mortilla M",
+                "initials": "M",
+                "lastName": "Mortilla"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-3797-1789"
+                },
+                "firstName": "R G",
+                "fullName": "Tupler RG",
+                "initials": "RG",
+                "lastName": "Tupler"
+              },
+              {
+                "firstName": "M E",
+                "fullName": "Percy ME",
+                "initials": "ME",
+                "lastName": "Percy"
+              },
+              {
+                "firstName": "Y",
+                "fullName": "Robitaille Y",
+                "initials": "Y",
+                "lastName": "Robitaille"
+              },
+              {
+                "firstName": "N E",
+                "fullName": "Noldy NE",
+                "initials": "NE",
+                "lastName": "Noldy"
+              }
+            ]
+          },
+          "authorString": "Karlinsky H, Vaula G, Haines JL, Ridgley J, Bergeron C, Mortilla M, Tupler RG, Percy ME, Robitaille Y, Noldy NE.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Codon",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Amyloid beta-Protein Precursor",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Molecular Probes",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 84,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "orderIn": 1,
+                "reference": "Neurology 1992 Sep;42(9):1662",
+                "source": "MED",
+                "type": "Erratum in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "related_data"
+            ]
+          },
+          "dateOfCompletion": "1992-09-03",
+          "dateOfCreation": "1992-08-01",
+          "dateOfRevision": "2019-05-14",
+          "dbCrossReferenceList": {
+            "dbName": [
+              "OMIM"
+            ]
+          },
+          "doi": "10.1212/wnl.42.8.1445",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-01-29",
+          "firstPublicationDate": "1992-08-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1212/wnl.42.8.1445"
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "Y",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "N",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "1520398",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "1992 Aug",
+            "issue": "8",
+            "journal": {
+              "essn": "1526-632X",
+              "isoabbreviation": "Neurology",
+              "issn": "0028-3878",
+              "medlineAbbreviation": "Neurology",
+              "nlmid": "0401060",
+              "title": "Neurology"
+            },
+            "journalIssueId": 613154,
+            "monthOfPublication": 8,
+            "printPublicationDate": "1992-08-01",
+            "volume": "42",
+            "yearOfPublication": 1992
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Brain",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PA",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "pathology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Alzheimer Disease",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DI",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "diagnosis"
+                    },
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "genetics"
+                    },
+                    {
+                      "abbreviation": "PA",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "pathology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Amyloid beta-Protein Precursor",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "genetics"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Codon",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "genetics"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Molecular Probes",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "genetics"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Retrospective Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Prospective Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Pedigree",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Neuropsychological Tests",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Molecular Biology",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Base Sequence",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Phenotype",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Mutation",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Molecular Sequence Data",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "1445-1453",
+          "pmid": "1520398",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, U.S. Gov't, P.H.S.",
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "1992",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Molecular and prospective phenotypic characterization of a pedigree with familial Alzheimer's disease and a missense mutation in codon 717 of the beta-amyloid precursor protein gene."
+        },
+        {
+          "abstractText": "<h4>Background</h4>Alzheimer disease (AD) is characterized by memory and visuospatial deficits with relative sparing of personality. Mutations in 3 genes (presenilin 1 and 2 and amyloid precursor protein) are associated with presenile AD. Presenilin 1 gene mutations have not been described in African Americans.<h4>Methods</h4>We studied an African American family with autosomal dominant rapidly progressive dementia and psychosis occurring early in the fifth decade of life. We performed neurologic evaluations, psychometrics, and neuroimaging. We sequenced the amyloid precursor protein gene, presenilin 1 and 2, and tau in affected and unaffected family members. One patient underwent a brain biopsy and subsequent autopsy.<h4>Results</h4>Personality change, auditory and visual hallucinations, delusions, memory impairment, word-finding difficulties, and subsequent rigidity, dystonia, myoclonus, and mutism developed in 2 brothers. Neuropsychometric testing in one was consistent with frontotemporal dementia or atypical AD. Neuroimaging studies showed diffuse cortical involvement. A clinical diagnosis of familial non-Alzheimer dementia was made. However, results of temporal lobe biopsy in one revealed amyloid neuritic plaques, and autopsy results confirmed the diagnosis of AD. Gene sequencing revealed a presenilin 1 point mutation (M139V) cosegregating with the disease. A tau polymorphism in exon 7 (A178T) was found in an affected brother and unaffected relatives.<h4>Conclusions</h4>We report the first documented presenilin mutation in African American patients presenting with early personality change, psychosis, and memory loss with preserved praxis. The M139V mutation can present differently between kindreds, with some features suggestive of a frontal lobe syndrome. The M139V mutation can lead to atypical AD, and genetic background may have a role in determining the phenotype of genetically defined AD.",
+          "affiliation": "Department of Neurology, Mayo Clinic, Rochester, MN, USA.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-2866-7777"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-3122-0423"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Neurology, Mayo Clinic, Rochester, MN, USA."
+                    }
+                  ]
+                },
+                "firstName": "Gregory A",
+                "fullName": "Rippon GA",
+                "initials": "GA",
+                "lastName": "Rippon"
+              },
+              {
+                "firstName": "Richard",
+                "fullName": "Crook R",
+                "initials": "R",
+                "lastName": "Crook"
+              },
+              {
+                "firstName": "Matthew",
+                "fullName": "Baker M",
+                "initials": "M",
+                "lastName": "Baker"
+              },
+              {
+                "firstName": "Elizabeth",
+                "fullName": "Halvorsen E",
+                "initials": "E",
+                "lastName": "Halvorsen"
+              },
+              {
+                "firstName": "Steven",
+                "fullName": "Chin S",
+                "initials": "S",
+                "lastName": "Chin"
+              },
+              {
+                "firstName": "Michael",
+                "fullName": "Hutton M",
+                "initials": "M",
+                "lastName": "Hutton"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-2866-7777"
+                },
+                "firstName": "Henry",
+                "fullName": "Houlden H",
+                "initials": "H",
+                "lastName": "Houlden"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-3122-0423"
+                },
+                "firstName": "John",
+                "fullName": "Hardy J",
+                "initials": "J",
+                "lastName": "Hardy"
+              },
+              {
+                "firstName": "Timothy",
+                "fullName": "Lynch T",
+                "initials": "T",
+                "lastName": "Lynch"
+              }
+            ]
+          },
+          "authorString": "Rippon GA, Crook R, Baker M, Halvorsen E, Chin S, Hutton M, Houlden H, Hardy J, Lynch T.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "presenilin-1",
+                "registryNumber": "0"
+              },
+              {
+                "name": "presenilin-2",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Membrane Proteins",
+                "registryNumber": "0"
+              },
+              {
+                "name": "tau Proteins",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Amyloid beta-Protein Precursor",
+                "registryNumber": "0"
+              },
+              {
+                "name": "PSEN1 protein, human",
+                "registryNumber": "0"
+              },
+              {
+                "name": "PSEN2 protein, human",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 39,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "15148163",
+                "orderIn": 1,
+                "reference": "Arch Neurol. 2004 May;61(5):801. doi: 10.1001/archneur.61.5.801-a",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "related_data"
+            ]
+          },
+          "dateOfCompletion": "2003-07-02",
+          "dateOfCreation": "2003-06-18",
+          "dateOfRevision": "2024-07-12",
+          "dbCrossReferenceList": {
+            "dbName": [
+              "OMIM"
+            ]
+          },
+          "doi": "10.1001/archneur.60.6.884",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-01-29",
+          "firstPublicationDate": "2003-06-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1001/archneur.60.6.884"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "NS",
+                "agency": "NINDS NIH HHS",
+                "grantId": "NS01966-01A1",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "Y",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "N",
+          "hasPDF": "N",
+          "hasReferences": "N",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "12810495",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2003 Jun",
+            "issue": "6",
+            "journal": {
+              "essn": "1538-3687",
+              "isoabbreviation": "Arch Neurol",
+              "issn": "0003-9942",
+              "medlineAbbreviation": "Arch Neurol",
+              "nlmid": "0372436",
+              "title": "Archives of neurology"
+            },
+            "journalIssueId": 1126160,
+            "monthOfPublication": 6,
+            "printPublicationDate": "2003-06-01",
+            "volume": "60",
+            "yearOfPublication": 2003
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Brain",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PA",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "pathology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Alzheimer Disease",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "genetics"
+                    },
+                    {
+                      "abbreviation": "PA",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "pathology"
+                    },
+                    {
+                      "abbreviation": "PX",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "psychology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Memory Disorders",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ET",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "etiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Hallucinations",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ET",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "etiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Amyloid beta-Protein Precursor",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "genetics"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "tau Proteins",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "genetics"
+                    },
+                    {
+                      "abbreviation": "CH",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Membrane Proteins",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "genetics"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Neurologic Examination",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Personality Disorders",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ET",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "etiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Neuropsychological Tests",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Genes, Dominant",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "genetics"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Phenotype",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Point Mutation",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "genetics"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Presenilin-1",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Presenilin-2",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Plaque, Amyloid",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PA",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "pathology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Black or African American",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Black People",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "884-888",
+          "pmid": "12810495",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, U.S. Gov't, P.H.S.",
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article",
+              "Case Reports"
+            ]
+          },
+          "pubYear": "2003",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Presenilin 1 mutation in an african american family presenting with atypical Alzheimer dementia."
+        },
+        {
+          "abstractText": "APP misexpression plays a crucial role in triggering a complex pathological cascade, leading to Alzheimer's disease (AD). But how the expression of APP is regulated in pathological conditions remains poorly understood. In this study, we found that the exosomes isolated from AD mouse brain promoted APP expression in neuronal N2a cells. Moreover, exosomes derived from N2a cells with ectopic expression of APP (APP-EXO) also induced APP dysregulation in normal N2a cells. Surprisingly, the effects of APP-EXO on APP expression in recipient cells were not mediated by the direct transferring of <i>APP</i> gene products. Instead, the effects of APP-EXO were highly likely mediated by the reduction of the expression levels of exosomal miR-185-5p. We found that the 3'UTR of <i>APP</i> transcripts binds to miR-185-5p, therefore inhibiting the sorting of miR-185-5p to exosomes. N2a cell-derived exosomes with less amount of miR-185-5p exert similar roles in APP expression to APP-EXO. Lastly, we demonstrated a significant decline of serum exosomal miR-185-5p in AD patients and AD mice, versus the corresponding controls. Together, our results demonstrate a novel mechanism in the exosome-dependent regulation of APP, implying exosomes and exosomal miRNAs as potential therapeutic targets and biomarkers for AD treatment and diagnosis, respectively.",
+          "affiliation": "Department of Anesthesiology, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8484-2050"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0287-6319"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Anesthesiology, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    }
+                  ]
+                },
+                "firstName": "Lu",
+                "fullName": "Ding L",
+                "initials": "L",
+                "lastName": "Ding"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Anesthesiology, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    }
+                  ]
+                },
+                "firstName": "Xiaoyu",
+                "fullName": "Yang X",
+                "initials": "X",
+                "lastName": "Yang"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Anesthesiology, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    },
+                    {
+                      "affiliation": "Center for Translational Neurodegeneration and Regenerative Therapy, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    },
+                    {
+                      "affiliation": "Center for Translational Neurodegeneration and Regenerative Therapy, Shanghai 10th People's Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    },
+                    {
+                      "affiliation": "Translational Research Institute of Brain and Brain-Like Intelligence, Shanghai Fourth People's Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-0287-6319"
+                },
+                "firstName": "Xiaohuan",
+                "fullName": "Xia X",
+                "initials": "X",
+                "lastName": "Xia"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Anesthesiology, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    }
+                  ]
+                },
+                "firstName": "Yunxia",
+                "fullName": "Li Y",
+                "initials": "Y",
+                "lastName": "Li"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Center for Translational Neurodegeneration and Regenerative Therapy, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    },
+                    {
+                      "affiliation": "Center for Translational Neurodegeneration and Regenerative Therapy, Shanghai 10th People's Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    }
+                  ]
+                },
+                "firstName": "Yi",
+                "fullName": "Wang Y",
+                "initials": "Y",
+                "lastName": "Wang"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Center for Translational Neurodegeneration and Regenerative Therapy, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    }
+                  ]
+                },
+                "firstName": "Chunhong",
+                "fullName": "Li C",
+                "initials": "C",
+                "lastName": "Li"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Anesthesiology, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    }
+                  ]
+                },
+                "firstName": "Yiyan",
+                "fullName": "Sun Y",
+                "initials": "Y",
+                "lastName": "Sun"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Center for Translational Neurodegeneration and Regenerative Therapy, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    }
+                  ]
+                },
+                "firstName": "Ge",
+                "fullName": "Gao G",
+                "initials": "G",
+                "lastName": "Gao"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Center for Translational Neurodegeneration and Regenerative Therapy, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    }
+                  ]
+                },
+                "firstName": "Shu",
+                "fullName": "Zhao S",
+                "initials": "S",
+                "lastName": "Zhao"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Center for Translational Neurodegeneration and Regenerative Therapy, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8484-2050"
+                },
+                "firstName": "Shiyang",
+                "fullName": "Sheng S",
+                "initials": "S",
+                "lastName": "Sheng"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Anesthesiology, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    },
+                    {
+                      "affiliation": "Center for Translational Neurodegeneration and Regenerative Therapy, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    }
+                  ]
+                },
+                "firstName": "Jianhui",
+                "fullName": "Liu J",
+                "initials": "J",
+                "lastName": "Liu"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Anesthesiology, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    },
+                    {
+                      "affiliation": "Center for Translational Neurodegeneration and Regenerative Therapy, Tongji Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    },
+                    {
+                      "affiliation": "Center for Translational Neurodegeneration and Regenerative Therapy, Shanghai 10th People's Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    },
+                    {
+                      "affiliation": "Translational Research Institute of Brain and Brain-Like Intelligence, Shanghai Fourth People's Hospital Affiliated to Tongji University School of Medicine, Shanghai, China."
+                    },
+                    {
+                      "affiliation": "Collaborative Innovation Center for Brain Science, Tongji University, Shanghai, China."
+                    }
+                  ]
+                },
+                "firstName": "Jialin C",
+                "fullName": "Zheng JC",
+                "initials": "JC",
+                "lastName": "Zheng"
+              }
+            ]
+          },
+          "authorString": "Ding L, Yang X, Xia X, Li Y, Wang Y, Li C, Sun Y, Gao G, Zhao S, Sheng S, Liu J, Zheng JC.",
+          "citedByCount": 35,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data"
+            ]
+          },
+          "dateOfCreation": "2022-02-28",
+          "dateOfRevision": "2022-03-01",
+          "doi": "10.3389/fcell.2022.793388",
+          "electronicPublicationDate": "2022-02-11",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2022-02-28",
+          "firstPublicationDate": "2022-02-11",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC8873530"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-04",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "https://www.frontiersin.org/articles/10.3389/fcell.2022.793388/pdf"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.3389/fcell.2022.793388"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC8873530"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC8873530?pdf=render"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "agency": "National Natural Science Foundation of China",
+                "grantId": "91949204 81830037 81971145 81901333 81974155 82171194",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "Y",
+          "hasTMAccessionNumbers": "Y",
+          "hasTextMinedTerms": "Y",
+          "id": "35223832",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "Y",
+          "journalInfo": {
+            "dateOfPublication": "2022 ",
+            "journal": {
+              "essn": "2296-634X",
+              "isoabbreviation": "Front Cell Dev Biol",
+              "issn": "2296-634X",
+              "medlineAbbreviation": "Front Cell Dev Biol",
+              "nlmid": "101630250",
+              "title": "Frontiers in cell and developmental biology"
+            },
+            "journalIssueId": 3307028,
+            "monthOfPublication": 0,
+            "printPublicationDate": "2022-01-01",
+            "volume": "10",
+            "yearOfPublication": 2022
+          },
+          "keywordList": {
+            "keyword": [
+              "Brain",
+              "Serum",
+              "APP",
+              "Exosome",
+              "Alzheimer\u2019s disease",
+              "MicroRNA",
+              "Extracellular Vesicle",
+              "Mir-185-5p"
+            ]
+          },
+          "language": "eng",
+          "license": "cc by",
+          "nihAuthMan": "N",
+          "pageInfo": "793388",
+          "pmcid": "PMC8873530",
+          "pmid": "35223832",
+          "pubModel": "Electronic-eCollection",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2022",
+          "publicationStatus": "epublish",
+          "source": "MED",
+          "title": "Exosomes Mediate APP Dysregulation <i>via</i> APP-miR-185-5p Axis.",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "doi"
+            ]
+          }
+        },
+        {
+          "abstractText": "<h4>Background</h4>Alzheimer's disease (AD), the most common cause of dementia in the elderly, has two pathological hallmarks: A\u03b2 plaques and aggregation of hyperphosphorylated tau (p-tau). A\u03b2 is a cleavage product of Amyloid Precursor Protein (APP). Presenilin 1 (PS1) and presenilin 2 (PS2) are the catalytic subunit of \u03b3-secretase, which cleaves APP and mediates A\u03b2 production. Genetic mutations in APP, PSEN1 or PSEN2 can lead to early onset of familial AD (FAD). Although mutations in the tau encoding gene MAPT leads to a subtype of frontotemporal dementia and these mutations have been used to model AD tauopathy, no MAPT mutations have been found to be associated with AD.<h4>Results</h4>To model AD pathophysiology in mice without the gross overexpression of mutant transgenes, we created a humanized AD mouse model by crossing the APP and PSEN1 FAD knock-in mice with the htau mice which express wildtype human MAPT genomic DNA on mouse MAPT null background (APP/PS1/htau). The APP/PS1/htau mice displayed mild, age-dependent, A\u03b2 plaques and tau hyperphosphorylation, thus successfully recapitulating the late-onset AD pathological hallmarks. Selected biochemical analyses, including p-tau western blot, \u03b3-secretase activity assay, and A\u03b2 ELISA, were performed to study the interaction between A\u03b2 and p-tau. Subsequent behavioral studies revealed that the APP/PS1/htau mice showed reduced mobility in old ages and exaggerated fear response. Genetic analysis suggested that the fear phenotype is due to a synergic interaction between A\u03b2 and p-tau, and it can be completely abolished by tau deletion.<h4>Conclusion</h4>The APP/PS1/htau model represents a valuable and disease-relevant late-onset pre-clinical AD animal model because it incorporates human AD genetics without mutant protein overexpression. Analysis of the mice revealed both cooperative and independent effects of A\u03b2 and p-tau.",
+          "affiliation": "Huffington Center on Aging, Baylor College of Medicine, Houston, Texas, United States of America.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-9895-3090"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-4320-6757"
+              },
+              {
+                "type": "ORCID",
+                "value": "0009-0002-3044-7826"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Huffington Center on Aging, Baylor College of Medicine, Houston, Texas, United States of America."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-4320-6757"
+                },
+                "firstName": "Qinxi",
+                "fullName": "Guo Q",
+                "initials": "Q",
+                "lastName": "Guo"
+              },
+              {
+                "firstName": "Hongmei",
+                "fullName": "Li H",
+                "initials": "H",
+                "lastName": "Li"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0009-0002-3044-7826"
+                },
+                "firstName": "Allysa L",
+                "fullName": "Cole AL",
+                "initials": "AL",
+                "lastName": "Cole"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-9895-3090"
+                },
+                "firstName": "Ji-Yeun",
+                "fullName": "Hur JY",
+                "initials": "JY",
+                "lastName": "Hur"
+              },
+              {
+                "firstName": "Yueming",
+                "fullName": "Li Y",
+                "initials": "Y",
+                "lastName": "Li"
+              },
+              {
+                "firstName": "Hui",
+                "fullName": "Zheng H",
+                "initials": "H",
+                "lastName": "Zheng"
+              }
+            ]
+          },
+          "authorString": "Guo Q, Li H, Cole AL, Hur JY, Li Y, Zheng H.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "tau Proteins",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Amyloid beta-Protein Precursor",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Mutant Proteins",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Amyloid Precursor Protein Secretases",
+                "registryNumber": "EC 3.4.-"
+              },
+              {
+                "name": "Presenilins",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 30,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data",
+              "related_data"
+            ]
+          },
+          "dateOfCompletion": "2014-12-10",
+          "dateOfCreation": "2013-11-27",
+          "dateOfRevision": "2023-06-21",
+          "doi": "10.1371/journal.pone.0080706",
+          "electronicPublicationDate": "2013-11-20",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2013-11-27",
+          "firstPublicationDate": "2013-11-20",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3835479"
+            ]
+          },
+          "fullTextReceivedDate": "2020-07-10",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1371/journal.pone.0080706"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3835479"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3835479?pdf=render"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "AG020670",
+                "orderIn": 0
+              },
+              {
+                "acronym": "HD",
+                "agency": "NICHD NIH HHS",
+                "grantId": "HD24064",
+                "orderIn": 0
+              },
+              {
+                "acronym": "HD",
+                "agency": "NICHD NIH HHS",
+                "grantId": "P30 HD024064",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "R01 AG020670",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "R01 AG032051",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "AG032051",
+                "orderIn": 0
+              },
+              {
+                "acronym": "NS",
+                "agency": "NINDS NIH HHS",
+                "grantId": "R01 NS076117",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "RF1 AG020670",
+                "orderIn": 0
+              },
+              {
+                "acronym": "NS",
+                "agency": "NINDS NIH HHS",
+                "grantId": "NS076117",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "Y",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "24278307",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "Y",
+          "journalInfo": {
+            "dateOfPublication": "2013 ",
+            "issue": "11",
+            "journal": {
+              "essn": "1932-6203",
+              "isoabbreviation": "PLoS One",
+              "issn": "1932-6203",
+              "medlineAbbreviation": "PLoS One",
+              "nlmid": "101285081",
+              "title": "PloS one"
+            },
+            "journalIssueId": 2094860,
+            "monthOfPublication": 0,
+            "printPublicationDate": "2013-01-01",
+            "volume": "8",
+            "yearOfPublication": 2013
+          },
+          "language": "eng",
+          "license": "cc by",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Animals",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Mice",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Alzheimer Disease",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CO",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "complications"
+                    },
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "genetics"
+                    },
+                    {
+                      "abbreviation": "PA",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "pathology"
+                    },
+                    {
+                      "abbreviation": "PP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "physiopathology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Disease Models, Animal",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Amyloid beta-Protein Precursor",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "genetics"
+                    },
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "tau Proteins",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "genetics"
+                    },
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Fluorescent Antibody Technique",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Anxiety",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CO",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "complications"
+                    },
+                    {
+                      "abbreviation": "PP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "physiopathology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Fear",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Maze Learning",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Memory",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Phosphorylation",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Movement",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Mutant Proteins",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "genetics"
+                    },
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Amyloid Precursor Protein Secretases",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Presenilins",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Gene Knock-In Techniques",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Plaque, Amyloid",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    },
+                    {
+                      "abbreviation": "PA",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "pathology"
+                    },
+                    {
+                      "abbreviation": "PP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "physiopathology"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "e80706",
+          "pmcid": "PMC3835479",
+          "pmid": "24278307",
+          "pubModel": "Electronic-eCollection",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2013",
+          "publicationStatus": "epublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Modeling Alzheimer's disease in mouse without mutant protein overexpression: cooperative and independent effects of A\u03b2 and tau."
+        },
+        {
+          "abstractText": "With the long-standing amyloid cascade hypothesis (ACH) largely discredited, there is an acute need for a new all-encompassing interpretation of Alzheimer's disease (AD). Whereas such a recently proposed theory of AD is designated ACH2.0, its commonality with the ACH is limited to the recognition of the centrality of amyloid-\u03b2 (A\u03b2) in the disease, necessitated by the observation that <i>all</i> AD-causing mutations affect, in one way or another, A\u03b2. Yet, even this narrow commonality is superficial since AD-causing A\u03b2 of the ACH differs distinctly from that specified in the ACH2.0: Whereas in the former, the disease is caused by secreted extracellular A\u03b2, in the latter, it is triggered by A\u03b2-protein-precursor (A\u03b2PP)-derived <i>intraneuronal</i> A\u03b2 (<i>i</i>A\u03b2) and driven by <i>i</i>A\u03b2 generated <i>independently</i> of A\u03b2PP. The ACH2.0 envisions AD as a two-stage disorder. The first, asymptomatic stage is a decades-long accumulation of A\u03b2PP-derived <i>i</i>A\u03b2, which occurs via internalization of secreted A\u03b2 and through intracellular retention of a fraction of A\u03b2 produced by A\u03b2PP proteolysis. When A\u03b2PP-derived <i>i</i>A\u03b2 reaches critical levels, it activates a self-perpetuating A\u03b2PP-independent production of <i>i</i>A\u03b2 that drives the second, devastating AD stage, a cascade that includes tau pathology and culminates in neuronal loss. The present study analyzes the dynamics of <i>i</i>A\u03b2 accumulation in health and disease and concludes that it is the prime factor driving both AD and aging-associated cognitive decline (AACD). It discusses mechanisms potentially involved in A\u03b2PP-independent generation of <i>i</i>A\u03b2, provides mechanistic interpretations for all principal aspects of AD and AACD including the protective effect of the Icelandic A\u03b2PP mutation, the early onset of FAD and the sequential manifestation of AD pathology in defined regions of the affected brain, and explains why current mouse AD models are neither adequate nor suitable. It posits that while drugs affecting the accumulation of A\u03b2PP-derived <i>i</i>A\u03b2 can be effective only protectively for AD, the targeted degradation of <i>i</i>A\u03b2 is the best therapeutic strategy for both prevention and effective treatment of AD and AACD. It also proposes potential <i>i</i>A\u03b2-degrading drugs.",
+          "affiliation": "Department of Developmental Biology, Harvard School of Dental Medicine, Boston, MA 02115, USA.",
+          "authMan": "N",
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Developmental Biology, Harvard School of Dental Medicine, Boston, MA 02115, USA."
+                    }
+                  ]
+                },
+                "firstName": "Vladimir",
+                "fullName": "Volloch V",
+                "initials": "V",
+                "lastName": "Volloch"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Division of Molecular Medicine, Children's Hospital, Boston, MA 02115, USA."
+                    },
+                    {
+                      "affiliation": "Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School, Boston, MA 02115, USA."
+                    }
+                  ]
+                },
+                "firstName": "Sophia",
+                "fullName": "Rits-Volloch S",
+                "initials": "S",
+                "lastName": "Rits-Volloch"
+              }
+            ]
+          },
+          "authorString": "Volloch V, Rits-Volloch S.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Amyloid beta-Protein Precursor",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Amyloid beta-Peptides",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 23,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data"
+            ]
+          },
+          "dateOfCompletion": "2023-08-14",
+          "dateOfCreation": "2023-08-12",
+          "dateOfRevision": "2023-08-15",
+          "doi": "10.3390/ijms241512246",
+          "electronicPublicationDate": "2023-07-31",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2023-08-18",
+          "firstPublicationDate": "2023-07-31",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC10419172"
+            ]
+          },
+          "fullTextReceivedDate": "2023-08-21",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "https://www.mdpi.com/1422-0067/24/15/12246/pdf?version=1690799221"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.3390/ijms241512246"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC10419172"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC10419172?pdf=render"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "GM",
+                "agency": "NIGMS NIH HHS",
+                "grantId": "R21 GM056179",
+                "orderIn": 0
+              },
+              {
+                "agency": "National Institutes of Health",
+                "grantId": "NIH R21 GM056179",
+                "orderIn": 0
+              },
+              {
+                "agency": "National Institutes of Health",
+                "grantId": "NIH RO1 AR036819",
+                "orderIn": 0
+              },
+              {
+                "acronym": "GF",
+                "agency": "NIH HHS",
+                "grantId": "R21 GM056179; RO1 AR036819",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AR",
+                "agency": "NIAMS NIH HHS",
+                "grantId": "R01 AR036819",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "Y",
+          "hasTextMinedTerms": "Y",
+          "id": "37569624",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "Y",
+          "journalInfo": {
+            "dateOfPublication": "2023 Jul",
+            "issue": "15",
+            "journal": {
+              "essn": "1422-0067",
+              "isoabbreviation": "Int J Mol Sci",
+              "issn": "1422-0067",
+              "medlineAbbreviation": "Int J Mol Sci",
+              "nlmid": "101092791",
+              "title": "International journal of molecular sciences"
+            },
+            "journalIssueId": 3614098,
+            "monthOfPublication": 7,
+            "printPublicationDate": "2023-07-01",
+            "volume": "24",
+            "yearOfPublication": 2023
+          },
+          "keywordList": {
+            "keyword": [
+              "Intraneuronal A\u03b2 (Ia\u03b2)",
+              "A\u03b2 Protein Precursor (A\u03b2pp)-independent Generation Of Ia\u03b2",
+              "Bace1 And Bace2 Activators As Ad And Aacd Drugs",
+              "Aging-related Cognitive Dysfunction (Aacd)",
+              "Ia\u03b2 Depletion Therapy For Ad And Aacd",
+              "The Amyloid Cascade Hypothesis 2.0 (Ach2.0)"
+            ]
+          },
+          "language": "eng",
+          "license": "cc by",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Animals",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Mice",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Alzheimer Disease",
+                "majorTopic_YN": "Y",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Disease Models, Animal",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Amyloid beta-Protein Precursor",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Aging",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "genetics"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Amyloid beta-Peptides",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "genetics"
+                    },
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Cognitive Dysfunction",
+                "majorTopic_YN": "Y",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "genetics"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "12246",
+          "pmcid": "PMC10419172",
+          "pmid": "37569624",
+          "pubModel": "Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "other",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2023",
+          "publicationStatus": "epublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "The Amyloid Cascade Hypothesis 2.0 for Alzheimer's Disease and Aging-Associated Cognitive Decline: From Molecular Basis to Effective Therapy.",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "doi"
+            ]
+          }
+        },
+        {
+          "abstractText": "The present <i>Perspective</i> analyzes the remarkable evolution of the Amyloid Cascade Hypothesis 2.0 (ACH2.0) theory of Alzheimer's disease (AD) since its inception a few years ago, as reflected in the diminishing role of amyloid-beta (A\u03b2) in the disease. In the initial iteration of the ACH2.0, A\u03b2-protein-precursor (A\u03b2PP)-derived intraneuronal A\u03b2 (iA\u03b2), accumulated to neuronal integrated stress response (ISR)-eliciting levels, triggers AD. The neuronal ISR, in turn, activates the A\u03b2PP-independent production of its C99 fragment that is processed into iA\u03b2, which drives the disease. The second iteration of the ACH2.0 stemmed from the realization that AD is, in fact, a disease of the sustained neuronal ISR. It introduced two categories of AD-conventional and unconventional-differing mainly in the manner of their causation. The former is caused by the neuronal ISR triggered by A\u03b2PP-derived iA\u03b2, whereas in the latter, the neuronal ISR is elicited by stressors distinct from A\u03b2PP-derived iA\u03b2 and arising from brain trauma, viral and bacterial infections, and various types of inflammation. Moreover, conventional AD always contains an unconventional component, and in both forms, the disease is driven by iA\u03b2 generated independently of A\u03b2PP. In its third, the current, iteration, the ACH2.0 posits that proteolytic production of A\u03b2 is suppressed in AD-affected neurons and that the disease is driven by C99 generated independently of A\u03b2PP. Suppression of A\u03b2 production in AD seems an oxymoron: A\u03b2 is equated with AD, and the later is inconceivable without the former in an ingrained Amyloid Cascade Hypothesis (ACH)-based notion. But suppression of A\u03b2 production in AD-affected neurons is where the logic leads, and to follow it we only need to overcome the inertia of the preexisting assumptions. Moreover, not only is the generation of A\u03b2 suppressed, so is the production of all components of the A\u03b2PP proteolytic pathway. This assertion is not a quantum leap (unless overcoming the inertia counts as such): the global cellular protein synthesis is severely suppressed under the neuronal ISR conditions, and there is no reason for constituents of the A\u03b2PP proteolytic pathway to be exempted, and they, apparently, are not, as indicated by the empirical data. In contrast, tau protein translation persists in AD-affected neurons under ISR conditions because the human tau mRNA contains an internal ribosomal entry site in its 5'UTR. In current mouse models, iA\u03b2 derived from A\u03b2PP expressed exogenously from human transgenes elicits the neuronal ISR and thus suppresses its own production. Its levels cannot principally reach AD pathology-causing levels regardless of the number of transgenes or the types of FAD mutations that they (or additional transgenes) carry. Since the A\u03b2PP-independent C99 production pathway is inoperative in mice, the current transgenic models have no potential for developing the full spectrum of AD pathology. What they display are only effects of the A\u03b2PP-derived iA\u03b2-elicited neuronal ISR. The paper describes strategies to construct adequate transgenic AD models. It also details the utilization of human neuronal cells as the only adequate model system currently available for conventional and unconventional AD. The final alteration of the ACH2.0, introduced in the present <i>Perspective</i>, is that A\u03b2PP, which supports neuronal functionality and viability, is, after all, potentially produced in AD-affected neurons, albeit not conventionally but in an ISR-driven and -compatible process. Thus, the present narrative begins with the \"omnipotent\" A\u03b2 capable of both triggering and driving the disease and ends up with this peptide largely dislodged from its pedestal and retaining its central role in triggering the disease in only one, although prevalent (conventional), category of AD (and driving it in none). Among interesting inferences of the present <i>Perspective</i> is the determination that \"sporadic AD\" is not sporadic at all (\"non-familial\" would be a much better designation). The term has fatalistic connotations, implying that the disease can strike at random. This is patently not the case: The conventional disease affects a distinct subpopulation, and the basis for unconventional AD is well understood. Another conclusion is that, unless prevented, the occurrence of conventional AD is inevitable given a sufficiently long lifespan. This <i>Perspective</i> also defines therapeutic directions not to be taken as well as auspicious ways forward. The former category includes ACH-based drugs (those interfering with the proteolytic production of A\u03b2 and/or depleting extracellular A\u03b2). They are legitimate (albeit inefficient) preventive agents for conventional AD. There is, however, a proverbial snowball's chance in hell of them being effective in symptomatic AD, lecanemab, donanemab, and any other \"\u2026mab\" or \"\u2026stat\" notwithstanding. They comprise A\u03b2-specific antibodies, inhibitors of beta- and gamma-secretase, and modulators of the latter. In the latter category, among ways to go are the following: (1) Depletion of iA\u03b2, which, if sufficiently \"deep\", opens up a tantalizing possibility of once-in-a-lifetime preventive transient treatment for conventional AD and aging-associated cognitive decline, AACD. (2) Composite therapy comprising the degradation of C99/iA\u03b2 and concurrent inhibition of the neuronal ISR. A single transient treatment could be sufficient to arrest the progression of conventional AD and prevent its recurrence for life. Multiple recurrent treatments would achieve the same outcome in unconventional AD. Alternatively, the sustained reduction/removal of unconventional neuronal ISR-eliciting stressors through the elimination of their source would convert unconventional AD into conventional one, preventable/treatable by a single transient administration of the composite C99/iA\u03b2 depletion/ISR suppression therapy. Efficient and suitable ISR inhibitors are available, and it is explicitly clear where to look for C99/iA\u03b2-specific targeted degradation agents-activators of BACE1 and, especially, BACE2. Directly acting C99/iA\u03b2-specific degradation agents such as proteolysis-targeting chimeras (PROTACs) and molecular-glue degraders (MGDs) are also viable options. (3) A circumscribed shift (either upstream or downstream) of the position of transcription start site (TSS) of the human A\u03b2PP gene, or, alternatively, a gene editing-mediated excision or replacement of a small, defined segment of its portion encoding 5'-untranslated region of A\u03b2PP mRNA; targeting A\u03b2PP RNA with anti-antisense oligonucleotides is another possibility. If properly executed, these RNA-based strategies would not interfere with the protein-coding potential of A\u03b2PP mRNA, and each would be capable of both preventing and stopping the A\u03b2PP-independent generation of C99 and thus of either preventing AD or arresting the progression of the disease in its conventional and unconventional forms. The paper is interspersed with \"validation\" sections: every conceptually significant notion is either validated by the existing data or an experimental procedure validating it is proposed.",
+          "affiliation": "Department of Developmental Biology, Harvard School of Dental Medicine, Boston, MA 02115, USA.",
+          "authMan": "N",
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Developmental Biology, Harvard School of Dental Medicine, Boston, MA 02115, USA."
+                    }
+                  ]
+                },
+                "firstName": "Vladimir",
+                "fullName": "Volloch V",
+                "initials": "V",
+                "lastName": "Volloch"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Division of Molecular Medicine, Children's Hospital, Boston, MA 02115, USA."
+                    },
+                    {
+                      "affiliation": "Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School, Boston, MA 02115, USA."
+                    }
+                  ]
+                },
+                "firstName": "Sophia",
+                "fullName": "Rits-Volloch S",
+                "initials": "S",
+                "lastName": "Rits-Volloch"
+              }
+            ]
+          },
+          "authorString": "Volloch V, Rits-Volloch S.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Peptide Fragments",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Amyloid beta-Protein Precursor",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Amyloid beta-Peptides",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 2,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "supporting_data"
+            ]
+          },
+          "dateOfCompletion": "2025-05-14",
+          "dateOfCreation": "2025-05-14",
+          "dateOfRevision": "2025-06-03",
+          "doi": "10.3390/ijms26094252",
+          "electronicPublicationDate": "2025-04-29",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2025-05-21",
+          "firstPublicationDate": "2025-04-29",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC12073115"
+            ]
+          },
+          "fullTextReceivedDate": "2025-12-02",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "https://www.mdpi.com/1422-0067/26/9/4252/pdf?version=1745988280"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.3390/ijms26094252"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC12073115"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC12073115?pdf=render"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "GF",
+                "agency": "NIH HHS",
+                "grantId": "NIH R21 GM056179; NIH RO1 AR036819",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "N",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "Y",
+          "hasTextMinedTerms": "Y",
+          "id": "40362488",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "Y",
+          "journalInfo": {
+            "dateOfPublication": "2025 Apr",
+            "issue": "9",
+            "journal": {
+              "essn": "1422-0067",
+              "isoabbreviation": "Int J Mol Sci",
+              "issn": "1422-0067",
+              "medlineAbbreviation": "Int J Mol Sci",
+              "nlmid": "101092791",
+              "title": "International journal of molecular sciences"
+            },
+            "journalIssueId": 3936229,
+            "monthOfPublication": 4,
+            "printPublicationDate": "2025-04-01",
+            "volume": "26",
+            "yearOfPublication": 2025
+          },
+          "keywordList": {
+            "keyword": [
+              "Amyloid Cascade Hypothesis 2.0 (Ach2.0)",
+              "Neuronal Integrated Stress Response (Isr)",
+              "Ad As The Disease Of The Neuronal Isr",
+              "A\u03b2pp-independent Generation Of The C99 Fragment",
+              "C99 As The Driver Of Ad",
+              "Rna-dependent Amplification Of Human A\u03b2pp Mrna",
+              "Conventional And Unconventional Alzheimer\u2019s Disease (Ad)",
+              "Isr-mediated Suppression Of The A\u03b2pp Proteolytic Pathway In Ad-affected Neurons",
+              "Rna-based Ad Therapies",
+              "Concurrent Inhibition Of The Neuronal Isr And Activation Of Bace1 And Bace2 As Composite Ad Therapy",
+              "Inhibition Of The Neuronal Isr As Ad Therapy"
+            ]
+          },
+          "language": "eng",
+          "license": "cc by",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Neurons",
+                "majorTopic_YN": "Y",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    },
+                    {
+                      "abbreviation": "PA",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "pathology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Animals",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Alzheimer Disease",
+                "majorTopic_YN": "Y",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ET",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "etiology"
+                    },
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    },
+                    {
+                      "abbreviation": "PA",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "pathology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Peptide Fragments",
+                "majorTopic_YN": "Y",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Amyloid beta-Protein Precursor",
+                "majorTopic_YN": "Y",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Amyloid beta-Peptides",
+                "majorTopic_YN": "Y",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Proteolysis",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "4252",
+          "pmcid": "PMC12073115",
+          "pmid": "40362488",
+          "pubModel": "Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "other",
+              "Review",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2025",
+          "publicationStatus": "epublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Alzheimer's Is a Multiform Disease of Sustained Neuronal Integrated Stress Response Driven by the C99 Fragment Generated Independently of A\u03b2PP; Proteolytic Production of A\u03b2 Is Suppressed in AD-Affected Neurons: Evolution of a Theory.",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "doi"
+            ]
+          }
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "source": "europepmc"
+}

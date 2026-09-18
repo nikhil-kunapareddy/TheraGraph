@@ -1,0 +1,2288 @@
+{
+  "operation": "target",
+  "params": {
+    "ensemblId": "ENSG00000142192"
+  },
+  "recorded_at": "2026-09-18T02:49:46.990649+00:00",
+  "response": {
+    "data": {
+      "target": {
+        "approvedName": "amyloid beta precursor protein",
+        "approvedSymbol": "APP",
+        "biotype": "protein_coding",
+        "dbXrefs": [
+          {
+            "id": "620",
+            "source": "HGNC"
+          },
+          {
+            "id": "1AAP",
+            "source": "PDB"
+          },
+          {
+            "id": "1AMB",
+            "source": "PDB"
+          },
+          {
+            "id": "1AMC",
+            "source": "PDB"
+          },
+          {
+            "id": "1AML",
+            "source": "PDB"
+          },
+          {
+            "id": "1BA4",
+            "source": "PDB"
+          },
+          {
+            "id": "1BA6",
+            "source": "PDB"
+          },
+          {
+            "id": "1BJB",
+            "source": "PDB"
+          },
+          {
+            "id": "1BJC",
+            "source": "PDB"
+          },
+          {
+            "id": "1BRC",
+            "source": "PDB"
+          },
+          {
+            "id": "1CA0",
+            "source": "PDB"
+          },
+          {
+            "id": "1HZ3",
+            "source": "PDB"
+          },
+          {
+            "id": "1IYT",
+            "source": "PDB"
+          },
+          {
+            "id": "1MWP",
+            "source": "PDB"
+          },
+          {
+            "id": "1OWT",
+            "source": "PDB"
+          },
+          {
+            "id": "1QCM",
+            "source": "PDB"
+          },
+          {
+            "id": "1QWP",
+            "source": "PDB"
+          },
+          {
+            "id": "1QXC",
+            "source": "PDB"
+          },
+          {
+            "id": "1QYT",
+            "source": "PDB"
+          },
+          {
+            "id": "1TAW",
+            "source": "PDB"
+          },
+          {
+            "id": "1TKN",
+            "source": "PDB"
+          },
+          {
+            "id": "1X11",
+            "source": "PDB"
+          },
+          {
+            "id": "1Z0Q",
+            "source": "PDB"
+          },
+          {
+            "id": "1ZE7",
+            "source": "PDB"
+          },
+          {
+            "id": "1ZE9",
+            "source": "PDB"
+          },
+          {
+            "id": "1ZJD",
+            "source": "PDB"
+          },
+          {
+            "id": "2BEG",
+            "source": "PDB"
+          },
+          {
+            "id": "2BP4",
+            "source": "PDB"
+          },
+          {
+            "id": "2FJZ",
+            "source": "PDB"
+          },
+          {
+            "id": "2FK1",
+            "source": "PDB"
+          },
+          {
+            "id": "2FK2",
+            "source": "PDB"
+          },
+          {
+            "id": "2FK3",
+            "source": "PDB"
+          },
+          {
+            "id": "2FKL",
+            "source": "PDB"
+          },
+          {
+            "id": "2FMA",
+            "source": "PDB"
+          },
+          {
+            "id": "2G47",
+            "source": "PDB"
+          },
+          {
+            "id": "2IPU",
+            "source": "PDB"
+          },
+          {
+            "id": "2LFM",
+            "source": "PDB"
+          },
+          {
+            "id": "2LLM",
+            "source": "PDB"
+          },
+          {
+            "id": "2LMN",
+            "source": "PDB"
+          },
+          {
+            "id": "2LMO",
+            "source": "PDB"
+          },
+          {
+            "id": "2LMP",
+            "source": "PDB"
+          },
+          {
+            "id": "2LMQ",
+            "source": "PDB"
+          },
+          {
+            "id": "2LNQ",
+            "source": "PDB"
+          },
+          {
+            "id": "2LOH",
+            "source": "PDB"
+          },
+          {
+            "id": "2LP1",
+            "source": "PDB"
+          },
+          {
+            "id": "2LZ3",
+            "source": "PDB"
+          },
+          {
+            "id": "2LZ4",
+            "source": "PDB"
+          },
+          {
+            "id": "2M4J",
+            "source": "PDB"
+          },
+          {
+            "id": "2M9R",
+            "source": "PDB"
+          },
+          {
+            "id": "2M9S",
+            "source": "PDB"
+          },
+          {
+            "id": "2MGT",
+            "source": "PDB"
+          },
+          {
+            "id": "2MJ1",
+            "source": "PDB"
+          },
+          {
+            "id": "2MPZ",
+            "source": "PDB"
+          },
+          {
+            "id": "2MVX",
+            "source": "PDB"
+          },
+          {
+            "id": "2MXU",
+            "source": "PDB"
+          },
+          {
+            "id": "2NAO",
+            "source": "PDB"
+          },
+          {
+            "id": "2OTK",
+            "source": "PDB"
+          },
+          {
+            "id": "2R0W",
+            "source": "PDB"
+          },
+          {
+            "id": "2WK3",
+            "source": "PDB"
+          },
+          {
+            "id": "2Y29",
+            "source": "PDB"
+          },
+          {
+            "id": "2Y2A",
+            "source": "PDB"
+          },
+          {
+            "id": "2Y3J",
+            "source": "PDB"
+          },
+          {
+            "id": "2Y3K",
+            "source": "PDB"
+          },
+          {
+            "id": "2Y3L",
+            "source": "PDB"
+          },
+          {
+            "id": "3AYU",
+            "source": "PDB"
+          },
+          {
+            "id": "3BAE",
+            "source": "PDB"
+          },
+          {
+            "id": "3BKJ",
+            "source": "PDB"
+          },
+          {
+            "id": "3DXC",
+            "source": "PDB"
+          },
+          {
+            "id": "3DXD",
+            "source": "PDB"
+          },
+          {
+            "id": "3DXE",
+            "source": "PDB"
+          },
+          {
+            "id": "3GCI",
+            "source": "PDB"
+          },
+          {
+            "id": "3IFL",
+            "source": "PDB"
+          },
+          {
+            "id": "3IFN",
+            "source": "PDB"
+          },
+          {
+            "id": "3IFO",
+            "source": "PDB"
+          },
+          {
+            "id": "3IFP",
+            "source": "PDB"
+          },
+          {
+            "id": "3JQ5",
+            "source": "PDB"
+          },
+          {
+            "id": "3JQL",
+            "source": "PDB"
+          },
+          {
+            "id": "3JTI",
+            "source": "PDB"
+          },
+          {
+            "id": "3KTM",
+            "source": "PDB"
+          },
+          {
+            "id": "3L33",
+            "source": "PDB"
+          },
+          {
+            "id": "3L81",
+            "source": "PDB"
+          },
+          {
+            "id": "3MOQ",
+            "source": "PDB"
+          },
+          {
+            "id": "3MXC",
+            "source": "PDB"
+          },
+          {
+            "id": "3MXY",
+            "source": "PDB"
+          },
+          {
+            "id": "3NYJ",
+            "source": "PDB"
+          },
+          {
+            "id": "3NYL",
+            "source": "PDB"
+          },
+          {
+            "id": "3OVJ",
+            "source": "PDB"
+          },
+          {
+            "id": "3OW9",
+            "source": "PDB"
+          },
+          {
+            "id": "3PZZ",
+            "source": "PDB"
+          },
+          {
+            "id": "3Q2X",
+            "source": "PDB"
+          },
+          {
+            "id": "3SV1",
+            "source": "PDB"
+          },
+          {
+            "id": "3U0T",
+            "source": "PDB"
+          },
+          {
+            "id": "3UMH",
+            "source": "PDB"
+          },
+          {
+            "id": "3UMI",
+            "source": "PDB"
+          },
+          {
+            "id": "3UMK",
+            "source": "PDB"
+          },
+          {
+            "id": "4HIX",
+            "source": "PDB"
+          },
+          {
+            "id": "4JFN",
+            "source": "PDB"
+          },
+          {
+            "id": "4M1C",
+            "source": "PDB"
+          },
+          {
+            "id": "4MDR",
+            "source": "PDB"
+          },
+          {
+            "id": "4MVI",
+            "source": "PDB"
+          },
+          {
+            "id": "4MVK",
+            "source": "PDB"
+          },
+          {
+            "id": "4MVL",
+            "source": "PDB"
+          },
+          {
+            "id": "4NGE",
+            "source": "PDB"
+          },
+          {
+            "id": "4OJF",
+            "source": "PDB"
+          },
+          {
+            "id": "4ONF",
+            "source": "PDB"
+          },
+          {
+            "id": "4ONG",
+            "source": "PDB"
+          },
+          {
+            "id": "4PQD",
+            "source": "PDB"
+          },
+          {
+            "id": "4PWQ",
+            "source": "PDB"
+          },
+          {
+            "id": "4XXD",
+            "source": "PDB"
+          },
+          {
+            "id": "5AEF",
+            "source": "PDB"
+          },
+          {
+            "id": "5AM8",
+            "source": "PDB"
+          },
+          {
+            "id": "5AMB",
+            "source": "PDB"
+          },
+          {
+            "id": "5BUO",
+            "source": "PDB"
+          },
+          {
+            "id": "5C67",
+            "source": "PDB"
+          },
+          {
+            "id": "5CSZ",
+            "source": "PDB"
+          },
+          {
+            "id": "5HOW",
+            "source": "PDB"
+          },
+          {
+            "id": "5HOX",
+            "source": "PDB"
+          },
+          {
+            "id": "5HOY",
+            "source": "PDB"
+          },
+          {
+            "id": "5KK3",
+            "source": "PDB"
+          },
+          {
+            "id": "5LFY",
+            "source": "PDB"
+          },
+          {
+            "id": "5LV0",
+            "source": "PDB"
+          },
+          {
+            "id": "5MY4",
+            "source": "PDB"
+          },
+          {
+            "id": "5MYO",
+            "source": "PDB"
+          },
+          {
+            "id": "5MYX",
+            "source": "PDB"
+          },
+          {
+            "id": "5NX1",
+            "source": "PDB"
+          },
+          {
+            "id": "5NX3",
+            "source": "PDB"
+          },
+          {
+            "id": "5ONP",
+            "source": "PDB"
+          },
+          {
+            "id": "5ONQ",
+            "source": "PDB"
+          },
+          {
+            "id": "5OQV",
+            "source": "PDB"
+          },
+          {
+            "id": "5TXD",
+            "source": "PDB"
+          },
+          {
+            "id": "5VOS",
+            "source": "PDB"
+          },
+          {
+            "id": "5VZY",
+            "source": "PDB"
+          },
+          {
+            "id": "5W3P",
+            "source": "PDB"
+          },
+          {
+            "id": "6CO3",
+            "source": "PDB"
+          },
+          {
+            "id": "6GFI",
+            "source": "PDB"
+          },
+          {
+            "id": "6ITU",
+            "source": "PDB"
+          },
+          {
+            "id": "6IYC",
+            "source": "PDB"
+          },
+          {
+            "id": "6NB9",
+            "source": "PDB"
+          },
+          {
+            "id": "6O4J",
+            "source": "PDB"
+          },
+          {
+            "id": "6OC9",
+            "source": "PDB"
+          },
+          {
+            "id": "6OIZ",
+            "source": "PDB"
+          },
+          {
+            "id": "6RHY",
+            "source": "PDB"
+          },
+          {
+            "id": "6SHS",
+            "source": "PDB"
+          },
+          {
+            "id": "6SZF",
+            "source": "PDB"
+          },
+          {
+            "id": "6TI5",
+            "source": "PDB"
+          },
+          {
+            "id": "6TI6",
+            "source": "PDB"
+          },
+          {
+            "id": "6TI7",
+            "source": "PDB"
+          },
+          {
+            "id": "6W0O",
+            "source": "PDB"
+          },
+          {
+            "id": "6WXM",
+            "source": "PDB"
+          },
+          {
+            "id": "6XOV",
+            "source": "PDB"
+          },
+          {
+            "id": "6YHF",
+            "source": "PDB"
+          },
+          {
+            "id": "6YHI",
+            "source": "PDB"
+          },
+          {
+            "id": "6YHO",
+            "source": "PDB"
+          },
+          {
+            "id": "6YHP",
+            "source": "PDB"
+          },
+          {
+            "id": "6YHX",
+            "source": "PDB"
+          },
+          {
+            "id": "7B3J",
+            "source": "PDB"
+          },
+          {
+            "id": "7B3K",
+            "source": "PDB"
+          },
+          {
+            "id": "7E6P",
+            "source": "PDB"
+          },
+          {
+            "id": "7F29",
+            "source": "PDB"
+          },
+          {
+            "id": "7JXN",
+            "source": "PDB"
+          },
+          {
+            "id": "7JXO",
+            "source": "PDB"
+          },
+          {
+            "id": "7O1Q",
+            "source": "PDB"
+          },
+          {
+            "id": "7OW1",
+            "source": "PDB"
+          },
+          {
+            "id": "7OXN",
+            "source": "PDB"
+          },
+          {
+            "id": "7Q4B",
+            "source": "PDB"
+          },
+          {
+            "id": "7Q4M",
+            "source": "PDB"
+          },
+          {
+            "id": "7RTZ",
+            "source": "PDB"
+          },
+          {
+            "id": "7U4P",
+            "source": "PDB"
+          },
+          {
+            "id": "7WFY",
+            "source": "PDB"
+          },
+          {
+            "id": "7WVY",
+            "source": "PDB"
+          },
+          {
+            "id": "7Y3J",
+            "source": "PDB"
+          },
+          {
+            "id": "7Y8Q",
+            "source": "PDB"
+          },
+          {
+            "id": "8AZS",
+            "source": "PDB"
+          },
+          {
+            "id": "8AZT",
+            "source": "PDB"
+          },
+          {
+            "id": "8B9Q",
+            "source": "PDB"
+          },
+          {
+            "id": "8B9R",
+            "source": "PDB"
+          },
+          {
+            "id": "8BFA",
+            "source": "PDB"
+          },
+          {
+            "id": "8BFB",
+            "source": "PDB"
+          },
+          {
+            "id": "8BFZ",
+            "source": "PDB"
+          },
+          {
+            "id": "8BG0",
+            "source": "PDB"
+          },
+          {
+            "id": "8C3H",
+            "source": "PDB"
+          },
+          {
+            "id": "8EZD",
+            "source": "PDB"
+          },
+          {
+            "id": "8EZE",
+            "source": "PDB"
+          },
+          {
+            "id": "8FF2",
+            "source": "PDB"
+          },
+          {
+            "id": "8FF3",
+            "source": "PDB"
+          },
+          {
+            "id": "8H8Q",
+            "source": "PDB"
+          },
+          {
+            "id": "8I4O",
+            "source": "PDB"
+          },
+          {
+            "id": "8KEW",
+            "source": "PDB"
+          },
+          {
+            "id": "8KF1",
+            "source": "PDB"
+          },
+          {
+            "id": "8KF3",
+            "source": "PDB"
+          },
+          {
+            "id": "8KF4",
+            "source": "PDB"
+          },
+          {
+            "id": "8KF5",
+            "source": "PDB"
+          },
+          {
+            "id": "8KF6",
+            "source": "PDB"
+          },
+          {
+            "id": "8OL2",
+            "source": "PDB"
+          },
+          {
+            "id": "8OL3",
+            "source": "PDB"
+          },
+          {
+            "id": "8OL5",
+            "source": "PDB"
+          },
+          {
+            "id": "8OL6",
+            "source": "PDB"
+          },
+          {
+            "id": "8OL7",
+            "source": "PDB"
+          },
+          {
+            "id": "8OLG",
+            "source": "PDB"
+          },
+          {
+            "id": "8OLN",
+            "source": "PDB"
+          },
+          {
+            "id": "8OLO",
+            "source": "PDB"
+          },
+          {
+            "id": "8OLQ",
+            "source": "PDB"
+          },
+          {
+            "id": "8OT1",
+            "source": "PDB"
+          },
+          {
+            "id": "8OT3",
+            "source": "PDB"
+          },
+          {
+            "id": "8OT4",
+            "source": "PDB"
+          },
+          {
+            "id": "8OTF",
+            "source": "PDB"
+          },
+          {
+            "id": "8OVK",
+            "source": "PDB"
+          },
+          {
+            "id": "8OVM",
+            "source": "PDB"
+          },
+          {
+            "id": "8OWD",
+            "source": "PDB"
+          },
+          {
+            "id": "8OWE",
+            "source": "PDB"
+          },
+          {
+            "id": "8OWJ",
+            "source": "PDB"
+          },
+          {
+            "id": "8OWK",
+            "source": "PDB"
+          },
+          {
+            "id": "8QN6",
+            "source": "PDB"
+          },
+          {
+            "id": "8QN7",
+            "source": "PDB"
+          },
+          {
+            "id": "8SEJ",
+            "source": "PDB"
+          },
+          {
+            "id": "8SEK",
+            "source": "PDB"
+          },
+          {
+            "id": "8SEL",
+            "source": "PDB"
+          },
+          {
+            "id": "8T82",
+            "source": "PDB"
+          },
+          {
+            "id": "8T89",
+            "source": "PDB"
+          },
+          {
+            "id": "8X52",
+            "source": "PDB"
+          },
+          {
+            "id": "8X53",
+            "source": "PDB"
+          },
+          {
+            "id": "8X54",
+            "source": "PDB"
+          },
+          {
+            "id": "8Z9V",
+            "source": "PDB"
+          },
+          {
+            "id": "9CZN",
+            "source": "PDB"
+          },
+          {
+            "id": "9CZP",
+            "source": "PDB"
+          },
+          {
+            "id": "9FH2",
+            "source": "PDB"
+          },
+          {
+            "id": "9FH3",
+            "source": "PDB"
+          },
+          {
+            "id": "9FH4",
+            "source": "PDB"
+          },
+          {
+            "id": "9FH5",
+            "source": "PDB"
+          },
+          {
+            "id": "9IIO",
+            "source": "PDB"
+          },
+          {
+            "id": "9JAZ",
+            "source": "PDB"
+          },
+          {
+            "id": "9JB0",
+            "source": "PDB"
+          },
+          {
+            "id": "9JB1",
+            "source": "PDB"
+          },
+          {
+            "id": "9JB2",
+            "source": "PDB"
+          },
+          {
+            "id": "9K0D",
+            "source": "PDB"
+          },
+          {
+            "id": "9K0E",
+            "source": "PDB"
+          },
+          {
+            "id": "9K0F",
+            "source": "PDB"
+          },
+          {
+            "id": "9M5P",
+            "source": "PDB"
+          },
+          {
+            "id": "9M5Q",
+            "source": "PDB"
+          },
+          {
+            "id": "9M5R",
+            "source": "PDB"
+          },
+          {
+            "id": "9UMH",
+            "source": "PDB"
+          },
+          {
+            "id": "CHEMBL2487",
+            "source": "ChEMBL"
+          },
+          {
+            "id": "DB12274",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB06086",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01370",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB14517",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB14518",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB05150",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB09130",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB11672",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00746",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB05938",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB09148",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB09149",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB09151",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB12034",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB13178",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02235",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB14580",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB12969",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB05846",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04892",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB18298",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB15746",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02709",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB05088",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB06527",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03754",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB19191",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01593",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB14487",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB14533",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB14548",
+            "source": "DrugBank"
+          },
+          {
+            "id": "R-HSA-114608",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-3000178",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-381426",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-416476",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-418594",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-432720",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-444473",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-445989",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-844456",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-879415",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-8862803",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-8957275",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-933542",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9609523",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9660826",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-977225",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9837999",
+            "source": "Reactome"
+          },
+          {
+            "id": "IPR036669",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR008155",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR013803",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR037071",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR011178",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR024329",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR008154",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR015849",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR036454",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR019745",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR019543",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR019744",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR036176",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR002223",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR036880",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR011993",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR020901",
+            "source": "InterPro"
+          },
+          {
+            "id": "SignalP-noTM",
+            "source": "signalP"
+          }
+        ],
+        "drugAndClinicalCandidates": {
+          "count": 13,
+          "rows": [
+            {
+              "drug": {
+                "drugType": "Antibody",
+                "id": "CHEMBL3833321",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Amyloid-beta A4 protein inhibitor"
+                    }
+                  ]
+                },
+                "name": "LECANEMAB"
+              },
+              "id": "1ef742a53754d55610c306b468179cf6d50c6870b83c33765e29d4367ac3c767",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL149082",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "STABILISER",
+                      "mechanismOfAction": "Amyloid-beta A4 protein stabiliser"
+                    }
+                  ]
+                },
+                "name": "TRAMIPROSATE"
+              },
+              "id": "2c9e6265bfd3e2841bdfe8dded5466ef12250f3c8fb6b761e7c28d66d3baeb84",
+              "maxClinicalStage": "PHASE_3"
+            },
+            {
+              "drug": {
+                "drugType": "Antibody",
+                "id": "CHEMBL4297245",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "DISRUPTING AGENT",
+                      "mechanismOfAction": "Amyloid-beta A4 protein disrupting agent"
+                    }
+                  ]
+                },
+                "name": "DONANEMAB"
+              },
+              "id": "4d4e913a666ccd92fcca0fb9b970955318e4a8295a915d8f2464507ebf10e207",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Antibody",
+                "id": "CHEMBL1743025",
+                "maximumClinicalStage": "PHASE_3",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "BINDING AGENT",
+                      "mechanismOfAction": "Amyloid-beta A4 protein binding agent"
+                    }
+                  ]
+                },
+                "name": "GANTENERUMAB"
+              },
+              "id": "50e4eb0dfb11853d6463beac43bf3bd9b1be4c32f3ae40e80d4ee07b5190d9f9",
+              "maxClinicalStage": "PHASE_3"
+            },
+            {
+              "drug": {
+                "drugType": "Protein",
+                "id": "CHEMBL2108328",
+                "maximumClinicalStage": "PHASE_2_3",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "VACCINE ANTIGEN",
+                      "mechanismOfAction": "Amyloid-beta A4 protein vaccine antigen"
+                    }
+                  ]
+                },
+                "name": "AMILOMOTIDE"
+              },
+              "id": "51147d18cafd29918d9c0a07c8ccc945b909deaa29a8500546d045d412c801a7",
+              "maxClinicalStage": "PHASE_2_3"
+            },
+            {
+              "drug": {
+                "drugType": "Unknown",
+                "id": "CHEMBL2109300",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "BINDING AGENT",
+                      "mechanismOfAction": "Amyloid-beta A4 protein binding agent"
+                    }
+                  ]
+                },
+                "name": "GSK933776"
+              },
+              "id": "620ac35e6c3f30bb7fc7a02e896cfe117d526ee22eed8f4815eed70e0d5e0446",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Antibody",
+                "id": "CHEMBL3039540",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "BINDING AGENT",
+                      "mechanismOfAction": "Amyloid-beta A4 protein binding agent"
+                    }
+                  ]
+                },
+                "name": "ADUCANUMAB"
+              },
+              "id": "6fa3963b93132c3a2ec18a0a8d3686c239c407cee2c5b2e43be4c1275b54b6b7",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Antibody",
+                "id": "CHEMBL2108576",
+                "maximumClinicalStage": "PHASE_3",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "BINDING AGENT",
+                      "mechanismOfAction": "Amyloid-beta A4 protein binding agent"
+                    }
+                  ]
+                },
+                "name": "BAPINEUZUMAB"
+              },
+              "id": "8b6b55472a0ea4740d69c8b93bfd41c5f970d43f824db554cbcdd5ff68154c25",
+              "maxClinicalStage": "PHASE_3"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL4650301",
+                "maximumClinicalStage": "PHASE_3",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "STABILISER",
+                      "mechanismOfAction": "Amyloid-beta A4 protein stabiliser"
+                    }
+                  ]
+                },
+                "name": "VALILTRAMIPROSATE"
+              },
+              "id": "90028ecf5a4faba844d4d3a9ca42615c21ef8ae13737321fa8c03fa75395a301",
+              "maxClinicalStage": "PHASE_3"
+            },
+            {
+              "drug": {
+                "drugType": "Antibody",
+                "id": "CHEMBL1743004",
+                "maximumClinicalStage": "PHASE_3",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Amyloid-beta A4 protein inhibitor"
+                    }
+                  ]
+                },
+                "name": "CRENEZUMAB"
+              },
+              "id": "a3fbed76c27c635b742c7f47651488e36dd1d9cb326f4fcc9b69d2bdd7e477d0",
+              "maxClinicalStage": "PHASE_3"
+            },
+            {
+              "drug": {
+                "drugType": "Antibody",
+                "id": "CHEMBL1743058",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "BINDING AGENT",
+                      "mechanismOfAction": "Amyloid-beta A4 protein binding agent"
+                    }
+                  ]
+                },
+                "name": "PONEZUMAB"
+              },
+              "id": "a78812898efdbb2ca81d22cad16ee0c73e5b7da20264642e5005f546b9900638",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Protein",
+                "id": "CHEMBL2108058",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "VACCINE ANTIGEN",
+                      "mechanismOfAction": "Amyloid-beta A4 protein vaccine antigen"
+                    }
+                  ]
+                },
+                "name": "VANUTIDE CRIDIFICAR"
+              },
+              "id": "aafb755773ff204de81d4ac0213f356c6bbe82294d5a52e29f98d6f4c1036204",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Antibody",
+                "id": "CHEMBL1743072",
+                "maximumClinicalStage": "PHASE_3",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "BINDING AGENT",
+                      "mechanismOfAction": "Amyloid-beta A4 protein binding agent"
+                    }
+                  ]
+                },
+                "name": "SOLANEZUMAB"
+              },
+              "id": "c9d4261be2364eef51b0289a693a5ead44a27a1a8491606bbedeb3a8a405dd0c",
+              "maxClinicalStage": "PHASE_3"
+            }
+          ]
+        },
+        "functionDescriptions": [
+          "Functions as a cell surface receptor and performs physiological functions on the surface of neurons relevant to neurite growth, neuronal adhesion and axonogenesis. Interaction between APP molecules on neighboring cells promotes synaptogenesis (PubMed:25122912). Involved in cell mobility and transcription regulation through protein-protein interactions. Can promote transcription activation through binding to APBB1-KAT5 and inhibits Notch signaling through interaction with Numb. Couples to apoptosis- inducing pathways such as those mediated by G(o) and JIP. Inhibits G(o) alpha ATPase activity (By similarity). Acts as a kinesin I membrane receptor, mediating the axonal transport of beta-secretase and presenilin 1 (By similarity). By acting as a kinesin I membrane receptor, plays a role in axonal anterograde transport of cargo towards synapses in axons (PubMed:17062754, PubMed:23011729). Involved in copper homeostasis/oxidative stress through copper ion reduction. In vitro, copper-metallated APP induces neuronal death directly or is potentiated through Cu(2+)-mediated low-density lipoprotein oxidation. Can regulate neurite outgrowth through binding to components of the extracellular matrix such as heparin and collagen I and IV. The splice isoforms that contain the BPTI domain possess protease inhibitor activity. Induces a AGER-dependent pathway that involves activation of p38 MAPK, resulting in internalization of amyloid-beta peptide and leading to mitochondrial dysfunction in cultured cortical neurons. Provides Cu(2+) ions for GPC1 which are required for release of nitric oxide (NO) and subsequent degradation of the heparan sulfate chains on GPC1. {ECO:0000250, ECO:0000250|UniProtKB:P12023, ECO:0000269|PubMed:17062754, ECO:0000269|PubMed:23011729, ECO:0000269|PubMed:25122912}.",
+          "Amyloid-beta peptides are lipophilic metal chelators with metal-reducing activity. Bind transient metals such as copper, zinc and iron. In vitro, can reduce Cu(2+) and Fe(3+) to Cu(+) and Fe(2+), respectively. Amyloid-beta peptides bind to lipoproteins and apolipoproteins E and J in the CSF and to HDL particles in plasma, inhibiting metal-catalyzed oxidation of lipoproteins. Promotes both tau aggregation and TPK II-mediated phosphorylation. Interaction with overexpressed HADH2 leads to oxidative stress and neurotoxicity. Also binds GPC1 in lipid rafts.",
+          "[Amyloid-beta protein 42]: More effective reductant than amyloid-beta protein 40. May activate mononuclear phagocytes in the brain and elicit inflammatory responses.",
+          "Appicans elicit adhesion of neural cells to the extracellular matrix and may regulate neurite outgrowth in the brain. .",
+          "The gamma-CTF peptides as well as the caspase-cleaved peptides, including C31, are potent enhancers of neuronal apoptosis."
+        ],
+        "genomicLocation": {
+          "chromosome": "21",
+          "end": 26171128,
+          "start": 25880535,
+          "strand": -1
+        },
+        "id": "ENSG00000142192",
+        "proteinIds": [
+          {
+            "id": "P05067",
+            "source": "uniprot_swissprot"
+          },
+          {
+            "id": "A0A0A0MRG2",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A140VJC8",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "E9PG40",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "H7C0V9",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "H7C2L2",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "ENSP00000284981",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000345463",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000346129",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000350578",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000351796",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000352760",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000387483",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000396923",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000398879",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000406539",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000542583",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000542584",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000542585",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000542586",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000542587",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000542588",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000542589",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000542590",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000542591",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000542592",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000542593",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000542594",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000542595",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000542596",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000542597",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000602896",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000602897",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000635138",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000635139",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000635140",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "B2R5V1",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "B4DII8",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "D3DSD1",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "D3DSD2",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "D3DSD3",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "P09000",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "P78438",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q13764",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q13778",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q13793",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q16011",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q16014",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q16019",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q16020",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q6GSC0",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q8WZ99",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q9BT38",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q9UC33",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q9UCA9",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q9UCB6",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q9UCC8",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q9UCD1",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q9UQ58",
+            "source": "uniprot_obsolete"
+          }
+        ],
+        "safetyLiabilities": [],
+        "subcellularLocations": [
+          {
+            "location": "Cell membrane ; Single-pass type I membrane protein",
+            "termSL": "SL-0039"
+          },
+          {
+            "location": "Membrane ; Single-pass type I membrane protein",
+            "termSL": "SL-0162"
+          },
+          {
+            "location": "Perikaryon",
+            "termSL": "SL-0197"
+          },
+          {
+            "location": "Cell projection, growth cone",
+            "termSL": "SL-0280"
+          },
+          {
+            "location": "Membrane, clathrin-coated pit",
+            "termSL": "SL-0162"
+          },
+          {
+            "location": "Early endosome",
+            "termSL": "SL-0094"
+          },
+          {
+            "location": "Cytoplasmic vesicle",
+            "termSL": "SL-0088"
+          },
+          {
+            "location": "Endoplasmic reticulum",
+            "termSL": "SL-0095"
+          },
+          {
+            "location": "Golgi apparatus",
+            "termSL": "SL-0132"
+          },
+          {
+            "location": "Early endosome",
+            "termSL": "SL-0094"
+          },
+          {
+            "location": "Secreted",
+            "termSL": "SL-0243"
+          },
+          {
+            "location": "Cell surface",
+            "termSL": "SL-0310"
+          },
+          {
+            "location": "Cell surface",
+            "termSL": "SL-0310"
+          },
+          {
+            "location": "Nucleus",
+            "termSL": "SL-0191"
+          },
+          {
+            "location": "Cytoplasm",
+            "termSL": "SL-0086"
+          },
+          {
+            "location": "Golgi apparatus",
+            "termSL": "SL-0132"
+          },
+          {
+            "location": "Vesicles",
+            "termSL": "SL-0498"
+          },
+          {
+            "location": "Predicted to be secreted",
+            "termSL": null
+          }
+        ],
+        "synonyms": [
+          {
+            "label": "Amyloid-beta precursor protein",
+            "source": "uniprot"
+          },
+          {
+            "label": "N-APP",
+            "source": "uniprot"
+          },
+          {
+            "label": "Soluble APP-alpha",
+            "source": "uniprot"
+          },
+          {
+            "label": "Soluble APP-beta",
+            "source": "uniprot"
+          },
+          {
+            "label": "C99",
+            "source": "uniprot"
+          },
+          {
+            "label": "Amyloid-beta protein 42",
+            "source": "uniprot"
+          },
+          {
+            "label": "Amyloid-beta protein 40",
+            "source": "uniprot"
+          },
+          {
+            "label": "C83",
+            "source": "uniprot"
+          },
+          {
+            "label": "P3(42)",
+            "source": "uniprot"
+          },
+          {
+            "label": "P3(40)",
+            "source": "uniprot"
+          },
+          {
+            "label": "C80",
+            "source": "uniprot"
+          },
+          {
+            "label": "Gamma-secretase C-terminal fragment 59",
+            "source": "uniprot"
+          },
+          {
+            "label": "Gamma-secretase C-terminal fragment 57",
+            "source": "uniprot"
+          },
+          {
+            "label": "Gamma-secretase C-terminal fragment 50",
+            "source": "uniprot"
+          },
+          {
+            "label": "C31",
+            "source": "uniprot"
+          },
+          {
+            "label": "APP",
+            "source": "uniprot"
+          },
+          {
+            "label": "CVAP",
+            "source": "uniprot"
+          },
+          {
+            "label": "PN-II",
+            "source": "uniprot"
+          },
+          {
+            "label": "S-APP-alpha",
+            "source": "uniprot"
+          },
+          {
+            "label": "S-APP-beta",
+            "source": "uniprot"
+          },
+          {
+            "label": "Beta-CTF",
+            "source": "uniprot"
+          },
+          {
+            "label": "Abeta42",
+            "source": "uniprot"
+          },
+          {
+            "label": "Abeta40",
+            "source": "uniprot"
+          },
+          {
+            "label": "Alpha-CTF",
+            "source": "uniprot"
+          },
+          {
+            "label": "Gamma-CTF(59)",
+            "source": "uniprot"
+          },
+          {
+            "label": "AICD-59",
+            "source": "uniprot"
+          },
+          {
+            "label": "AID(59)",
+            "source": "uniprot"
+          },
+          {
+            "label": "Gamma-CTF(57)",
+            "source": "uniprot"
+          },
+          {
+            "label": "AICD-57",
+            "source": "uniprot"
+          },
+          {
+            "label": "AID(57)",
+            "source": "uniprot"
+          },
+          {
+            "label": "Gamma-CTF(50)",
+            "source": "uniprot"
+          },
+          {
+            "label": "AICD-50",
+            "source": "uniprot"
+          },
+          {
+            "label": "AID(50)",
+            "source": "uniprot"
+          },
+          {
+            "label": "A4",
+            "source": "uniprot"
+          },
+          {
+            "label": "AD1",
+            "source": "uniprot"
+          },
+          {
+            "label": "alpha-sAPP",
+            "source": "HGNC"
+          },
+          {
+            "label": "ABPP",
+            "source": "uniprot"
+          },
+          {
+            "label": "APPI",
+            "source": "uniprot"
+          },
+          {
+            "label": "Alzheimer disease amyloid A4 protein homolog",
+            "source": "uniprot"
+          },
+          {
+            "label": "Alzheimer disease amyloid protein",
+            "source": "uniprot"
+          },
+          {
+            "label": "Amyloid precursor protein",
+            "source": "uniprot"
+          },
+          {
+            "label": "Amyloid-beta (A4) precursor protein",
+            "source": "uniprot"
+          },
+          {
+            "label": "Amyloid-beta A4 protein",
+            "source": "uniprot"
+          },
+          {
+            "label": "Cerebral vascular amyloid peptide",
+            "source": "uniprot"
+          },
+          {
+            "label": "PreA4",
+            "source": "uniprot"
+          },
+          {
+            "label": "Protease nexin-II",
+            "source": "uniprot"
+          },
+          {
+            "label": "Beta-secretase C-terminal fragment",
+            "source": "uniprot"
+          },
+          {
+            "label": "Beta-APP42",
+            "source": "uniprot"
+          },
+          {
+            "label": "Beta-APP40",
+            "source": "uniprot"
+          },
+          {
+            "label": "Alpha-secretase C-terminal fragment",
+            "source": "uniprot"
+          },
+          {
+            "label": "Amyloid intracellular domain 59",
+            "source": "uniprot"
+          },
+          {
+            "label": "Amyloid intracellular domain 57",
+            "source": "uniprot"
+          },
+          {
+            "label": "Amyloid intracellular domain 50",
+            "source": "uniprot"
+          },
+          {
+            "label": "peptidase nexin-II",
+            "source": "HGNC"
+          },
+          {
+            "label": "AAA",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "ABETA",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "ABPP",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "AD1",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "APPI",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "CTFgamma",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "CVAP",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "PN-II",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "PN2",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "alpha-sAPP",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "preA4",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "amyloid-beta precursor protein",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "alzheimer disease amyloid A4 protein homolog",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "alzheimer disease amyloid protein",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "amyloid beta (A4) precursor protein",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "amyloid beta A4 protein",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "amyloid precursor protein",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "beta-amyloid peptide",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "beta-amyloid peptide(1-40)",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "beta-amyloid peptide(1-42)",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "beta-amyloid precursor protein",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "cerebral vascular amyloid peptide",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "peptidase nexin-II",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "protease nexin-II",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "testicular tissue protein Li 2",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "APP",
+            "source": "NCBI_entrez"
+          }
+        ],
+        "targetClass": [
+          {
+            "id": 11,
+            "label": "Membrane receptor",
+            "level": "l1"
+          }
+        ],
+        "tractability": [
+          {
+            "label": "Approved Drug",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Structure with Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Pocket",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Med-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Druggable Family",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt loc high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt loc med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt SigP or TMHMM",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Human Protein Atlas loc",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Literature",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "UniProt Ubiquitination",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Database Ubiquitination",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Half-life Data",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Small Molecule Binder",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "OC",
+            "value": true
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "OC",
+            "value": false
+          }
+        ]
+      }
+    }
+  },
+  "source": "open_targets"
+}

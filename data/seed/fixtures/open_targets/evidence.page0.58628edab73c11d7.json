@@ -1,0 +1,156 @@
+{
+  "operation": "evidence.page0",
+  "params": {
+    "cursor": null,
+    "datasourceIds": [
+      "eva"
+    ],
+    "efoId": "MONDO_0004975",
+    "ensemblIds": [
+      "ENSG00000142192",
+      "ENSG00000080815",
+      "ENSG00000143801"
+    ],
+    "size": 3
+  },
+  "recorded_at": "2026-09-18T03:31:09.952051+00:00",
+  "response": {
+    "data": {
+      "disease": {
+        "evidences": {
+          "count": 1182,
+          "cursor": "eyJpbmRleCI6MSwic2l6ZSI6M30=",
+          "rows": [
+            {
+              "beta": null,
+              "clinicalSignificances": [
+                "pathogenic"
+              ],
+              "clinicalStage": null,
+              "confidence": "criteria provided, multiple submitters, no conflicts",
+              "datasourceId": "eva",
+              "datatypeId": "genetic_association",
+              "disease": {
+                "id": "MONDO_0007088",
+                "name": "Alzheimer disease type 1"
+              },
+              "diseaseFromSource": "Alzheimer disease type 1",
+              "diseaseFromSourceMappedId": "MONDO_0007088",
+              "drug": null,
+              "drugFromSource": null,
+              "id": "2804b1982e5ad06c994e45f779a738d2b3667665",
+              "literature": [
+                "1520398",
+                "1671712",
+                "1678057",
+                "1678058",
+                "1679288",
+                "1908231",
+                "8290965",
+                "8886002"
+              ],
+              "oddsRatio": null,
+              "pValueExponent": null,
+              "pValueMantissa": null,
+              "publicationFirstAuthor": null,
+              "publicationYear": null,
+              "resourceScore": null,
+              "score": 0.95,
+              "studyId": "RCV000019714",
+              "studyOverview": null,
+              "target": {
+                "approvedSymbol": "APP",
+                "id": "ENSG00000142192"
+              },
+              "targetFromSourceId": "ENSG00000142192",
+              "targetModulation": null,
+              "textMiningSentences": [],
+              "urls": [],
+              "variantRsId": "rs63750264"
+            },
+            {
+              "beta": null,
+              "clinicalSignificances": [
+                "likely pathogenic",
+                "pathogenic"
+              ],
+              "clinicalStage": null,
+              "confidence": "criteria provided, multiple submitters, no conflicts",
+              "datasourceId": "eva",
+              "datatypeId": "genetic_association",
+              "disease": {
+                "id": "MONDO_0011913",
+                "name": "Alzheimer disease 3"
+              },
+              "diseaseFromSource": "Alzheimer disease 3",
+              "diseaseFromSourceMappedId": "MONDO_0011913",
+              "drug": null,
+              "drugFromSource": null,
+              "id": "29bf5f29c4b8be92ab642290091e51d6c1e3a436",
+              "literature": [],
+              "oddsRatio": null,
+              "pValueExponent": null,
+              "pValueMantissa": null,
+              "publicationFirstAuthor": null,
+              "publicationYear": null,
+              "resourceScore": null,
+              "score": 0.95,
+              "studyId": "RCV001199924",
+              "studyOverview": null,
+              "target": {
+                "approvedSymbol": "PSEN1",
+                "id": "ENSG00000080815"
+              },
+              "targetFromSourceId": "ENSG00000080815",
+              "targetModulation": null,
+              "textMiningSentences": [],
+              "urls": [],
+              "variantRsId": "rs63750450"
+            },
+            {
+              "beta": null,
+              "clinicalSignificances": [
+                "pathogenic"
+              ],
+              "clinicalStage": null,
+              "confidence": "criteria provided, multiple submitters, no conflicts",
+              "datasourceId": "eva",
+              "datatypeId": "genetic_association",
+              "disease": {
+                "id": "MONDO_0004975",
+                "name": "Alzheimer disease"
+              },
+              "diseaseFromSource": "Alzheimer disease",
+              "diseaseFromSourceMappedId": "MONDO_0004975",
+              "drug": null,
+              "drugFromSource": null,
+              "id": "9d93dcc6f51db929a3d590f5fba657430c4e3410",
+              "literature": [],
+              "oddsRatio": null,
+              "pValueExponent": null,
+              "pValueMantissa": null,
+              "publicationFirstAuthor": null,
+              "publicationYear": null,
+              "resourceScore": null,
+              "score": 0.95,
+              "studyId": "RCV000034924",
+              "studyOverview": null,
+              "target": {
+                "approvedSymbol": "APP",
+                "id": "ENSG00000142192"
+              },
+              "targetFromSourceId": "ENSG00000142192",
+              "targetModulation": null,
+              "textMiningSentences": [],
+              "urls": [],
+              "variantRsId": "rs281865161"
+            }
+          ]
+        },
+        "id": "MONDO_0004975",
+        "name": "Alzheimer disease"
+      }
+    }
+  },
+  "source": "open_targets"
+}

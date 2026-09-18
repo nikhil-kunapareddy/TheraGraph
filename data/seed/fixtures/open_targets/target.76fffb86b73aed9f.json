@@ -1,0 +1,951 @@
+{
+  "operation": "target",
+  "params": {
+    "ensemblId": "ENSG00000143801"
+  },
+  "recorded_at": "2026-09-18T02:49:47.372483+00:00",
+  "response": {
+    "data": {
+      "target": {
+        "approvedName": "presenilin 2",
+        "approvedSymbol": "PSEN2",
+        "biotype": "protein_coding",
+        "dbXrefs": [
+          {
+            "id": "9509",
+            "source": "HGNC"
+          },
+          {
+            "id": "7Y5X",
+            "source": "PDB"
+          },
+          {
+            "id": "7Y5Z",
+            "source": "PDB"
+          },
+          {
+            "id": "CHEMBL3708",
+            "source": "ChEMBL"
+          },
+          {
+            "id": "DB16159",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB12005",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB05289",
+            "source": "DrugBank"
+          },
+          {
+            "id": "R-HSA-1251985",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-193692",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-205043",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-2122948",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-2644606",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-2894862",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-2979096",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-3928665",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9013507",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9013700",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9017802",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9839383",
+            "source": "Reactome"
+          },
+          {
+            "id": "IPR001493",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR001108",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR006639",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR042524",
+            "source": "InterPro"
+          }
+        ],
+        "drugAndClinicalCandidates": {
+          "count": 7,
+          "rows": [
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL190083",
+                "maximumClinicalStage": "PHASE_3",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "MODULATOR",
+                      "mechanismOfAction": "Gamma-secretase modulator"
+                    }
+                  ]
+                },
+                "name": "TARENFLURBIL"
+              },
+              "id": "049894119751c72226b3799d27140096e1a2076368c16f9db50288c5c76a472e",
+              "maxClinicalStage": "PHASE_3"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL4298153",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Gamma-secretase inhibitor"
+                    }
+                  ]
+                },
+                "name": "NIROGACESTAT HYDROBROMIDE"
+              },
+              "id": "244ecf15f230718c6450831585a39955e827f3ad775a7b4178d225da88368c00",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1090771",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Gamma-secretase inhibitor"
+                    }
+                  ]
+                },
+                "name": "AVAGACESTAT"
+              },
+              "id": "5a0788c0d92482fb4de1c4bb2181da68060518f371fb3e4ac3c365b493781922",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL520733",
+                "maximumClinicalStage": "PHASE_3",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Gamma-secretase inhibitor"
+                    }
+                  ]
+                },
+                "name": "SEMAGACESTAT"
+              },
+              "id": "78f0bb0a0d39f7ef5e9246303e4a6e21890452761bf146355fbb3ee847936704",
+              "maxClinicalStage": "PHASE_3"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1770916",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Gamma-secretase inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Gamma-secretase inhibitor"
+                    }
+                  ]
+                },
+                "name": "NIROGACESTAT"
+              },
+              "id": "92ff280c0e9187238026c8dfe317494004429d0559a32f7011ed1f277d2bb2d6",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL463981",
+                "maximumClinicalStage": "PHASE_1",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Gamma-secretase inhibitor"
+                    }
+                  ]
+                },
+                "name": "BEGACESTAT"
+              },
+              "id": "ac98babbc0e1224b2faa5cc1365211165eb775ca0ca41f27fbb93e06a9691229",
+              "maxClinicalStage": "PHASE_1"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL4297422",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Gamma-secretase inhibitor"
+                    }
+                  ]
+                },
+                "name": "RG-4733"
+              },
+              "id": "e64b7696729c6911b137061c1323b7098e95ab8ce8fbdaaeec97755053e836bf",
+              "maxClinicalStage": "PHASE_2"
+            }
+          ]
+        },
+        "functionDescriptions": [
+          "Catalytic subunit of the gamma-secretase complex, an endoprotease complex that catalyzes the intramembrane cleavage of integral membrane proteins such as Notch receptors and APP (amyloid- beta precursor protein) (PubMed:10497236, PubMed:10652302, PubMed:16752394, PubMed:27293189, PubMed:36272978). Selectively cleaves late endosomal/lysosomal localized substrates and generates the prominent pool of intracellular amyloid beta that contains longer amyloid beta (PubMed:27293189). The holoprotein functions as a calcium- leak channel that allows the passive movement of calcium from endoplasmic reticulum to cytosol and is involved in calcium homeostasis (PubMed:16959576). Is a regulator of mitochondrion-endoplasmic reticulum membrane tethering and modulates calcium ions shuttling between ER and mitochondria (PubMed:21285369). {ECO:0000269|PubMed:10497236, ECO:0000269|PubMed:10652302, ECO:0000269|PubMed:16752394, ECO:0000269|PubMed:16959576, ECO:0000269|PubMed:21285369, ECO:0000269|PubMed:27293189, ECO:0000269|PubMed:36272978}."
+        ],
+        "genomicLocation": {
+          "chromosome": "1",
+          "end": 226927726,
+          "start": 226870184,
+          "strand": 1
+        },
+        "id": "ENSG00000143801",
+        "proteinIds": [
+          {
+            "id": "P49810",
+            "source": "uniprot_swissprot"
+          },
+          {
+            "id": "A0A7I2V2W1",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A7I2V355",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A7I2V3R9",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A7I2V3Y8",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A7I2V4D0",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A7I2V4T4",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A7I2V4Y6",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A7I2V551",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A7I2V5L1",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A7I2V5Q3",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A7I2V5S6",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A7I2V5Y0",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A7I2YQG9",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "B1AP22",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "E5RFW4",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "E5RG63",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "E5RHT1",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "E5RJM5",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "ENSP00000355746",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000355747",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000403737",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000427806",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000427912",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000429036",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000429682",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000486498",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000503116",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000503121",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000503244",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000503618",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000503659",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000503673",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000503680",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000504138",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000504230",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000504294",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000504303",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000504318",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000504343",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000504410",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000504433",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000504483",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000504624",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000504652",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000504674",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000504727",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000504728",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000570124",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000570125",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000570126",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000570127",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000570128",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000570129",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000570130",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000570131",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000570132",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000570133",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000570134",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000570135",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000570136",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000570137",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000610914",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000610915",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000610916",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000610917",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000610918",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000610919",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000610920",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000610921",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000610922",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000610923",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638820",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638821",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638822",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638823",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638824",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638825",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638826",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638827",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638828",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638829",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638830",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638831",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638832",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638833",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638834",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638835",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638836",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638837",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000638838",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "A8K8D4",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "B1AP21",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q96P32",
+            "source": "uniprot_obsolete"
+          }
+        ],
+        "safetyLiabilities": [],
+        "subcellularLocations": [
+          {
+            "location": "Endoplasmic reticulum membrane ; Multi-pass membrane protein",
+            "termSL": "SL-0097"
+          },
+          {
+            "location": "Golgi apparatus membrane ; Multi-pass membrane protein",
+            "termSL": "SL-0134"
+          },
+          {
+            "location": "Late endosome membrane",
+            "termSL": "SL-0151"
+          },
+          {
+            "location": "Lysosome membrane",
+            "termSL": "SL-0157"
+          }
+        ],
+        "synonyms": [
+          {
+            "label": "Presenilin-2",
+            "source": "uniprot"
+          },
+          {
+            "label": "Presenilin-2 NTF subunit",
+            "source": "uniprot"
+          },
+          {
+            "label": "Presenilin-2 CTF subunit",
+            "source": "uniprot"
+          },
+          {
+            "label": "PS-2",
+            "source": "uniprot"
+          },
+          {
+            "label": "PSEN2",
+            "source": "uniprot"
+          },
+          {
+            "label": "AD4",
+            "source": "uniprot"
+          },
+          {
+            "label": "PS2",
+            "source": "uniprot"
+          },
+          {
+            "label": "PSNL2",
+            "source": "uniprot"
+          },
+          {
+            "label": "STM2",
+            "source": "uniprot"
+          },
+          {
+            "label": "AD3L",
+            "source": "HGNC"
+          },
+          {
+            "label": "STM2",
+            "source": "HGNC"
+          },
+          {
+            "label": "PS2",
+            "source": "HGNC"
+          },
+          {
+            "label": "PS-2",
+            "source": "HGNC"
+          },
+          {
+            "label": "E5-1",
+            "source": "HGNC"
+          },
+          {
+            "label": "AD3LP",
+            "source": "uniprot"
+          },
+          {
+            "label": "AD5",
+            "source": "uniprot"
+          },
+          {
+            "label": "E5-1",
+            "source": "uniprot"
+          },
+          {
+            "label": "STM-2",
+            "source": "uniprot"
+          },
+          {
+            "label": "Alzheimer disease 3-like",
+            "source": "HGNC"
+          },
+          {
+            "label": "AD3L",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "AD4",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "CMD1V",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "PS2",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "STM2",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "presenilin-2",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "AD3LP",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "AD5",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "Alzheimer disease 3-like",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "Alzheimer disease 4",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "E5-1",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "PS-2",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "STM-2",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "PSEN2",
+            "source": "NCBI_entrez"
+          }
+        ],
+        "targetClass": [
+          {
+            "id": 783,
+            "label": "Presenilin ER Ca2+ leak channel family",
+            "level": "l4"
+          },
+          {
+            "id": 783,
+            "label": "Ion channel",
+            "level": "l1"
+          },
+          {
+            "id": 783,
+            "label": "Other ion channel",
+            "level": "l2"
+          },
+          {
+            "id": 783,
+            "label": "Miscellaneous ion channel",
+            "level": "l3"
+          }
+        ],
+        "tractability": [
+          {
+            "label": "Approved Drug",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Structure with Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Med-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Druggable Family",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt loc high conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "GO CC high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt loc med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt SigP or TMHMM",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Human Protein Atlas loc",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Literature",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "UniProt Ubiquitination",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Database Ubiquitination",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Half-life Data",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Small Molecule Binder",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "OC",
+            "value": false
+          }
+        ]
+      }
+    }
+  },
+  "source": "open_targets"
+}

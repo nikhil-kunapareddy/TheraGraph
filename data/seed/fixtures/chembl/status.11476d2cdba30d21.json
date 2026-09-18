@@ -1,0 +1,18 @@
+{
+  "operation": "status",
+  "params": {
+    "path": "status.json"
+  },
+  "recorded_at": "2026-09-18T02:49:56.674126+00:00",
+  "response": {
+    "activities": 24527044,
+    "chembl_db_version": "ChEMBL_37",
+    "chembl_release_date": "2026-05-01",
+    "compound_records": 3824604,
+    "disinct_compounds": 2921148,
+    "publications": 101100,
+    "status": "UP",
+    "targets": 18552
+  },
+  "source": "chembl"
+}

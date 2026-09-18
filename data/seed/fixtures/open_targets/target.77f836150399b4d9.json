@@ -1,0 +1,733 @@
+{
+  "operation": "target",
+  "params": {
+    "ensemblId": "ENSG00000164885"
+  },
+  "recorded_at": "2026-09-18T03:31:13.424242+00:00",
+  "response": {
+    "data": {
+      "target": {
+        "approvedName": "cyclin dependent kinase 5",
+        "approvedSymbol": "CDK5",
+        "biotype": "protein_coding",
+        "dbXrefs": [
+          {
+            "id": "1774",
+            "source": "HGNC"
+          },
+          {
+            "id": "1H4L",
+            "source": "PDB"
+          },
+          {
+            "id": "1UNG",
+            "source": "PDB"
+          },
+          {
+            "id": "1UNH",
+            "source": "PDB"
+          },
+          {
+            "id": "1UNL",
+            "source": "PDB"
+          },
+          {
+            "id": "3O0G",
+            "source": "PDB"
+          },
+          {
+            "id": "4AU8",
+            "source": "PDB"
+          },
+          {
+            "id": "7VDP",
+            "source": "PDB"
+          },
+          {
+            "id": "7VDQ",
+            "source": "PDB"
+          },
+          {
+            "id": "7VDR",
+            "source": "PDB"
+          },
+          {
+            "id": "7VDS",
+            "source": "PDB"
+          },
+          {
+            "id": "CHEMBL4036",
+            "source": "ChEMBL"
+          },
+          {
+            "id": "DB07364",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04014",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03496",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB21530",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02950",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02052",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02519",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02116",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02733",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03428",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB15442",
+            "source": "DrugBank"
+          },
+          {
+            "id": "R-HSA-180024",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-399956",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-6804756",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-8862803",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9031628",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9032845",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9768919",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-983231",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9841922",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9931529",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9931530",
+            "source": "Reactome"
+          },
+          {
+            "id": "IPR050108",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR011009",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR000719",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR017441",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR008271",
+            "source": "InterPro"
+          }
+        ],
+        "drugAndClinicalCandidates": {
+          "count": 7,
+          "rows": [
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL4442620",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase inhibitor"
+                    }
+                  ]
+                },
+                "name": "RONICICLIB"
+              },
+              "id": "306a5f3a1e45af78b4e763218e17c91773412d6058aa8d2a39d502f04521a229",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL445813",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase inhibitor"
+                    }
+                  ]
+                },
+                "name": "AT-7519"
+              },
+              "id": "38bbe0c3e07a5172435813fbcf725f7a7434ce8f5e0325af7001b39daa11ac81",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL14762",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase 2 inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase 5 inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase 1 inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase 7 inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase 9 inhibitor"
+                    }
+                  ]
+                },
+                "name": "SELICICLIB"
+              },
+              "id": "45035ac22649a92565d1409b1d3f1d8c588a0b8f9cffd9a6f83412bacfd4a072",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL2103840",
+                "maximumClinicalStage": "PHASE_3",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase 2 inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase 9 inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase 1 inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase 5 inhibitor"
+                    }
+                  ]
+                },
+                "name": "DINACICLIB"
+              },
+              "id": "5b16b6554e411ced6e1f85091d65470809b1b5fb7d4c86ae4ac748967057d90a",
+              "maxClinicalStage": "PHASE_3"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL488436",
+                "maximumClinicalStage": "PHASE_1",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase inhibitor"
+                    }
+                  ]
+                },
+                "name": "AZD-5438"
+              },
+              "id": "604e33f083df4fd2f481a8ecd8159d28a8712653f8fb03917b05c74464b4dfb2",
+              "maxClinicalStage": "PHASE_1"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL3545083",
+                "maximumClinicalStage": "PHASE_1",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase 1 inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase 2 inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase 5 inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase 7 inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase 9 inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase 4 inhibitor"
+                    }
+                  ]
+                },
+                "name": "RGB-286638"
+              },
+              "id": "b0587eb5e0b717ecf8d31120545e4ce6b1979cd3c9179d6b32c34f6328fb3c54",
+              "maxClinicalStage": "PHASE_1"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1230607",
+                "maximumClinicalStage": "PHASE_1",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cyclin-dependent kinase inhibitor"
+                    }
+                  ]
+                },
+                "name": "PHA-793887"
+              },
+              "id": "bc2fc384a2a5859e415c6fcbf444dffca861f637812081c8318644d14659116f",
+              "maxClinicalStage": "PHASE_1"
+            }
+          ]
+        },
+        "functionDescriptions": [
+          "Proline-directed serine/threonine-protein kinase essential for neuronal cell cycle arrest and differentiation and may be involved in apoptotic cell death in neuronal diseases by triggering abortive cell cycle re-entry. Interacts with D1 and D3-type G1 cyclins. Phosphorylates SRC, NOS3, VIM/vimentin, p35/CDK5R1, MEF2A, SIPA1L1, SH3GLB1, PXN, PAK1, MCAM/MUC18, SEPT5, SYN1, DNM1, AMPH, SYNJ1, CDK16, RAC1, RHOA, CDC42, TONEBP/NFAT5, MAPT/TAU, MAP1B, histone H1, p53/TP53, HDAC1, APEX1, PTK2/FAK1, huntingtin/HTT, ATM, MAP2, NEFH and NEFM. Regulates several neuronal development and physiological processes including neuronal survival, migration and differentiation, axonal and neurite growth, synaptogenesis, oligodendrocyte differentiation, synaptic plasticity and neurotransmission, by phosphorylating key proteins. Negatively regulates the CACNA1B/CAV2.2 -mediated Ca(2+) release probability at hippocampal neuronal soma and synaptic terminals (By similarity). Activated by interaction with CDK5R1 (p35) and CDK5R2 (p39), especially in postmitotic neurons, and promotes CDK5R1 (p35) expression in an autostimulation loop. Phosphorylates many downstream substrates such as Rho and Ras family small GTPases (e.g. PAK1, RAC1, RHOA, CDC42) or microtubule-binding proteins (e.g. MAPT/TAU, MAP2, MAP1B), and modulates actin dynamics to regulate neurite growth and/or spine morphogenesis. Also phosphorylates exocytosis associated proteins such as MCAM/MUC18, SEPT5, SYN1, and CDK16/PCTAIRE1 as well as endocytosis associated proteins such as DNM1, AMPH and SYNJ1 at synaptic terminals. In the mature central nervous system (CNS), regulates neurotransmitter movements by phosphorylating substrates associated with neurotransmitter release and synapse plasticity; synaptic vesicle exocytosis, vesicles fusion with the presynaptic membrane, and endocytosis. Promotes cell survival by activating anti- apoptotic proteins BCL2 and STAT3, and negatively regulating of JNK3/MAPK10 activity. Phosphorylation of p53/TP53 in response to genotoxic and oxidative stresses enhances its stabilization by preventing ubiquitin ligase-mediated proteasomal degradation, and induces transactivation of p53/TP53 target genes, thus regulating apoptosis. Phosphorylation of p35/CDK5R1 enhances its stabilization by preventing calpain-mediated proteolysis producing p25/CDK5R1 and avoiding ubiquitin ligase-mediated proteasomal degradation. During aberrant cell-cycle activity and DNA damage, p25/CDK5 activity elicits cell-cycle activity and double-strand DNA breaks that precedes neuronal death by deregulating HDAC1. DNA damage triggered phosphorylation of huntingtin/HTT in nuclei of neurons protects neurons against polyglutamine expansion as well as DNA damage mediated toxicity. Phosphorylation of PXN reduces its interaction with PTK2/FAK1 in matrix-cell focal adhesions (MCFA) during oligodendrocytes (OLs) differentiation. Negative regulator of Wnt/beta-catenin signaling pathway. Activator of the GAIT (IFN-gamma-activated inhibitor of translation) pathway, which suppresses expression of a post- transcriptional regulon of proinflammatory genes in myeloid cells; phosphorylates the linker domain of glutamyl-prolyl tRNA synthetase (EPRS) in a IFN-gamma-dependent manner, the initial event in assembly of the GAIT complex. Phosphorylation of SH3GLB1 is required for autophagy induction in starved neurons. Phosphorylation of TONEBP/NFAT5 in response to osmotic stress mediates its rapid nuclear localization. MEF2 is inactivated by phosphorylation in nucleus in response to neurotoxin, thus leading to neuronal apoptosis. APEX1 AP- endodeoxyribonuclease is repressed by phosphorylation, resulting in accumulation of DNA damage and contributing to neuronal death. NOS3 phosphorylation down regulates NOS3-derived nitrite (NO) levels. SRC phosphorylation mediates its ubiquitin-dependent degradation and thus leads to cytoskeletal reorganization. May regulate endothelial cell migration and angiogenesis via the modulation of lamellipodia formation. Involved in dendritic spine morphogenesis by mediating the EFNA1-EPHA4 signaling. The complex p35/CDK5 participates in the regulation of the circadian clock by modulating the function of CLOCK protein: phosphorylates CLOCK at 'Thr-451' and 'Thr-461' and regulates the transcriptional activity of the CLOCK-BMAL1 heterodimer in association with altered stability and subcellular distribution. {ECO:0000250|UniProtKB:Q03114, ECO:0000269|PubMed:12393264, ECO:0000269|PubMed:12691662, ECO:0000269|PubMed:15992363, ECO:0000269|PubMed:17009320, ECO:0000269|PubMed:17121855, ECO:0000269|PubMed:17591690, ECO:0000269|PubMed:17611284, ECO:0000269|PubMed:17671990, ECO:0000269|PubMed:18042622, ECO:0000269|PubMed:19081376, ECO:0000269|PubMed:19693690, ECO:0000269|PubMed:20061803, ECO:0000269|PubMed:20213743, ECO:0000269|PubMed:20826806, ECO:0000269|PubMed:21209322, ECO:0000269|PubMed:21220307, ECO:0000269|PubMed:21442427, ECO:0000269|PubMed:21465480, ECO:0000269|PubMed:21499257, ECO:0000269|PubMed:24235147, ECO:0000269|PubMed:9822744}."
+        ],
+        "genomicLocation": {
+          "chromosome": "7",
+          "end": 151057947,
+          "start": 151051517,
+          "strand": -1
+        },
+        "id": "ENSG00000164885",
+        "proteinIds": [
+          {
+            "id": "Q00535",
+            "source": "uniprot_swissprot"
+          },
+          {
+            "id": "A0A090N7W4",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A0S2Z355",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "ENSP00000297518",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000419782",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000561122",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000561123",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000561124",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000590933",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000590934",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000590935",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000590936",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000637143",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "A1XKG3",
+            "source": "uniprot_obsolete"
+          }
+        ],
+        "safetyLiabilities": [],
+        "subcellularLocations": [
+          {
+            "location": "Cytoplasm",
+            "termSL": "SL-0086"
+          },
+          {
+            "location": "Nucleus",
+            "termSL": "SL-0191"
+          },
+          {
+            "location": "Cell membrane ; Peripheral membrane protein",
+            "termSL": "SL-0039"
+          },
+          {
+            "location": "Perikaryon",
+            "termSL": "SL-0197"
+          },
+          {
+            "location": "Cell projection, lamellipodium",
+            "termSL": "SL-0280"
+          },
+          {
+            "location": "Cell projection, growth cone",
+            "termSL": "SL-0280"
+          },
+          {
+            "location": "Postsynaptic density",
+            "termSL": "SL-0297"
+          },
+          {
+            "location": "Synapse",
+            "termSL": "SL-0258"
+          },
+          {
+            "location": "Nucleus",
+            "termSL": "SL-0191"
+          },
+          {
+            "location": "Nucleoplasm",
+            "termSL": "SL-0190"
+          },
+          {
+            "location": "Plasma membrane",
+            "termSL": "SL-0039"
+          },
+          {
+            "location": "Cell Junctions",
+            "termSL": "SL-0038"
+          }
+        ],
+        "synonyms": [
+          {
+            "label": "Cyclin-dependent kinase 5",
+            "source": "uniprot"
+          },
+          {
+            "label": "TPKII catalytic subunit",
+            "source": "uniprot"
+          },
+          {
+            "label": "CDK5",
+            "source": "uniprot"
+          },
+          {
+            "label": "CDKN5",
+            "source": "uniprot"
+          },
+          {
+            "label": "PSSALRE",
+            "source": "uniprot"
+          },
+          {
+            "label": "PSSALRE",
+            "source": "HGNC"
+          },
+          {
+            "label": "Cell division protein kinase 5",
+            "source": "uniprot"
+          },
+          {
+            "label": "Cyclin-dependent-like kinase 5",
+            "source": "uniprot"
+          },
+          {
+            "label": "Serine/threonine-protein kinase PSSALRE",
+            "source": "uniprot"
+          },
+          {
+            "label": "Tau protein kinase II catalytic subunit",
+            "source": "uniprot"
+          },
+          {
+            "label": "LIS7",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "PSSALRE",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "cyclin-dependent kinase 5",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "TPKII catalytic subunit",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "cell division protein kinase 5",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "cyclin-dependent-like kinase 5",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "epididymis secretory sperm binding protein",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "protein kinase CDK5 splicing",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "serine/threonine-protein kinase PSSALRE",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "tau protein kinase II catalytic subunit",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "CDK5",
+            "source": "NCBI_entrez"
+          }
+        ],
+        "targetClass": [
+          {
+            "id": 325,
+            "label": "Kinase",
+            "level": "l2"
+          },
+          {
+            "id": 325,
+            "label": "CMGC protein kinase group",
+            "level": "l4"
+          },
+          {
+            "id": 325,
+            "label": "Protein Kinase",
+            "level": "l3"
+          },
+          {
+            "id": 325,
+            "label": "CMGC protein kinase CDK5 subfamily",
+            "level": "l6"
+          },
+          {
+            "id": 325,
+            "label": "CMGC protein kinase CDK family",
+            "level": "l5"
+          },
+          {
+            "id": 325,
+            "label": "Enzyme",
+            "level": "l1"
+          }
+        ],
+        "tractability": [
+          {
+            "label": "Approved Drug",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Structure with Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Med-Quality Pocket",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Druggable Family",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt loc high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt loc med conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt SigP or TMHMM",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "GO CC med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Human Protein Atlas loc",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Literature",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "UniProt Ubiquitination",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Database Ubiquitination",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Half-life Data",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Small Molecule Binder",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "OC",
+            "value": false
+          }
+        ]
+      }
+    }
+  },
+  "source": "open_targets"
+}

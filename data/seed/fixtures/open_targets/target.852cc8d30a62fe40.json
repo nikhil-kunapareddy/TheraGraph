@@ -1,0 +1,1574 @@
+{
+  "operation": "target",
+  "params": {
+    "ensemblId": "ENSG00000273079"
+  },
+  "recorded_at": "2026-09-18T03:31:13.988829+00:00",
+  "response": {
+    "data": {
+      "target": {
+        "approvedName": "glutamate ionotropic receptor NMDA type subunit 2B",
+        "approvedSymbol": "GRIN2B",
+        "biotype": "protein_coding",
+        "dbXrefs": [
+          {
+            "id": "4586",
+            "source": "HGNC"
+          },
+          {
+            "id": "5EWJ",
+            "source": "PDB"
+          },
+          {
+            "id": "5EWL",
+            "source": "PDB"
+          },
+          {
+            "id": "5EWM",
+            "source": "PDB"
+          },
+          {
+            "id": "7EU8",
+            "source": "PDB"
+          },
+          {
+            "id": "7KL0",
+            "source": "PDB"
+          },
+          {
+            "id": "7KL1",
+            "source": "PDB"
+          },
+          {
+            "id": "7KL2",
+            "source": "PDB"
+          },
+          {
+            "id": "7UIS",
+            "source": "PDB"
+          },
+          {
+            "id": "7UJP",
+            "source": "PDB"
+          },
+          {
+            "id": "7UJQ",
+            "source": "PDB"
+          },
+          {
+            "id": "7UJR",
+            "source": "PDB"
+          },
+          {
+            "id": "7UJS",
+            "source": "PDB"
+          },
+          {
+            "id": "7UJT",
+            "source": "PDB"
+          },
+          {
+            "id": "8VUU",
+            "source": "PDB"
+          },
+          {
+            "id": "8VUV",
+            "source": "PDB"
+          },
+          {
+            "id": "9D37",
+            "source": "PDB"
+          },
+          {
+            "id": "9D38",
+            "source": "PDB"
+          },
+          {
+            "id": "9D39",
+            "source": "PDB"
+          },
+          {
+            "id": "9D3A",
+            "source": "PDB"
+          },
+          {
+            "id": "9D3B",
+            "source": "PDB"
+          },
+          {
+            "id": "9D3C",
+            "source": "PDB"
+          },
+          {
+            "id": "9IYP",
+            "source": "PDB"
+          },
+          {
+            "id": "9IYQ",
+            "source": "PDB"
+          },
+          {
+            "id": "9OOQ",
+            "source": "PDB"
+          },
+          {
+            "id": "9OOR",
+            "source": "PDB"
+          },
+          {
+            "id": "9OOS",
+            "source": "PDB"
+          },
+          {
+            "id": "9OOT",
+            "source": "PDB"
+          },
+          {
+            "id": "CHEMBL1904",
+            "source": "ChEMBL"
+          },
+          {
+            "id": "DB00659",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB06151",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01238",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00128",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00289",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02655",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00647",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB20240",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00843",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB12869",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00228",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB11823",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB05956",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00949",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03759",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB13146",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB06741",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00142",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00874",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00502",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB08954",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB06738",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB11937",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB09409",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB09481",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04175",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01043",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00454",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00333",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04896",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB21460",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00312",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03575",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01174",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01708",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01069",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB12260",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB12063",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00418",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01956",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01520",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00193",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB18795",
+            "source": "DrugBank"
+          },
+          {
+            "id": "R-HSA-3928662",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-438066",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-442982",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-5673001",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-6794361",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-8849932",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9022699",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9032500",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9609736",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9617324",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9620244",
+            "source": "Reactome"
+          },
+          {
+            "id": "IPR001828",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR019594",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR001508",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR015683",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR001320",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR018884",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR028082",
+            "source": "InterPro"
+          },
+          {
+            "id": "SignalP-noTM",
+            "source": "signalP"
+          }
+        ],
+        "drugAndClinicalCandidates": {
+          "count": 31,
+          "rows": [
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL660",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Matrix protein 2 inhibitor"
+                    },
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    }
+                  ]
+                },
+                "name": "AMANTADINE"
+              },
+              "id": "040742d02ed64c294187ada1378c3f611dd3ff2f6a2df7e88da4a47086ae7db4",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Protein",
+                "id": "CHEMBL3989872",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "PARTIAL AGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor partial agonist"
+                    }
+                  ]
+                },
+                "name": "APIMOSTINEL"
+              },
+              "id": "05bfb61e1780d8b3c8375fb576e0bcd0f89422bc545a31accdbfa425228316f4",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1201293",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    },
+                    {
+                      "actionType": "POSITIVE MODULATOR",
+                      "mechanismOfAction": "GABA-A receptor; anion channel positive modulator"
+                    }
+                  ]
+                },
+                "name": "ACAMPROSATE"
+              },
+              "id": "171abf5abaec587305047210bd72f69b628815b9f2e8afe781b81463c4f1c1fa",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL2068724",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    },
+                    {
+                      "actionType": "POSITIVE MODULATOR",
+                      "mechanismOfAction": "GABA-A receptor; anion channel positive modulator"
+                    }
+                  ]
+                },
+                "name": "ACAMPROSATE CALCIUM"
+              },
+              "id": "2b9f1265b6900c552a755a64f765b8505a7c38181120a919f2778c41fc9952e7",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL41306",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "BLOCKER",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor blocker"
+                    }
+                  ]
+                },
+                "name": "CNS-5161"
+              },
+              "id": "3f2d66711191ce6fee082bcf59c8145ad61a3040cd87b08afbef74e36409623e",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL395091",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "NEGATIVE ALLOSTERIC MODULATOR",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor negative allosteric modulator"
+                    },
+                    {
+                      "actionType": "NEGATIVE ALLOSTERIC MODULATOR",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor negative allosteric modulator"
+                    }
+                  ]
+                },
+                "name": "ESKETAMINE"
+              },
+              "id": "409be9566890a64a82ec79f33e7c84675155f8dba87cfbc3dcdae41915542742",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Protein",
+                "id": "CHEMBL3544917",
+                "maximumClinicalStage": "PHASE_3",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "PARTIAL AGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor partial agonist"
+                    }
+                  ]
+                },
+                "name": "RAPASTINEL"
+              },
+              "id": "5a007e826305a2c0fa03002933e50f7563c0a813cdd87616c6d01cc821335473",
+              "maxClinicalStage": "PHASE_3"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1207366",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    }
+                  ]
+                },
+                "name": "GW468816"
+              },
+              "id": "5aa40ccc512c2ea86fed82ee25c5ab58b191760f542aa269cabad7c39b433a40",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL2107771",
+                "maximumClinicalStage": "PHASE_3",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    },
+                    {
+                      "actionType": "BLOCKER",
+                      "mechanismOfAction": "Sodium channel alpha subunit blocker"
+                    },
+                    {
+                      "actionType": "BLOCKER",
+                      "mechanismOfAction": "Voltage-gated N-type calcium channel alpha-1B subunit blocker"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Monoamine oxidase B inhibitor"
+                    }
+                  ]
+                },
+                "name": "RALFINAMIDE"
+              },
+              "id": "5ad9764a31cc5e53f5be33fc251b1154df50d02fde03c51025d298ab5f5aa8f5",
+              "maxClinicalStage": "PHASE_3"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL2364609",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "NEGATIVE ALLOSTERIC MODULATOR",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor negative allosteric modulator"
+                    }
+                  ]
+                },
+                "name": "ESKETAMINE HYDROCHLORIDE"
+              },
+              "id": "694ab7d91cfcad78288def0afe37efb6fbc05e937067dfb97216f2bd5bc3f375",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1201023",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Histamine H1 receptor antagonist"
+                    },
+                    {
+                      "actionType": "BLOCKER",
+                      "mechanismOfAction": "Sodium channel alpha subunit blocker"
+                    },
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Norepinephrine transporter inhibitor"
+                    }
+                  ]
+                },
+                "name": "ORPHENADRINE HYDROCHLORIDE"
+              },
+              "id": "72dec1f5232ea2ba71106bd8fe6a523ff446e42f9ba8db60445a801465233e1c",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL182066",
+                "maximumClinicalStage": "PHASE_3",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate NMDA receptor; GRIN1/GRIN2B antagonist"
+                    }
+                  ]
+                },
+                "name": "RADIPRODIL"
+              },
+              "id": "752d8e120dbd3cfc7e6777f5e8819c69d5e7c857df1acaf9a7530068f6701bf9",
+              "maxClinicalStage": "PHASE_3"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL2106798",
+                "maximumClinicalStage": "PHASE_3",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Neuronal acetylcholine receptor; alpha9/alpha10 antagonist"
+                    },
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    }
+                  ]
+                },
+                "name": "NERAMEXANE MESYLATE"
+              },
+              "id": "89ad6c848ad2953d14b6f0e1c113fdeb74af5ac62b9a139bcc835f2c01e2f03d",
+              "maxClinicalStage": "PHASE_3"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1699",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "NEGATIVE ALLOSTERIC MODULATOR",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor negative allosteric modulator"
+                    }
+                  ]
+                },
+                "name": "MEMANTINE HYDROCHLORIDE"
+              },
+              "id": "9560af35b8b93c409ff6bb1a84cbb4f8ee06d5ab57655a15106870eea9291e4a",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL2110954",
+                "maximumClinicalStage": "PHASE_3",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Neuronal acetylcholine receptor; alpha9/alpha10 antagonist"
+                    },
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    }
+                  ]
+                },
+                "name": "NERAMEXANE"
+              },
+              "id": "97e77643223a468c5808e2b618f2309620290b63a23f3f5cabbfff958b867bdb",
+              "maxClinicalStage": "PHASE_3"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL2110814",
+                "maximumClinicalStage": "PHASE_1",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    }
+                  ]
+                },
+                "name": "DELUCEMINE"
+              },
+              "id": "aad1abc54e59576eedfe68436bcd2bdf957f4a97d4ccf942b38ea3a9ec057d8b",
+              "maxClinicalStage": "PHASE_1"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL807",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "NEGATIVE ALLOSTERIC MODULATOR",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor negative allosteric modulator"
+                    }
+                  ]
+                },
+                "name": "MEMANTINE"
+              },
+              "id": "abb5fe6d8c9b590be459759e056a2d9bd30016771c14a3a50dd815792b973691",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL3545351",
+                "maximumClinicalStage": "PHASE_3",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    }
+                  ]
+                },
+                "name": "AV-101"
+              },
+              "id": "b1456bf6f624872382c64c901eed1951eac923329ce6d10dd2090faed97ce76f",
+              "maxClinicalStage": "PHASE_3"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL2068839",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate NMDA receptor; GRIN1/GRIN2B antagonist"
+                    }
+                  ]
+                },
+                "name": "RISLENEMDAZ"
+              },
+              "id": "b378f461a016f2a297e451a1c1190212ca7cd1f241ac675f53643d3562a549bf",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1255840",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "POSITIVE ALLOSTERIC MODULATOR",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor positive allosteric modulator"
+                    }
+                  ]
+                },
+                "name": "NEBOGLAMINE"
+              },
+              "id": "b6802031783a38ac7e69d2ff600b69260129298da29a6a4bb6674cb8924149af",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL17350",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate NMDA receptor; GRIN1/GRIN2B antagonist"
+                    }
+                  ]
+                },
+                "name": "TRAXOPRODIL"
+              },
+              "id": "b6ae2db8ff1a59f126a862d6bfe51977829829b0876aa0177ad6b35814f257ac",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL3545349",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate NMDA receptor; GRIN1/GRIN2B antagonist"
+                    }
+                  ]
+                },
+                "name": "EVT-101"
+              },
+              "id": "bbee89df3ef0698b95b6674956d98176e0e48f26e562a0874e37d7e7f415c501",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1714",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "NEGATIVE ALLOSTERIC MODULATOR",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor negative allosteric modulator"
+                    }
+                  ]
+                },
+                "name": "KETAMINE HYDROCHLORIDE"
+              },
+              "id": "bc89ca04812005e5a4a840cad3035602f261fbd815788e13e8b68f31b8f3f7f5",
+              "maxClinicalStage": "PHASE_3"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1094",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    }
+                  ]
+                },
+                "name": "FELBAMATE"
+              },
+              "id": "c2d0e2a62b0692a197717e8cc61b44f64182e062f418b28474f80f6965269769",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL742",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "NEGATIVE ALLOSTERIC MODULATOR",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor negative allosteric modulator"
+                    }
+                  ]
+                },
+                "name": "KETAMINE"
+              },
+              "id": "c33c49209f0a8d4c8a9a9c7a05a25ac7fe4cdbdad9e693544a156c786ec9da3e",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Unknown",
+                "id": "CHEMBL3707400",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Monoamine oxidase A inhibitor"
+                    }
+                  ]
+                },
+                "name": "INDANTADOL"
+              },
+              "id": "d415ff3a7fbce522da53296e5f472a46c064a0db7118cfd0473d7ba9c1c2b725",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1569",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Matrix protein 2 inhibitor"
+                    },
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    }
+                  ]
+                },
+                "name": "AMANTADINE HYDROCHLORIDE"
+              },
+              "id": "e1c414aff3b08ac067c919c797a6ad26d00ddbd13f69e2a405b0053be2d15865",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL900",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    },
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Histamine H1 receptor antagonist"
+                    },
+                    {
+                      "actionType": "BLOCKER",
+                      "mechanismOfAction": "Sodium channel alpha subunit blocker"
+                    },
+                    {
+                      "actionType": "BLOCKER",
+                      "mechanismOfAction": "Sodium channel alpha subunit blocker"
+                    },
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    },
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Histamine H1 receptor antagonist"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Norepinephrine transporter inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Norepinephrine transporter inhibitor"
+                    }
+                  ]
+                },
+                "name": "ORPHENADRINE"
+              },
+              "id": "e3798220ba5f6e0a0e930541a3a9141753e5dbf06c3bd0e3ff006cca59f35a01",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1200395",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    },
+                    {
+                      "actionType": "BLOCKER",
+                      "mechanismOfAction": "Sodium channel alpha subunit blocker"
+                    },
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Histamine H1 receptor antagonist"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Norepinephrine transporter inhibitor"
+                    }
+                  ]
+                },
+                "name": "ORPHENADRINE CITRATE"
+              },
+              "id": "e451ba10ee9948d2e271f800f19b7d2a2f25869ee6fff353025fc62e3fb45ed4",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL467084",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "BLOCKER",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor blocker"
+                    }
+                  ]
+                },
+                "name": "LANICEMINE"
+              },
+              "id": "e819612dfdb54422bab877bf1047eaa3c7c4ae787c67dc109b08e9d22b637c3b",
+              "maxClinicalStage": "PHASE_2"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL452461",
+                "maximumClinicalStage": "PHASE_2",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "ANTAGONIST",
+                      "mechanismOfAction": "Glutamate [NMDA] receptor antagonist"
+                    }
+                  ]
+                },
+                "name": "PERZINFOTEL"
+              },
+              "id": "f0a17fdca7dee5c22942314b7eeb55931bd564f6841ac154269267b63dafda8c",
+              "maxClinicalStage": "PHASE_2"
+            }
+          ]
+        },
+        "functionDescriptions": [
+          "Component of N-methyl-D-aspartate (NMDA) receptors (NMDARs) that function as heterotetrameric, ligand-gated cation channels with high calcium permeability and voltage-dependent block by Mg(2+) (PubMed:24272827, PubMed:24863970, PubMed:26875626, PubMed:26919761, PubMed:27839871, PubMed:28095420, PubMed:28126851, PubMed:38538865, PubMed:8768735). Participates in synaptic plasticity for learning and memory formation by contributing to the long-term depression (LTD) of hippocampus membrane currents (By similarity). Channel activation requires binding of the neurotransmitter L-glutamate to the GluN2 subunit, glycine or D-serine binding to the GluN1 subunit, plus membrane depolarization to eliminate channel inhibition by Mg(2+) (PubMed:24272827, PubMed:24863970, PubMed:26875626, PubMed:26919761, PubMed:27839871, PubMed:28095420, PubMed:28126851, PubMed:38538865, PubMed:8768735). NMDARs mediate simultaneously the potassium efflux and the influx of calcium and sodium (By similarity). Each GluN2 subunit confers differential attributes to channel properties, including activation, deactivation and desensitization kinetics, pH sensitivity, Ca2(+) permeability, and binding to allosteric modulators (PubMed:26875626, PubMed:28095420, PubMed:28126851, PubMed:38538865, PubMed:8768735). In concert with DAPK1 at extrasynaptic sites, acts as a central mediator for stroke damage. Its phosphorylation at Ser-1303 by DAPK1 enhances synaptic NMDA receptor channel activity inducing injurious Ca2+ influx through them, resulting in an irreversible neuronal death (By similarity). {ECO:0000250|UniProtKB:P35438, ECO:0000250|UniProtKB:Q01097, ECO:0000269|PubMed:24272827, ECO:0000269|PubMed:24863970, ECO:0000269|PubMed:26875626, ECO:0000269|PubMed:26919761, ECO:0000269|PubMed:27839871, ECO:0000269|PubMed:28095420, ECO:0000269|PubMed:28126851, ECO:0000269|PubMed:38538865, ECO:0000269|PubMed:8768735}."
+        ],
+        "genomicLocation": {
+          "chromosome": "12",
+          "end": 13982002,
+          "start": 13437942,
+          "strand": -1
+        },
+        "id": "ENSG00000273079",
+        "proteinIds": [
+          {
+            "id": "Q13224",
+            "source": "uniprot_swissprot"
+          },
+          {
+            "id": "A0A0D9SFA0",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A0D9SFK0",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A1B0GU78",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0A8D9PHB2",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "A0AAQ5BH89",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "ENSP00000477455",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000486411",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000486677",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000489997",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000519339",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "Q12919",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q13220",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q13225",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q14CU4",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q9UM56",
+            "source": "uniprot_obsolete"
+          }
+        ],
+        "safetyLiabilities": [
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "convulsions",
+            "eventId": "EFO_0009853",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "dizziness",
+            "eventId": "EFO_0009847",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "pain",
+            "eventId": "HP_0012531",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "ClinPGx",
+            "event": "sleepiness",
+            "eventId": "",
+            "literature": null
+          },
+          {
+            "datasource": "ClinPGx",
+            "event": "adverse reactions",
+            "eventId": "",
+            "literature": null
+          },
+          {
+            "datasource": "ClinPGx",
+            "event": "neurological adverse reactions and sleepiness",
+            "eventId": "",
+            "literature": null
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "stereotypy",
+            "eventId": "HP_0000733",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "increased locomotor activity",
+            "eventId": "GO_0040017",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "increased heart rate",
+            "eventId": "HP_0001649",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "neurodegeneration",
+            "eventId": "HP_0002180",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "decreased convulsions",
+            "eventId": "EFO_0009853",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "decreased pain",
+            "eventId": "GO_1904057",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "psychosis",
+            "eventId": "MONDO_0005485",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "impaired social interactions",
+            "eventId": "HP_0000735",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "increased blood pressure",
+            "eventId": "HP_0032263",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "increased then decreased heart rate",
+            "eventId": "HP_0031860",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "neurotoxicity",
+            "eventId": "MONDO_0005527",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "ataxia",
+            "eventId": "MONDO_0000437",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "drug abuse/dependence",
+            "eventId": "MONDO_0005303",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "Lynch et al. (2017)",
+            "event": "decreased memory",
+            "eventId": "EFO_0001072",
+            "literature": "28216264"
+          },
+          {
+            "datasource": "ClinPGx",
+            "event": "neurological adverse reactions",
+            "eventId": "",
+            "literature": null
+          }
+        ],
+        "subcellularLocations": [
+          {
+            "location": "Cell membrane ; Multi-pass membrane protein",
+            "termSL": "SL-0039"
+          },
+          {
+            "location": "Postsynaptic cell membrane ; Multi-pass membrane protein",
+            "termSL": "SL-0219"
+          },
+          {
+            "location": "Cell projection, dendrite",
+            "termSL": "SL-0280"
+          },
+          {
+            "location": "Late endosome",
+            "termSL": "SL-0152"
+          },
+          {
+            "location": "Lysosome",
+            "termSL": "SL-0158"
+          },
+          {
+            "location": "Cytoplasm, cytoskeleton",
+            "termSL": "SL-0086"
+          },
+          {
+            "location": "Plasma membrane",
+            "termSL": "SL-0039"
+          },
+          {
+            "location": "Basal body",
+            "termSL": null
+          },
+          {
+            "location": "Nucleoplasm",
+            "termSL": "SL-0190"
+          },
+          {
+            "location": "Primary cilium",
+            "termSL": null
+          },
+          {
+            "location": "Primary cilium tip",
+            "termSL": null
+          },
+          {
+            "location": "Primary cilium transition zone",
+            "termSL": null
+          }
+        ],
+        "synonyms": [
+          {
+            "label": "Glutamate receptor ionotropic, NMDA 2B",
+            "source": "uniprot"
+          },
+          {
+            "label": "GluN2B",
+            "source": "uniprot"
+          },
+          {
+            "label": "NMDAR2B",
+            "source": "uniprot"
+          },
+          {
+            "label": "NR2B",
+            "source": "uniprot"
+          },
+          {
+            "label": "NR3",
+            "source": "uniprot"
+          },
+          {
+            "label": "hNR3",
+            "source": "uniprot"
+          },
+          {
+            "label": "GRIN2B",
+            "source": "uniprot"
+          },
+          {
+            "label": "GluN2B",
+            "source": "HGNC"
+          },
+          {
+            "label": "NR2B",
+            "source": "HGNC"
+          },
+          {
+            "label": "Glutamate [NMDA] receptor subunit epsilon-2",
+            "source": "uniprot"
+          },
+          {
+            "label": "N-methyl D-aspartate receptor subtype 2B",
+            "source": "uniprot"
+          },
+          {
+            "label": "N-methyl-D-aspartate receptor subunit 3",
+            "source": "uniprot"
+          },
+          {
+            "label": "DEE27",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "EIEE27",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "GluN2B",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "MRD6",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "NMDAR2B",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "NR2B",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "NR3",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "hNR3",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "glutamate receptor ionotropic, NMDA 2B",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "GluN2B(alt_5'UTR)",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "N-methyl D-aspartate receptor subtype 2B",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "N-methyl-D-aspartate receptor subunit 3",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "glutamate [NMDA] receptor subunit epsilon-2",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "glutamate receptor subunit epsilon-2",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "glutamate receptor, ionotropic, N-methyl D-aspartate 2B",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "GRIN2B",
+            "source": "NCBI_entrez"
+          }
+        ],
+        "targetClass": [
+          {
+            "id": 1150,
+            "label": "Ion channel",
+            "level": "l1"
+          },
+          {
+            "id": 1150,
+            "label": "Ionotropic glutamate receptor",
+            "level": "l3"
+          },
+          {
+            "id": 1150,
+            "label": "Ligand-gated ion channel",
+            "level": "l2"
+          },
+          {
+            "id": 1150,
+            "label": "NMDA receptor",
+            "level": "l4"
+          }
+        ],
+        "tractability": [
+          {
+            "label": "Approved Drug",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Structure with Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Med-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Druggable Family",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt loc high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt loc med conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt SigP or TMHMM",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Human Protein Atlas loc",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Literature",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "UniProt Ubiquitination",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Database Ubiquitination",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Half-life Data",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Small Molecule Binder",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "OC",
+            "value": true
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "OC",
+            "value": false
+          }
+        ]
+      }
+    }
+  },
+  "source": "open_targets"
+}

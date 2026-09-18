@@ -1,0 +1,1276 @@
+{
+  "operation": "target",
+  "params": {
+    "ensemblId": "ENSG00000114200"
+  },
+  "recorded_at": "2026-09-18T03:31:14.183570+00:00",
+  "response": {
+    "data": {
+      "target": {
+        "approvedName": "butyrylcholinesterase",
+        "approvedSymbol": "BCHE",
+        "biotype": "protein_coding",
+        "dbXrefs": [
+          {
+            "id": "983",
+            "source": "HGNC"
+          },
+          {
+            "id": "1P0I",
+            "source": "PDB"
+          },
+          {
+            "id": "1P0M",
+            "source": "PDB"
+          },
+          {
+            "id": "1P0P",
+            "source": "PDB"
+          },
+          {
+            "id": "1P0Q",
+            "source": "PDB"
+          },
+          {
+            "id": "1XLU",
+            "source": "PDB"
+          },
+          {
+            "id": "1XLV",
+            "source": "PDB"
+          },
+          {
+            "id": "1XLW",
+            "source": "PDB"
+          },
+          {
+            "id": "2J4C",
+            "source": "PDB"
+          },
+          {
+            "id": "2PM8",
+            "source": "PDB"
+          },
+          {
+            "id": "2WID",
+            "source": "PDB"
+          },
+          {
+            "id": "2WIF",
+            "source": "PDB"
+          },
+          {
+            "id": "2WIG",
+            "source": "PDB"
+          },
+          {
+            "id": "2WIJ",
+            "source": "PDB"
+          },
+          {
+            "id": "2WIK",
+            "source": "PDB"
+          },
+          {
+            "id": "2WIL",
+            "source": "PDB"
+          },
+          {
+            "id": "2WSL",
+            "source": "PDB"
+          },
+          {
+            "id": "2XMB",
+            "source": "PDB"
+          },
+          {
+            "id": "2XMC",
+            "source": "PDB"
+          },
+          {
+            "id": "2XMD",
+            "source": "PDB"
+          },
+          {
+            "id": "2XMG",
+            "source": "PDB"
+          },
+          {
+            "id": "2XQF",
+            "source": "PDB"
+          },
+          {
+            "id": "2XQG",
+            "source": "PDB"
+          },
+          {
+            "id": "2XQI",
+            "source": "PDB"
+          },
+          {
+            "id": "2XQJ",
+            "source": "PDB"
+          },
+          {
+            "id": "2XQK",
+            "source": "PDB"
+          },
+          {
+            "id": "2Y1K",
+            "source": "PDB"
+          },
+          {
+            "id": "3DJY",
+            "source": "PDB"
+          },
+          {
+            "id": "3DKK",
+            "source": "PDB"
+          },
+          {
+            "id": "3O9M",
+            "source": "PDB"
+          },
+          {
+            "id": "4AQD",
+            "source": "PDB"
+          },
+          {
+            "id": "4AXB",
+            "source": "PDB"
+          },
+          {
+            "id": "4B0O",
+            "source": "PDB"
+          },
+          {
+            "id": "4B0P",
+            "source": "PDB"
+          },
+          {
+            "id": "4BBZ",
+            "source": "PDB"
+          },
+          {
+            "id": "4BDS",
+            "source": "PDB"
+          },
+          {
+            "id": "4TPK",
+            "source": "PDB"
+          },
+          {
+            "id": "4XII",
+            "source": "PDB"
+          },
+          {
+            "id": "5DYT",
+            "source": "PDB"
+          },
+          {
+            "id": "5DYW",
+            "source": "PDB"
+          },
+          {
+            "id": "5DYY",
+            "source": "PDB"
+          },
+          {
+            "id": "5K5E",
+            "source": "PDB"
+          },
+          {
+            "id": "5LKR",
+            "source": "PDB"
+          },
+          {
+            "id": "5NN0",
+            "source": "PDB"
+          },
+          {
+            "id": "6EMI",
+            "source": "PDB"
+          },
+          {
+            "id": "6EP4",
+            "source": "PDB"
+          },
+          {
+            "id": "6EQP",
+            "source": "PDB"
+          },
+          {
+            "id": "6EQQ",
+            "source": "PDB"
+          },
+          {
+            "id": "6ESJ",
+            "source": "PDB"
+          },
+          {
+            "id": "6ESY",
+            "source": "PDB"
+          },
+          {
+            "id": "6EYF",
+            "source": "PDB"
+          },
+          {
+            "id": "6EZ2",
+            "source": "PDB"
+          },
+          {
+            "id": "6F7Q",
+            "source": "PDB"
+          },
+          {
+            "id": "6I0B",
+            "source": "PDB"
+          },
+          {
+            "id": "6I0C",
+            "source": "PDB"
+          },
+          {
+            "id": "6I2T",
+            "source": "PDB"
+          },
+          {
+            "id": "6QAA",
+            "source": "PDB"
+          },
+          {
+            "id": "6QAB",
+            "source": "PDB"
+          },
+          {
+            "id": "6QAC",
+            "source": "PDB"
+          },
+          {
+            "id": "6QAD",
+            "source": "PDB"
+          },
+          {
+            "id": "6QAE",
+            "source": "PDB"
+          },
+          {
+            "id": "6R6V",
+            "source": "PDB"
+          },
+          {
+            "id": "6R6W",
+            "source": "PDB"
+          },
+          {
+            "id": "6RUA",
+            "source": "PDB"
+          },
+          {
+            "id": "6SAM",
+            "source": "PDB"
+          },
+          {
+            "id": "6T9P",
+            "source": "PDB"
+          },
+          {
+            "id": "6T9S",
+            "source": "PDB"
+          },
+          {
+            "id": "6XTA",
+            "source": "PDB"
+          },
+          {
+            "id": "6ZWI",
+            "source": "PDB"
+          },
+          {
+            "id": "7AIY",
+            "source": "PDB"
+          },
+          {
+            "id": "7AMZ",
+            "source": "PDB"
+          },
+          {
+            "id": "7AWG",
+            "source": "PDB"
+          },
+          {
+            "id": "7AWH",
+            "source": "PDB"
+          },
+          {
+            "id": "7AWI",
+            "source": "PDB"
+          },
+          {
+            "id": "7BGC",
+            "source": "PDB"
+          },
+          {
+            "id": "7BO3",
+            "source": "PDB"
+          },
+          {
+            "id": "7BO4",
+            "source": "PDB"
+          },
+          {
+            "id": "7Q1M",
+            "source": "PDB"
+          },
+          {
+            "id": "7Q1N",
+            "source": "PDB"
+          },
+          {
+            "id": "7Q1O",
+            "source": "PDB"
+          },
+          {
+            "id": "7Q1P",
+            "source": "PDB"
+          },
+          {
+            "id": "7QBQ",
+            "source": "PDB"
+          },
+          {
+            "id": "7QBR",
+            "source": "PDB"
+          },
+          {
+            "id": "7QHD",
+            "source": "PDB"
+          },
+          {
+            "id": "7QHE",
+            "source": "PDB"
+          },
+          {
+            "id": "7ZPB",
+            "source": "PDB"
+          },
+          {
+            "id": "8AI7",
+            "source": "PDB"
+          },
+          {
+            "id": "8AM1",
+            "source": "PDB"
+          },
+          {
+            "id": "8AM2",
+            "source": "PDB"
+          },
+          {
+            "id": "8CGO",
+            "source": "PDB"
+          },
+          {
+            "id": "8QTW",
+            "source": "PDB"
+          },
+          {
+            "id": "8QTX",
+            "source": "PDB"
+          },
+          {
+            "id": "9EWU",
+            "source": "PDB"
+          },
+          {
+            "id": "9GCQ",
+            "source": "PDB"
+          },
+          {
+            "id": "9GCR",
+            "source": "PDB"
+          },
+          {
+            "id": "9I02",
+            "source": "PDB"
+          },
+          {
+            "id": "9I03",
+            "source": "PDB"
+          },
+          {
+            "id": "9I5O",
+            "source": "PDB"
+          },
+          {
+            "id": "9I5P",
+            "source": "PDB"
+          },
+          {
+            "id": "9I5Q",
+            "source": "PDB"
+          },
+          {
+            "id": "9QPU",
+            "source": "PDB"
+          },
+          {
+            "id": "9R3B",
+            "source": "PDB"
+          },
+          {
+            "id": "9R3C",
+            "source": "PDB"
+          },
+          {
+            "id": "9R9D",
+            "source": "PDB"
+          },
+          {
+            "id": "9R9E",
+            "source": "PDB"
+          },
+          {
+            "id": "9SL8",
+            "source": "PDB"
+          },
+          {
+            "id": "9SL9",
+            "source": "PDB"
+          },
+          {
+            "id": "CHEMBL1914",
+            "source": "ChEMBL"
+          },
+          {
+            "id": "DB08200",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB08201",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03814",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB07940",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03672",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03128",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB08897",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01122",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB06692",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01408",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB19353",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00868",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB06756",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB11148",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03568",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04250",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB06774",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01161",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00856",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00477",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00122",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB14006",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00527",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00515",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04920",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00907",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00979",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01245",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00944",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB11397",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02811",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00711",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00449",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB07681",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00843",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01135",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01057",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01010",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01364",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03822",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB08658",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB15236",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00674",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB06525",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00941",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB06636",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00677",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01064",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01221",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB12212",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00772",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00888",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00358",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB13478",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB02845",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB08893",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01226",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB09205",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01400",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00585",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00892",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01337",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00082",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00183",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00790",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04892",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB03976",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01338",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00733",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01035",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00721",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00392",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB09288",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00545",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00178",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB05386",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00989",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB05875",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00202",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00391",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00382",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00871",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04572",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB14031",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00620",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00508",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01116",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01199",
+            "source": "DrugBank"
+          },
+          {
+            "id": "R-HSA-112311",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-1483191",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-422085",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9749641",
+            "source": "Reactome"
+          },
+          {
+            "id": "IPR029058",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR050654",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR014788",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR002018",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR019826",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR019819",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR000997",
+            "source": "InterPro"
+          },
+          {
+            "id": "SignalP-TM",
+            "source": "signalP"
+          }
+        ],
+        "drugAndClinicalCandidates": {
+          "count": 4,
+          "rows": [
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL636",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cholinesterases; ACHE & BCHE inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cholinesterases; ACHE & BCHE inhibitor"
+                    }
+                  ]
+                },
+                "name": "RIVASTIGMINE"
+              },
+              "id": "42a8f0812692257343b0a69846e3757d06e031d7c16982fdbbf57d2b2b0b0a83",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL95",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cholinesterases; ACHE & BCHE inhibitor"
+                    }
+                  ]
+                },
+                "name": "TACRINE"
+              },
+              "id": "4e711399201f80cb34645faf96b32101e7dfa6ebfacb4651d048f91179f455f8",
+              "maxClinicalStage": "APPROVAL"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL2105345",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Acetylcholinesterase inhibitor"
+                    },
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Butyrylcholinesterase inhibitor"
+                    }
+                  ]
+                },
+                "name": "PROPANIDID"
+              },
+              "id": "6109cb2d5108d140bbd3bbfba3a76cef5e36e404876cdc66f122c6d64ce0dd5a",
+              "maxClinicalStage": "UNKNOWN"
+            },
+            {
+              "drug": {
+                "drugType": "Small molecule",
+                "id": "CHEMBL1201092",
+                "maximumClinicalStage": "APPROVAL",
+                "mechanismsOfAction": {
+                  "rows": [
+                    {
+                      "actionType": "INHIBITOR",
+                      "mechanismOfAction": "Cholinesterases; ACHE & BCHE inhibitor"
+                    }
+                  ]
+                },
+                "name": "RIVASTIGMINE TARTRATE"
+              },
+              "id": "f41e4dd478b1825952ed69b34350da0ed63f998b6d48d8a76612957291c274f3",
+              "maxClinicalStage": "APPROVAL"
+            }
+          ]
+        },
+        "functionDescriptions": [
+          "Esterase with broad substrate specificity. Contributes to the inactivation of the neurotransmitter acetylcholine. Can degrade neurotoxic organophosphate esters. {ECO:0000269|PubMed:19452557, ECO:0000269|PubMed:19542320}."
+        ],
+        "genomicLocation": {
+          "chromosome": "3",
+          "end": 165837462,
+          "start": 165772904,
+          "strand": -1
+        },
+        "id": "ENSG00000114200",
+        "proteinIds": [
+          {
+            "id": "P06276",
+            "source": "uniprot_swissprot"
+          },
+          {
+            "id": "F8WEX7",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "F8WF14",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "H0Y885",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "H7C4Y0",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "ENSP00000264381",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000418325",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000418504",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000419505",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000419804",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000525395",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000525396",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000525397",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000525398",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "A8K7P8",
+            "source": "uniprot_obsolete"
+          }
+        ],
+        "safetyLiabilities": [
+          {
+            "datasource": "ClinPGx",
+            "event": "apnea following administration of succinylcholine",
+            "eventId": "",
+            "literature": null
+          },
+          {
+            "datasource": "ClinPGx",
+            "event": "apnea",
+            "eventId": "",
+            "literature": null
+          },
+          {
+            "datasource": "ClinPGx",
+            "event": "post anesthesia apnea",
+            "eventId": "",
+            "literature": null
+          },
+          {
+            "datasource": "ToxCast",
+            "event": "regulation of catalytic activity",
+            "eventId": "",
+            "literature": null
+          }
+        ],
+        "subcellularLocations": [
+          {
+            "location": "Secreted",
+            "termSL": "SL-0243"
+          }
+        ],
+        "synonyms": [
+          {
+            "label": "Cholinesterase",
+            "source": "uniprot"
+          },
+          {
+            "label": "BCHE",
+            "source": "uniprot"
+          },
+          {
+            "label": "CHE1",
+            "source": "uniprot"
+          },
+          {
+            "label": "E1",
+            "source": "HGNC"
+          },
+          {
+            "label": "Acylcholine acylhydrolase",
+            "source": "uniprot"
+          },
+          {
+            "label": "Butyrylcholine esterase",
+            "source": "uniprot"
+          },
+          {
+            "label": "Choline esterase II",
+            "source": "uniprot"
+          },
+          {
+            "label": "Pseudocholinesterase",
+            "source": "uniprot"
+          },
+          {
+            "label": "BCHED",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "CHE1",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "CHE2",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "E1",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "cholinesterase",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "acylcholine acylhydrolase",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "butyrylcholine esterase",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "choline esterase II",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "cholinesterase (serum) 2",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "cholinesterase 1",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "pseudocholinesterase",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "BCHE",
+            "source": "NCBI_entrez"
+          }
+        ],
+        "targetClass": [
+          {
+            "id": 646,
+            "label": "Enzyme",
+            "level": "l1"
+          },
+          {
+            "id": 646,
+            "label": "Hydrolase",
+            "level": "l2"
+          }
+        ],
+        "tractability": [
+          {
+            "label": "Approved Drug",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Structure with Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Pocket",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Med-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Druggable Family",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt loc high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt loc med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt SigP or TMHMM",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Human Protein Atlas loc",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Literature",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "UniProt Ubiquitination",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Database Ubiquitination",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Half-life Data",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Small Molecule Binder",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "OC",
+            "value": false
+          }
+        ]
+      }
+    }
+  },
+  "source": "open_targets"
+}

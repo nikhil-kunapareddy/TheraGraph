@@ -1,0 +1,31 @@
+{
+  "operation": "evidence.page0",
+  "params": {
+    "cursor": null,
+    "datasourceIds": [
+      "chembl"
+    ],
+    "efoId": "MONDO_0004975",
+    "ensemblIds": [
+      "ENSG00000142192",
+      "ENSG00000080815",
+      "ENSG00000143801"
+    ],
+    "size": 3
+  },
+  "recorded_at": "2026-09-18T03:31:01.175090+00:00",
+  "response": {
+    "data": {
+      "disease": {
+        "evidences": {
+          "count": 0,
+          "cursor": null,
+          "rows": []
+        },
+        "id": "MONDO_0004975",
+        "name": "Alzheimer disease"
+      }
+    }
+  },
+  "source": "open_targets"
+}

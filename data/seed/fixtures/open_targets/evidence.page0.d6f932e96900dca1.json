@@ -1,0 +1,71 @@
+{
+  "operation": "evidence.page0",
+  "params": {
+    "cursor": null,
+    "datasourceIds": [
+      "reactome"
+    ],
+    "efoId": "MONDO_0004975",
+    "ensemblIds": [
+      "ENSG00000142192",
+      "ENSG00000080815",
+      "ENSG00000143801"
+    ],
+    "size": 4
+  },
+  "recorded_at": "2026-09-18T02:49:53.094702+00:00",
+  "response": {
+    "data": {
+      "disease": {
+        "evidences": {
+          "count": 1,
+          "cursor": null,
+          "rows": [
+            {
+              "beta": null,
+              "clinicalSignificances": [],
+              "clinicalStage": null,
+              "confidence": null,
+              "datasourceId": "reactome",
+              "datatypeId": "affected_pathway",
+              "disease": {
+                "id": "MONDO_0004975",
+                "name": "Alzheimer disease"
+              },
+              "diseaseFromSource": "Alzheimer's disease",
+              "diseaseFromSourceMappedId": "EFO_0000249",
+              "drug": null,
+              "drugFromSource": null,
+              "id": "9d241ff56e033b188bf04835854268f85add9223",
+              "literature": [
+                "15590058",
+                "10830966"
+              ],
+              "oddsRatio": null,
+              "pValueExponent": null,
+              "pValueMantissa": null,
+              "publicationFirstAuthor": null,
+              "publicationYear": null,
+              "resourceScore": null,
+              "score": 1,
+              "studyId": null,
+              "studyOverview": null,
+              "target": {
+                "approvedSymbol": "APP",
+                "id": "ENSG00000142192"
+              },
+              "targetFromSourceId": "P05067",
+              "targetModulation": "up_or_down",
+              "textMiningSentences": [],
+              "urls": [],
+              "variantRsId": null
+            }
+          ]
+        },
+        "id": "MONDO_0004975",
+        "name": "Alzheimer disease"
+      }
+    }
+  },
+  "source": "open_targets"
+}

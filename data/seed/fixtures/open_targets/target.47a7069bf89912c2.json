@@ -1,0 +1,582 @@
+{
+  "operation": "target",
+  "params": {
+    "ensemblId": "ENSG00000137845"
+  },
+  "recorded_at": "2026-09-18T03:31:13.593551+00:00",
+  "response": {
+    "data": {
+      "target": {
+        "approvedName": "ADAM metallopeptidase domain 10",
+        "approvedSymbol": "ADAM10",
+        "biotype": "protein_coding",
+        "dbXrefs": [
+          {
+            "id": "188",
+            "source": "HGNC"
+          },
+          {
+            "id": "6BDZ",
+            "source": "PDB"
+          },
+          {
+            "id": "6BE6",
+            "source": "PDB"
+          },
+          {
+            "id": "8ESV",
+            "source": "PDB"
+          },
+          {
+            "id": "CHEMBL5028",
+            "source": "ChEMBL"
+          },
+          {
+            "id": "DB21288",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB04991",
+            "source": "DrugBank"
+          },
+          {
+            "id": "R-HSA-1442490",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-1474228",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-177929",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-2122948",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-2644606",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-2660826",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-2691232",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-2894862",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-2979096",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-381426",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-3928665",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-6798695",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-8957275",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9013507",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9013700",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-977225",
+            "source": "Reactome"
+          },
+          {
+            "id": "IPR034025",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR049038",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR051489",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR001762",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR036436",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR024079",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR001590",
+            "source": "InterPro"
+          },
+          {
+            "id": "SignalP-noTM",
+            "source": "signalP"
+          }
+        ],
+        "drugAndClinicalCandidates": {
+          "count": 0,
+          "rows": []
+        },
+        "functionDescriptions": [
+          "Transmembrane metalloprotease which mediates the ectodomain shedding of a myriad of transmembrane proteins, including adhesion proteins, growth factor precursors and cytokines being essential for development and tissue homeostasis (PubMed:11786905, PubMed:12475894, PubMed:20592283, PubMed:24990881, PubMed:26686862, PubMed:28600292, PubMed:31792032, PubMed:31792032). Associates with six members of the tetraspanin superfamily TspanC8 which regulate its exit from the endoplasmic reticulum and its substrate selectivity (PubMed:26686862, PubMed:28600292, PubMed:31792032, PubMed:34739841, PubMed:37516108). Cleaves the membrane-bound precursor of TNF at '76-Ala-|-Val-77' to its mature soluble form. Responsible for the proteolytical release of soluble JAM3 from endothelial cells surface (PubMed:20592283). Responsible for the proteolytic release of several other cell-surface proteins, including heparin-binding epidermal growth-like factor, ephrin-A2, CD44, CDH2 and for constitutive and regulated alpha- secretase cleavage of amyloid precursor protein (APP) (PubMed:11786905, PubMed:26686862, PubMed:29224781, PubMed:34739841, PubMed:33731436). Contributes to the normal cleavage of the cellular prion protein (PubMed:11477090). Involved in the cleavage of the adhesion molecule L1 at the cell surface and in released membrane vesicles, suggesting a vesicle-based protease activity (PubMed:12475894). Also controls the proteolytic processing of Notch and mediates lateral inhibition during neurogenesis (By similarity). Required for the development of type 1 transitional B cells into marginal zone B cells, probably by cleaving Notch (By similarity). Responsible for the FasL ectodomain shedding and for the generation of the remnant ADAM10-processed FasL (FasL APL) transmembrane form (PubMed:17557115). Also cleaves the ectodomain of the integral membrane proteins CORIN and ITM2B (PubMed:19114711, PubMed:21288900). Mediates the proteolytic cleavage of LAG3, leading to release the secreted form of LAG3 (By similarity). Mediates the proteolytic cleavage of IL6R and IL11RA, leading to the release of secreted forms of IL6R and IL11RA (PubMed:26876177). Enhances the cleavage of CHL1 by BACE1 (By similarity). Cleaves NRCAM (By similarity). Cleaves TREM2, resulting in shedding of the TREM2 ectodomain (PubMed:24990881). Involved in the development and maturation of glomerular and coronary vasculature (By similarity). During development of the cochlear organ of Corti, promotes pillar cell separation by forming a ternary complex with CADH1 and EPHA4 and cleaving CADH1 at adherens junctions (By similarity). May regulate the EFNA5-EPHA3 signaling (PubMed:16239146). Regulates leukocyte transmigration as a sheddase for the adherens junction protein VE- cadherin/CDH5 in endothelial cells (PubMed:28600292). {ECO:0000250|UniProtKB:O35598, ECO:0000269|PubMed:11477090, ECO:0000269|PubMed:11786905, ECO:0000269|PubMed:12475894, ECO:0000269|PubMed:16239146, ECO:0000269|PubMed:17557115, ECO:0000269|PubMed:19114711, ECO:0000269|PubMed:20592283, ECO:0000269|PubMed:21288900, ECO:0000269|PubMed:24990881, ECO:0000269|PubMed:26686862, ECO:0000269|PubMed:26876177, ECO:0000269|PubMed:28600292, ECO:0000269|PubMed:29224781, ECO:0000269|PubMed:31792032, ECO:0000269|PubMed:33731436, ECO:0000269|PubMed:34739841, ECO:0000269|PubMed:37516108}.",
+          "(Microbial infection) Promotes the cytotoxic activity of S.aureus hly by binding to the toxin at zonula adherens and promoting formation of toxin pores. {ECO:0000269|PubMed:20624979, ECO:0000269|PubMed:30463011}."
+        ],
+        "genomicLocation": {
+          "chromosome": "15",
+          "end": 58749842,
+          "start": 58588809,
+          "strand": -1
+        },
+        "id": "ENSG00000137845",
+        "proteinIds": [
+          {
+            "id": "O14672",
+            "source": "uniprot_swissprot"
+          },
+          {
+            "id": "A0A087WYG1",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "B5MC71",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "C9J9B4",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "H0YK32",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "H0YK87",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "H0YNC5",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "H3BS53",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "ENSP00000260408",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000386056",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000391930",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000452639",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000452704",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000453952",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000456542",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000481779",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000532004",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000603905",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000603906",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000603907",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000614970",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000614971",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000614972",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000614973",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "B4DU28",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q10742",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q92650",
+            "source": "uniprot_obsolete"
+          }
+        ],
+        "safetyLiabilities": [],
+        "subcellularLocations": [
+          {
+            "location": "Cell membrane ; Single-pass type I membrane protein",
+            "termSL": "SL-0039"
+          },
+          {
+            "location": "Golgi apparatus membrane ; Single-pass type I membrane protein",
+            "termSL": "SL-0134"
+          },
+          {
+            "location": "Cytoplasmic vesicle, clathrin-coated vesicle",
+            "termSL": "SL-0088"
+          },
+          {
+            "location": "Cell projection, axon",
+            "termSL": "SL-0280"
+          },
+          {
+            "location": "Cell projection, dendrite",
+            "termSL": "SL-0280"
+          },
+          {
+            "location": "Cell junction, adherens junction",
+            "termSL": "SL-0038"
+          },
+          {
+            "location": "Cytoplasm",
+            "termSL": "SL-0086"
+          },
+          {
+            "location": "Plasma membrane",
+            "termSL": "SL-0039"
+          },
+          {
+            "location": "Vesicles",
+            "termSL": "SL-0498"
+          }
+        ],
+        "synonyms": [
+          {
+            "label": "Disintegrin and metalloproteinase domain-containing protein 10",
+            "source": "uniprot"
+          },
+          {
+            "label": "ADAM 10",
+            "source": "uniprot"
+          },
+          {
+            "label": "CD156c",
+            "source": "uniprot"
+          },
+          {
+            "label": "ADAM10",
+            "source": "uniprot"
+          },
+          {
+            "label": "KUZ",
+            "source": "uniprot"
+          },
+          {
+            "label": "MADM",
+            "source": "uniprot"
+          },
+          {
+            "label": "kuz",
+            "source": "HGNC"
+          },
+          {
+            "label": "MADM",
+            "source": "HGNC"
+          },
+          {
+            "label": "HsT18717",
+            "source": "HGNC"
+          },
+          {
+            "label": "CD156C",
+            "source": "HGNC"
+          },
+          {
+            "label": "CDw156",
+            "source": "uniprot"
+          },
+          {
+            "label": "Kuzbanian protein homolog",
+            "source": "uniprot"
+          },
+          {
+            "label": "Mammalian disintegrin-metalloprotease",
+            "source": "uniprot"
+          },
+          {
+            "label": "AD10",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "AD18",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "CD156c",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "CDw156",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "HsT18717",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "MADM",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "RAK",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "kuz",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "disintegrin and metalloproteinase domain-containing protein 10",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "a disintegrin and metalloprotease domain 10",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "kuzbanian protein homolog",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "mammalian disintegrin-metalloprotease",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "ADAM10",
+            "source": "NCBI_entrez"
+          }
+        ],
+        "targetClass": [
+          {
+            "id": 84,
+            "label": "Metallo protease MAM clan",
+            "level": "l4"
+          },
+          {
+            "id": 84,
+            "label": "Metallo protease",
+            "level": "l3"
+          },
+          {
+            "id": 84,
+            "label": "Protease",
+            "level": "l2"
+          },
+          {
+            "id": 84,
+            "label": "Enzyme",
+            "level": "l1"
+          },
+          {
+            "id": 84,
+            "label": "Metallo protease M12B subfamily",
+            "level": "l5"
+          }
+        ],
+        "tractability": [
+          {
+            "label": "Approved Drug",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Structure with Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Med-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Druggable Family",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt loc high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt loc med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt SigP or TMHMM",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Human Protein Atlas loc",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Literature",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "UniProt Ubiquitination",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Database Ubiquitination",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Half-life Data",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Small Molecule Binder",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "OC",
+            "value": false
+          }
+        ]
+      }
+    }
+  },
+  "source": "open_targets"
+}

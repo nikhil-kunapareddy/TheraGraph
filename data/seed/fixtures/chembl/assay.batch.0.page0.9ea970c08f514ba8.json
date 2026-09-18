@@ -1,0 +1,122 @@
+{
+  "operation": "assay.batch.0.page0",
+  "params": {
+    "assay_chembl_id__in": "CHEMBL649398,CHEMBL649400,CHEMBL649527,CHEMBL649528,CHEMBL649529,CHEMBL649530,CHEMBL678443",
+    "format": "json",
+    "limit": 7,
+    "offset": 0,
+    "only": "assay_chembl_id,description,assay_type,assay_category,assay_organism,assay_tissue,assay_cell_type,confidence_score,bao_format,bao_label,document_chembl_id,target_chembl_id",
+    "path": "assay.json"
+  },
+  "recorded_at": "2026-09-18T02:49:59.006449+00:00",
+  "response": {
+    "assays": [
+      {
+        "assay_category": null,
+        "assay_cell_type": null,
+        "assay_chembl_id": "CHEMBL649527",
+        "assay_organism": null,
+        "assay_tissue": null,
+        "assay_type": "B",
+        "bao_format": "BAO_0000357",
+        "bao_label": "single protein format",
+        "confidence_score": 8,
+        "description": "Inhibition constant of compound on ligand binding to aggregates of Amyloid beta was measured by comparing with [125I]IMSB",
+        "document_chembl_id": "CHEMBL1134439",
+        "target_chembl_id": "CHEMBL2487"
+      },
+      {
+        "assay_category": null,
+        "assay_cell_type": null,
+        "assay_chembl_id": "CHEMBL649528",
+        "assay_organism": "Homo sapiens",
+        "assay_tissue": null,
+        "assay_type": "B",
+        "bao_format": "BAO_0000357",
+        "bao_label": "single protein format",
+        "confidence_score": 9,
+        "description": "Inhibition constant for amyloid beta compared to [125I]TZDM",
+        "document_chembl_id": "CHEMBL1134439",
+        "target_chembl_id": "CHEMBL2487"
+      },
+      {
+        "assay_category": null,
+        "assay_cell_type": null,
+        "assay_chembl_id": "CHEMBL649529",
+        "assay_organism": "Homo sapiens",
+        "assay_tissue": null,
+        "assay_type": "B",
+        "bao_format": "BAO_0000357",
+        "bao_label": "single protein format",
+        "confidence_score": 9,
+        "description": "Inhibition constant for aggregates of amyloid beta compared to [125I]IMSB",
+        "document_chembl_id": "CHEMBL1134439",
+        "target_chembl_id": "CHEMBL2487"
+      },
+      {
+        "assay_category": null,
+        "assay_cell_type": null,
+        "assay_chembl_id": "CHEMBL649530",
+        "assay_organism": null,
+        "assay_tissue": "Brain",
+        "assay_type": "B",
+        "bao_format": "BAO_0000221",
+        "bao_label": "tissue-based format",
+        "confidence_score": 8,
+        "description": "Inhibitory activity against binding of [125I]IMSB to amyloid beta in brain",
+        "document_chembl_id": "CHEMBL1134523",
+        "target_chembl_id": "CHEMBL2487"
+      },
+      {
+        "assay_category": null,
+        "assay_cell_type": null,
+        "assay_chembl_id": "CHEMBL649398",
+        "assay_organism": null,
+        "assay_tissue": null,
+        "assay_type": "B",
+        "bao_format": "BAO_0000357",
+        "bao_label": "single protein format",
+        "confidence_score": 8,
+        "description": "Inhibition constant against [125I]-7 (TZDM) binding to Amyloid beta 1-40 aggregates",
+        "document_chembl_id": "CHEMBL1145100",
+        "target_chembl_id": "CHEMBL2487"
+      },
+      {
+        "assay_category": null,
+        "assay_cell_type": null,
+        "assay_chembl_id": "CHEMBL649400",
+        "assay_organism": null,
+        "assay_tissue": null,
+        "assay_type": "B",
+        "bao_format": "BAO_0000357",
+        "bao_label": "single protein format",
+        "confidence_score": 8,
+        "description": "Binding affinity for Amyloid beta 1-40 aggregates in competition with [N-methyl-3H] BTA-1.",
+        "document_chembl_id": "CHEMBL1145813",
+        "target_chembl_id": "CHEMBL2487"
+      },
+      {
+        "assay_category": null,
+        "assay_cell_type": "HEK293",
+        "assay_chembl_id": "CHEMBL678443",
+        "assay_organism": null,
+        "assay_tissue": null,
+        "assay_type": "B",
+        "bao_format": "BAO_0000219",
+        "bao_label": "cell-based format",
+        "confidence_score": 8,
+        "description": "Inhibition of A-beta-42 production by inhibiting Gamma-secretase proteolytic pathway in HEK293 cell stably transfected with a double mutant form of human APP(K595N/M596L)",
+        "document_chembl_id": "CHEMBL1133739",
+        "target_chembl_id": "CHEMBL2487"
+      }
+    ],
+    "page_meta": {
+      "limit": 7,
+      "next": null,
+      "offset": 0,
+      "previous": null,
+      "total_count": 7
+    }
+  },
+  "source": "chembl"
+}

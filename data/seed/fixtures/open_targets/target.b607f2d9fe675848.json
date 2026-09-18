@@ -1,0 +1,653 @@
+{
+  "operation": "target",
+  "params": {
+    "ensemblId": "ENSG00000130203"
+  },
+  "recorded_at": "2026-09-18T02:49:47.574440+00:00",
+  "response": {
+    "data": {
+      "target": {
+        "approvedName": "apolipoprotein E",
+        "approvedSymbol": "APOE",
+        "biotype": "protein_coding",
+        "dbXrefs": [
+          {
+            "id": "613",
+            "source": "HGNC"
+          },
+          {
+            "id": "1B68",
+            "source": "PDB"
+          },
+          {
+            "id": "1BZ4",
+            "source": "PDB"
+          },
+          {
+            "id": "1EA8",
+            "source": "PDB"
+          },
+          {
+            "id": "1GS9",
+            "source": "PDB"
+          },
+          {
+            "id": "1H7I",
+            "source": "PDB"
+          },
+          {
+            "id": "1LE2",
+            "source": "PDB"
+          },
+          {
+            "id": "1LE4",
+            "source": "PDB"
+          },
+          {
+            "id": "1LPE",
+            "source": "PDB"
+          },
+          {
+            "id": "1NFN",
+            "source": "PDB"
+          },
+          {
+            "id": "1NFO",
+            "source": "PDB"
+          },
+          {
+            "id": "1OEF",
+            "source": "PDB"
+          },
+          {
+            "id": "1OEG",
+            "source": "PDB"
+          },
+          {
+            "id": "1OR2",
+            "source": "PDB"
+          },
+          {
+            "id": "1OR3",
+            "source": "PDB"
+          },
+          {
+            "id": "2KC3",
+            "source": "PDB"
+          },
+          {
+            "id": "2KNY",
+            "source": "PDB"
+          },
+          {
+            "id": "2L7B",
+            "source": "PDB"
+          },
+          {
+            "id": "6IWB",
+            "source": "PDB"
+          },
+          {
+            "id": "6NCN",
+            "source": "PDB"
+          },
+          {
+            "id": "6NCO",
+            "source": "PDB"
+          },
+          {
+            "id": "6V7M",
+            "source": "PDB"
+          },
+          {
+            "id": "7FCR",
+            "source": "PDB"
+          },
+          {
+            "id": "7FCS",
+            "source": "PDB"
+          },
+          {
+            "id": "7UVJ",
+            "source": "PDB"
+          },
+          {
+            "id": "8AX8",
+            "source": "PDB"
+          },
+          {
+            "id": "8AX9",
+            "source": "PDB"
+          },
+          {
+            "id": "8CDY",
+            "source": "PDB"
+          },
+          {
+            "id": "8CE0",
+            "source": "PDB"
+          },
+          {
+            "id": "8GRX",
+            "source": "PDB"
+          },
+          {
+            "id": "DB18345",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB09130",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB11886",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00877",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB00460",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB01593",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB14487",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB14533",
+            "source": "DrugBank"
+          },
+          {
+            "id": "DB14548",
+            "source": "DrugBank"
+          },
+          {
+            "id": "R-HSA-1251985",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-3000480",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-381426",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-8864260",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-8957275",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-8963888",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-8963901",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-8964026",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-8964058",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-9029569",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-975634",
+            "source": "Reactome"
+          },
+          {
+            "id": "R-HSA-977225",
+            "source": "Reactome"
+          },
+          {
+            "id": "IPR000074",
+            "source": "InterPro"
+          },
+          {
+            "id": "IPR050163",
+            "source": "InterPro"
+          },
+          {
+            "id": "SignalP-noTM",
+            "source": "signalP"
+          }
+        ],
+        "drugAndClinicalCandidates": {
+          "count": 0,
+          "rows": []
+        },
+        "functionDescriptions": [
+          "APOE is an apolipoprotein, a protein associating with lipid particles, that mainly functions in lipoprotein-mediated lipid transport between organs via the plasma and interstitial fluids (PubMed:14754908, PubMed:1911868, PubMed:6860692). APOE is a core component of plasma lipoproteins and is involved in their production, conversion and clearance (PubMed:14754908, PubMed:1911868, PubMed:1917954, PubMed:23620513, PubMed:2762297, PubMed:6860692, PubMed:9395455). Apolipoproteins are amphipathic molecules that interact both with lipids of the lipoprotein particle core and the aqueous environment of the plasma (PubMed:2762297, PubMed:6860692, PubMed:9395455). As such, APOE associates with chylomicrons, chylomicron remnants, very low density lipoproteins (VLDL) and intermediate density lipoproteins (IDL) but shows a preferential binding to high-density lipoproteins (HDL) (PubMed:1911868, PubMed:6860692). It also binds a wide range of cellular receptors including the LDL receptor/LDLR, the LDL receptor-related proteins LRP1, LRP2 and LRP8 and the very low-density lipoprotein receptor/VLDLR that mediate the cellular uptake of the APOE-containing lipoprotein particles (PubMed:12950167, PubMed:1530612, PubMed:1917954, PubMed:20030366, PubMed:20303980, PubMed:2063194, PubMed:2762297, PubMed:7635945, PubMed:7768901, PubMed:8756331, PubMed:8939961). Finally, APOE also has a heparin-binding activity and binds heparan- sulfate proteoglycans on the surface of cells, a property that supports the capture and the receptor-mediated uptake of APOE-containing lipoproteins by cells (PubMed:23676495, PubMed:7635945, PubMed:9395455, PubMed:9488694). A main function of APOE is to mediate lipoprotein clearance through the uptake of chylomicrons, VLDLs, and HDLs by hepatocytes (PubMed:1911868, PubMed:1917954, PubMed:23676495, PubMed:29516132, PubMed:9395455). APOE is also involved in the biosynthesis by the liver of VLDLs as well as their uptake by peripheral tissues ensuring the delivery of triglycerides and energy storage in muscle, heart and adipose tissues (PubMed:2762297, PubMed:29516132). By participating in the lipoprotein-mediated distribution of lipids among tissues, APOE plays a critical role in plasma and tissues lipid homeostasis (PubMed:1917954, PubMed:2762297, PubMed:29516132). APOE is also involved in two steps of reverse cholesterol transport, the HDLs-mediated transport of cholesterol from peripheral tissues to the liver, and thereby plays an important role in cholesterol homeostasis (PubMed:14754908, PubMed:23620513, PubMed:9395455). First, it is functionally associated with ABCA1 in the biogenesis of HDLs in tissues (PubMed:14754908, PubMed:23620513). Second, it is enriched in circulating HDLs and mediates their uptake by hepatocytes (PubMed:9395455). APOE also plays an important role in lipid transport in the central nervous system, regulating neuron survival and sprouting (PubMed:25173806, PubMed:8939961). APOE is also involved in innate and adaptive immune responses, controlling for instance the survival of myeloid-derived suppressor cells (By similarity). Binds to the immune cell receptor LILRB4 (PubMed:30333625). APOE may also play a role in transcription regulation through a receptor-dependent and cholesterol-independent mechanism, that activates MAP3K12 and a non-canonical MAPK signal transduction pathway that results in enhanced AP-1-mediated transcription of APP (PubMed:28111074). {ECO:0000250|UniProtKB:P08226, ECO:0000269|PubMed:12950167, ECO:0000269|PubMed:14754908, ECO:0000269|PubMed:1530612, ECO:0000269|PubMed:1911868, ECO:0000269|PubMed:1917954, ECO:0000269|PubMed:20030366, ECO:0000269|PubMed:20303980, ECO:0000269|PubMed:2063194, ECO:0000269|PubMed:23620513, ECO:0000269|PubMed:23676495, ECO:0000269|PubMed:2762297, ECO:0000269|PubMed:28111074, ECO:0000269|PubMed:30333625, ECO:0000269|PubMed:6860692, ECO:0000269|PubMed:7635945, ECO:0000269|PubMed:7768901, ECO:0000269|PubMed:8756331, ECO:0000269|PubMed:8939961, ECO:0000269|PubMed:9395455, ECO:0000269|PubMed:9488694, ECO:0000303|PubMed:25173806, ECO:0000303|PubMed:29516132}.",
+          "(Microbial infection) Through its interaction with HCV envelope glycoprotein E2, participates in the attachment of HCV to HSPGs and other receptors (LDLr, VLDLr, and SR-B1) on the cell surface and to the assembly, maturation and infectivity of HCV viral particles (PubMed:25122793, PubMed:29695434). This interaction is probably promoted via the up-regulation of cellular autophagy by the virus (PubMed:29695434). {ECO:0000269|PubMed:25122793, ECO:0000269|PubMed:29695434}."
+        ],
+        "genomicLocation": {
+          "chromosome": "19",
+          "end": 44909396,
+          "start": 44903787,
+          "strand": 1
+        },
+        "id": "ENSG00000130203",
+        "proteinIds": [
+          {
+            "id": "P02649",
+            "source": "uniprot_swissprot"
+          },
+          {
+            "id": "A0A0S2Z3D5",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "E7ERP7",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "E9PEV4",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "H0Y7L5",
+            "source": "uniprot_trembl"
+          },
+          {
+            "id": "ENSP00000252486",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000410423",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000413135",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000413653",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534877",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534879",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534881",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534883",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534885",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534887",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534888",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534889",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534890",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534891",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534892",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534893",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534894",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534895",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534896",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534897",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534898",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534899",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534900",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534901",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534902",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534903",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534904",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534905",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534906",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534907",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "ENSP00000534908",
+            "source": "ensembl_PRO"
+          },
+          {
+            "id": "B2RC15",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "C0JYY5",
+            "source": "uniprot_obsolete"
+          },
+          {
+            "id": "Q9P2S4",
+            "source": "uniprot_obsolete"
+          }
+        ],
+        "safetyLiabilities": [
+          {
+            "datasource": "ClinPGx",
+            "event": "elevated triglycerides",
+            "eventId": "",
+            "literature": null
+          },
+          {
+            "datasource": "ClinPGx",
+            "event": "hypertriglyceridemia",
+            "eventId": "",
+            "literature": null
+          },
+          {
+            "datasource": "ClinPGx",
+            "event": "hemorrhage",
+            "eventId": "",
+            "literature": null
+          },
+          {
+            "datasource": "ClinPGx",
+            "event": "elevated plasma lipids",
+            "eventId": "",
+            "literature": null
+          }
+        ],
+        "subcellularLocations": [
+          {
+            "location": "Secreted",
+            "termSL": "SL-0243"
+          },
+          {
+            "location": "Secreted, extracellular space",
+            "termSL": "SL-0243"
+          },
+          {
+            "location": "Secreted, extracellular space, extracellular matrix",
+            "termSL": "SL-0243"
+          },
+          {
+            "location": "Extracellular vesicle",
+            "termSL": "SL-0499"
+          },
+          {
+            "location": "Endosome, multivesicular body",
+            "termSL": "SL-0101"
+          },
+          {
+            "location": "Vesicles",
+            "termSL": "SL-0498"
+          },
+          {
+            "location": "Predicted to be secreted",
+            "termSL": null
+          }
+        ],
+        "synonyms": [
+          {
+            "label": "Apolipoprotein E",
+            "source": "uniprot"
+          },
+          {
+            "label": "Apo-E",
+            "source": "uniprot"
+          },
+          {
+            "label": "APOE",
+            "source": "uniprot"
+          },
+          {
+            "label": "AD2",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "APO-E",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "ApoE4",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "LDLCQ5",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "LPG",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "apolipoprotein E",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "apolipoprotein E3",
+            "source": "NCBI_entrez"
+          },
+          {
+            "label": "APOE",
+            "source": "NCBI_entrez"
+          }
+        ],
+        "targetClass": [],
+        "tractability": [
+          {
+            "label": "Approved Drug",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Structure with Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Ligand",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "High-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Med-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Druggable Family",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt loc high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt loc med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt SigP or TMHMM",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Human Protein Atlas loc",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Literature",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "UniProt Ubiquitination",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Database Ubiquitination",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Half-life Data",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Small Molecule Binder",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "OC",
+            "value": false
+          }
+        ]
+      }
+    }
+  },
+  "source": "open_targets"
+}
