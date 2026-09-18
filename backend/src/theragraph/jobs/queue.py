@@ -293,6 +293,17 @@ class InlineQueue(_BaseQueue):
 
 
 def build_queue(settings: Settings, *, cache: Any = None, store: Any = None) -> JobQueue:
-    if settings.job_queue_backend == "inline":
+    """Select the queue transport.
+
+    ``memory://`` falls back to the inline queue rather than crashing. The cache already
+    treats that URL as "no Redis here" (see ``build_cache``), so a single ``memory://``
+    must mean the same thing to both -- otherwise a local setup with no Redis configures
+    a working cache and an API that dies during startup on ``Redis.from_url``.
+    """
+    if settings.job_queue_backend == "inline" or not str(settings.redis_url).startswith(
+        ("redis://", "rediss://", "unix://")
+    ):
+        if settings.job_queue_backend != "inline":
+            log.info("jobs.inline_fallback", reason="redis_url is not a redis scheme")
         return InlineQueue(settings, cache=cache, store=store)
     return RedisQueue(settings)
