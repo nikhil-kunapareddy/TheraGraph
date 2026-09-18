@@ -70,6 +70,7 @@ COPY --chown=theragraph:theragraph backend/alembic.ini ./
 COPY --chown=theragraph:theragraph backend/alembic ./alembic
 COPY --chown=theragraph:theragraph backend/src ./src
 COPY --chown=theragraph:theragraph data/seed ./data/seed
+COPY --chown=theragraph:theragraph data/raw/moleculenet ./data/raw/moleculenet
 
 # Writable locations for model artifacts, dataset snapshots and rendered reports.
 RUN mkdir -p /app/artifacts/models /app/data/raw \

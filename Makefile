@@ -80,18 +80,23 @@ bootstrap: ## Create the schema from the models (throwaway databases only)
 	$(VENV)/bin/theragraph db sources
 
 # ----------------------------------------------------------------------- data
+# `replay` is explicit rather than `auto` on the offline targets: auto falls back to the
+# network when a fixture is missing, which would make "this works offline" true until
+# the day it quietly isn't.
 seed: ## Build the full demo corpus from public sources (needs network)
 	$(VENV)/bin/theragraph ingest seed --plan demo
 
-seed-smoke: ## Build a small corpus (one disease, one target)
-	$(VENV)/bin/theragraph ingest seed --plan smoke
+seed-smoke: ## Build a small corpus from committed fixtures (no network)
+	$(VENV)/bin/theragraph ingest seed --plan smoke --mode replay
 
-train: ## Train and register models for every endpoint
-	$(VENV)/bin/theragraph ingest moleculenet esol
-	$(VENV)/bin/theragraph ingest moleculenet bbbp
-	$(VENV)/bin/theragraph ingest moleculenet clintox
+train: ## Train and register models for every endpoint (no network)
+	$(VENV)/bin/theragraph ingest moleculenet esol --mode replay
+	$(VENV)/bin/theragraph ingest moleculenet bbbp --mode replay
+	$(VENV)/bin/theragraph ingest moleculenet lipophilicity --mode replay
+	$(VENV)/bin/theragraph ingest moleculenet clintox --mode replay
 	$(VENV)/bin/theragraph ml train --endpoint solubility --dataset esol
 	$(VENV)/bin/theragraph ml train --endpoint bbb_permeability --dataset bbbp
+	$(VENV)/bin/theragraph ml train --endpoint lipophilicity --dataset lipophilicity
 	$(VENV)/bin/theragraph ml train --endpoint clinical_toxicity --dataset clintox
 
 evals: ## Run the agent evaluation suite and check the CI thresholds

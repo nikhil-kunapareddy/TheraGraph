@@ -12,6 +12,11 @@
 **/.github
 **/*.sqlite3
 data/raw/**
+# ...except the MoleculeNet benchmark CSVs (540 KB). Without them the image can serve
+# and ingest from fixtures but cannot train, so `docker compose run api theragraph ml
+# train` would need a network it is not supposed to have.
+!data/raw/moleculenet/*.csv
+!data/raw/moleculenet/*.csv.gz
 artifacts/models/**
 artifacts/eval/**
 docs/**
