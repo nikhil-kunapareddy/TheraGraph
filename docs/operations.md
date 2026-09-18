@@ -15,13 +15,18 @@ make api              # API on :8000 with auto-reload
 make frontend-dev     # UI on :5173, proxying /api to :8000
 ```
 
-Requires Python 3.11, [uv](https://docs.astral.sh/uv/), Node 20+, and PostgreSQL if you
-want the production datastore. Without PostgreSQL, point `DATABASE_URL` at SQLite —
-everything works, minus trigram search:
+Requires Python 3.11, [uv](https://docs.astral.sh/uv/), Node 20+, and PostgreSQL and
+Redis if you want the production datastores. Without them, write a `.env` — every
+command reads the repo-root one, so configuring it once covers make, the CLI and the
+API:
 
 ```bash
-DATABASE_URL=sqlite+aiosqlite:///./theragraph.sqlite3 make migrate
+printf 'DATABASE_URL=sqlite+aiosqlite:///./tg.sqlite3\nREDIS_URL=memory://\n' > .env
 ```
+
+Everything works that way except trigram search, which is PostgreSQL-only. Note that a
+relative SQLite path resolves against the process working directory; every `make` target
+runs from the repo root, so they all agree on one file.
 
 ### With Docker
 

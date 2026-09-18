@@ -42,12 +42,17 @@ Needs Python 3.11, [uv](https://docs.astral.sh/uv/) and Node 20+. No API keys, n
 access, and no PostgreSQL required to get the whole thing running.
 
 ```bash
-make setup                                        # venv + backend + frontend deps
-DATABASE_URL=sqlite+aiosqlite:///./tg.sqlite3 make migrate
-make seed-smoke                                   # build the corpus from committed fixtures
-make train                                        # train and register the models
-make api                                          # API on :8000
-make frontend-dev                                 # UI on :5173
+make setup            # uv venv + backend (editable) + frontend deps
+
+# No PostgreSQL or Redis running? Write a .env and every command below picks it up.
+# (Settings reads the repo-root .env, so this applies to make, the CLI and the API.)
+printf 'DATABASE_URL=sqlite+aiosqlite:///./tg.sqlite3\nREDIS_URL=memory://\n' > .env
+
+make migrate          # create the schema
+make seed-smoke       # build the corpus from committed fixtures (no network)
+make train            # train and register the models
+make api              # API on :8000
+make frontend-dev     # UI on :5173  (in a second terminal)
 ```
 
 Or with Docker (PostgreSQL, Redis, MinIO, API, two workers, the UI):
