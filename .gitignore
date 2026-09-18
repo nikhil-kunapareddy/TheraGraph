@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# Node
+node_modules/
+frontend/dist/
+frontend/coverage/
+*.tsbuildinfo
+
+# Data & artifacts (large / regenerable)
+data/raw/**
+!data/raw/.gitkeep
+# ...except the MoleculeNet benchmark CSVs. They are small, public, and permanently
+# versioned by content hash, and committing them is what lets a fresh clone rebuild
+# the corpus and train a model with no network access -- which is also how CI runs.
+!data/raw/moleculenet/
+!data/raw/moleculenet/*.csv
+!data/raw/moleculenet/*.csv.gz
+# Trained models, generated reports and eval output are build products. Committing a
+# model's metadata without its (large, binary) artifact would be worse than committing
+# neither: the artifact-hash check on load would fail against a file that is not there.
+artifacts/**
+!artifacts/**/.gitkeep
+*.sqlite3
+*.db
+
+# Test reports
+junit.xml
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
