@@ -271,9 +271,12 @@ def regression_interval_coverage(
             else None
         )
 
+    coverage = float(inside.mean())
+    nominal = float(2 * _standard_normal_cdf(z) - 1)
+
     return {
-        "coverage": round(float(inside.mean()), 4),
-        "nominal": round(float(2 * _standard_normal_cdf(z) - 1), 4),
+        "coverage": round(coverage, 4),
+        "nominal": round(nominal, 4),
         "mean_uncertainty": round(float(uncertainties.mean()), 5),
         "mean_absolute_error": round(float(residuals.mean()), 5),
         "uncertainty_error_correlation": round(correlation, 4) if correlation is not None else None,
@@ -281,10 +284,30 @@ def regression_interval_coverage(
         if np.isfinite(np.nanmedian(normalized))
         else None,
         "n": len(predictions),
-        "interpretation": (
-            "coverage below nominal means the uncertainty estimate is over-confident"
-        ),
+        "interpretation": _coverage_verdict(coverage, nominal),
     }
+
+
+def _coverage_verdict(coverage: float, nominal: float) -> str:
+    """Say what *this* coverage means, not what low coverage would mean in general.
+
+    A fixed legend ("coverage below nominal means over-confident") reads as a verdict on
+    the model in front of you, and is simply wrong when coverage came out above nominal.
+    """
+    if coverage < nominal - 0.05:
+        return (
+            f"coverage {coverage:.1%} is below the nominal {nominal:.0%}: the uncertainty "
+            "estimate is over-confident, so treat the error bars as a lower bound"
+        )
+    if coverage > nominal + 0.03:
+        return (
+            f"coverage {coverage:.1%} exceeds the nominal {nominal:.0%}: the intervals are "
+            "conservative -- wider than they need to be, which is the safer direction"
+        )
+    return (
+        f"coverage {coverage:.1%} matches the nominal {nominal:.0%}: the uncertainty "
+        "estimate behaves like a calibrated error bar"
+    )
 
 
 def _standard_normal_cdf(z: float) -> float:

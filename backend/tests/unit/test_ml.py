@@ -239,6 +239,23 @@ class TestCalibration:
         # Under-stated uncertainty must produce coverage below nominal.
         coverage = regression_interval_coverage(predictions, np.full(400, 0.05), actuals)
         assert coverage["coverage"] < 0.5
+        assert "over-confident" in coverage["interpretation"]
+
+    def test_the_verdict_describes_this_model_not_a_general_rule(self) -> None:
+        """A fixed legend would call a conservative model over-confident."""
+        rng = np.random.default_rng(11)
+        predictions = rng.normal(0, 1, 400)
+        actuals = predictions + rng.normal(0, 0.1, 400)
+
+        wide = regression_interval_coverage(predictions, np.full(400, 2.0), actuals)
+        assert wide["coverage"] > wide["nominal"]
+        assert "conservative" in wide["interpretation"]
+        assert "over-confident" not in wide["interpretation"]
+
+        # sigma = 0.1 against a 0.1 noise scale is the calibrated case.
+        matched = regression_interval_coverage(predictions, np.full(400, 0.1), actuals)
+        assert matched["coverage"] == pytest.approx(matched["nominal"], abs=0.05)
+        assert "calibrated" in matched["interpretation"]
 
 
 class TestMetrics:
