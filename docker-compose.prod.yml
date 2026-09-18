@@ -1,0 +1,92 @@
+# Production overlay.
+#
+#   docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+#
+# Assumes managed Postgres, Redis and object storage supplied through the environment,
+# so the local postgres/redis/minio services are not started.
+
+name: theragraph-prod
+
+x-prod-env: &prod-env
+  ENVIRONMENT: production
+  DATABASE_URL: ${DATABASE_URL:?DATABASE_URL is required in production}
+  REDIS_URL: ${REDIS_URL:?REDIS_URL is required in production}
+  STORAGE_BACKEND: s3
+  S3_ENDPOINT_URL: ${S3_ENDPOINT_URL:-}
+  S3_BUCKET: ${S3_BUCKET:?S3_BUCKET is required}
+  S3_ACCESS_KEY_ID: ${S3_ACCESS_KEY_ID:?}
+  S3_SECRET_ACCESS_KEY: ${S3_SECRET_ACCESS_KEY:?}
+  S3_REGION: ${S3_REGION:-us-east-1}
+  # Auth is on, and the application refuses to boot with the development JWT secret.
+  AUTH_ENABLED: "true"
+  JWT_SECRET: ${JWT_SECRET:?JWT_SECRET is required in production}
+  API_KEYS: ${API_KEYS:-}
+  RATE_LIMIT_ENABLED: "true"
+  RATE_LIMIT_REQUESTS: ${RATE_LIMIT_REQUESTS:-120}
+  RATE_LIMIT_AGENT_REQUESTS: ${RATE_LIMIT_AGENT_REQUESTS:-20}
+  CORS_ORIGINS: ${CORS_ORIGINS:?CORS_ORIGINS is required}
+  LOG_FORMAT: json
+  LOG_LEVEL: ${LOG_LEVEL:-INFO}
+  JOB_QUEUE_BACKEND: redis
+  ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+  # The public demo serves a pre-ingested corpus and must not call upstream APIs from
+  # user requests: no surprise load on Open Targets or ChEMBL, no surprise latency.
+  ALLOW_LIVE_INGESTION: "false"
+  OTEL_ENABLED: ${OTEL_ENABLED:-true}
+  OTEL_EXPORTER_ENDPOINT: ${OTEL_EXPORTER_ENDPOINT:-}
+  DATABASE_POOL_SIZE: ${DATABASE_POOL_SIZE:-10}
+
+services:
+  postgres:
+    profiles: ["never"]
+  redis:
+    profiles: ["never"]
+  minio:
+    profiles: ["never"]
+  minio-init:
+    profiles: ["never"]
+
+  migrate:
+    environment: *prod-env
+    depends_on: []
+
+  api:
+    environment: *prod-env
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+    ports: ["${API_PORT:-8000}:8000"]
+    deploy:
+      replicas: ${API_REPLICAS:-2}
+      resources:
+        limits: { cpus: "2.0", memory: 3G }
+        reservations: { cpus: "0.5", memory: 1G }
+    logging:
+      driver: json-file
+      options: { max-size: "20m", max-file: "5" }
+    restart: always
+
+  worker:
+    environment: *prod-env
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+    deploy:
+      replicas: ${WORKER_REPLICAS:-2}
+      resources:
+        # Training a graph model is the memory-hungry path.
+        limits: { cpus: "4.0", memory: 6G }
+        reservations: { cpus: "1.0", memory: 2G }
+    logging:
+      driver: json-file
+      options: { max-size: "20m", max-file: "5" }
+    restart: always
+
+  frontend:
+    build:
+      args:
+        VITE_API_BASE: ${VITE_API_BASE:-/api/v1}
+    ports: ["${FRONTEND_PORT:-8080}:8080"]
+    deploy:
+      replicas: ${FRONTEND_REPLICAS:-2}
+      resources:
+        limits: { cpus: "0.5", memory: 256M }
+    restart: always

@@ -1,0 +1,164 @@
+# Local development stack.
+#
+#   docker compose up -d          # postgres, redis, minio, api, worker, frontend
+#   docker compose run --rm api theragraph ingest seed --plan smoke
+#   docker compose logs -f api worker
+#
+# Ports are deliberately non-default on the host (55432, 63790, 9000) so the stack does
+# not collide with a locally installed Postgres or Redis.
+
+name: theragraph
+
+x-backend-env: &backend-env
+  ENVIRONMENT: local
+  DATABASE_URL: postgresql+asyncpg://theragraph:theragraph@postgres:5432/theragraph
+  REDIS_URL: redis://redis:6379/0
+  STORAGE_BACKEND: s3
+  S3_ENDPOINT_URL: http://minio:9000
+  S3_BUCKET: theragraph
+  S3_ACCESS_KEY_ID: theragraph
+  S3_SECRET_ACCESS_KEY: theragraph-secret
+  LOG_FORMAT: json
+  LOG_LEVEL: INFO
+  JOB_QUEUE_BACKEND: redis
+  # Without a key the agent runs its deterministic backend, so the stack is fully
+  # functional with no credentials.
+  ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+  AGENT_LLM_BACKEND: ${AGENT_LLM_BACKEND:-anthropic}
+  ALLOW_LIVE_INGESTION: ${ALLOW_LIVE_INGESTION:-true}
+  OTEL_ENABLED: ${OTEL_ENABLED:-false}
+  OTEL_EXPORTER_ENDPOINT: ${OTEL_EXPORTER_ENDPOINT:-}
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: theragraph
+      POSTGRES_PASSWORD: theragraph
+      POSTGRES_DB: theragraph
+      # Deterministic collation so index ordering matches between machines.
+      POSTGRES_INITDB_ARGS: "--locale=C --encoding=UTF8"
+    ports: ["55432:5432"]
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U theragraph -d theragraph"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    # appendonly keeps queued jobs across a restart; the database is still the truth.
+    command: ["redis-server", "--appendonly", "yes", "--maxmemory-policy", "noeviction"]
+    ports: ["63790:6379"]
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+
+  minio:
+    image: minio/minio:RELEASE.2024-10-13T13-34-11Z
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: theragraph
+      MINIO_ROOT_PASSWORD: theragraph-secret
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio-data:/data
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  # One-shot: create the bucket, then exit.
+  minio-init:
+    image: minio/mc:RELEASE.2024-10-08T09-37-26Z
+    depends_on:
+      minio: { condition: service_healthy }
+    entrypoint: >
+      /bin/sh -c "
+      mc alias set local http://minio:9000 theragraph theragraph-secret &&
+      mc mb --ignore-existing local/theragraph &&
+      echo 'bucket ready'
+      "
+    restart: "no"
+
+  # One-shot: bring the schema to head before the API and worker start.
+  migrate:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment: *backend-env
+    depends_on:
+      postgres: { condition: service_healthy }
+    command: ["alembic", "upgrade", "head"]
+    restart: "no"
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment: *backend-env
+    ports: ["8000:8000"]
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+      migrate: { condition: service_completed_successfully }
+    volumes:
+      # Models and dataset snapshots persist across rebuilds.
+      - artifacts:/app/artifacts
+      - raw-data:/app/data/raw
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/healthz"]
+      interval: 15s
+      timeout: 5s
+      start_period: 20s
+      retries: 3
+    restart: unless-stopped
+
+  worker:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment: *backend-env
+    command: ["theragraph", "worker"]
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+      migrate: { condition: service_completed_successfully }
+    volumes:
+      - artifacts:/app/artifacts
+      - raw-data:/app/data/raw
+    # Ingestion and training are IO- and CPU-heavy; two workers is a sane default and
+    # the queue's leases make horizontal scaling safe.
+    deploy:
+      replicas: 2
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      args:
+        VITE_API_BASE: /api/v1
+    ports: ["5173:8080"]
+    depends_on:
+      api: { condition: service_started }
+    restart: unless-stopped
+
+volumes:
+  postgres-data:
+  redis-data:
+  minio-data:
+  artifacts:
+  raw-data:
