@@ -203,7 +203,7 @@ backend/
     jobs/          durable queue + worker
     mcp_server/    the same tools over MCP
     tests_support/ the in-process demo corpus (shipped: CI and the CLI use it)
-  tests/           unit · integration · api · ml · agent · e2e   (442 tests)
+  tests/           unit · integration · api · ml · agent · e2e   (449 tests)
   alembic/         migrations, dialect-agnostic
 frontend/
   src/{pages,components,lib,types}                                (43 tests)
@@ -220,7 +220,7 @@ deploy/            nginx configuration for the SPA + API proxy
 ```bash
 make help              # every target, described
 make check             # lint + typecheck + tests, everything CI runs
-make test              # 442 backend + 43 frontend tests
+make test              # 449 backend + 43 frontend tests
 make coverage          # backend coverage report
 make evals             # the agent evaluation suite, with its CI thresholds
 make demo              # bootstrap → seed → train → evals, from scratch, offline
@@ -234,7 +234,7 @@ make docker-up         # the full stack
 |---|---|
 | **Backend** | Python 3.11, FastAPI, SQLAlchemy 2.0 async, PostgreSQL 16, Redis, Alembic, PyTorch, scikit-learn, RDKit, S3/MinIO |
 | **Frontend** | React 18, TypeScript, Vite, Tailwind, TanStack Query, Recharts, smiles-drawer |
-| **Tests** | 442 backend (unit, integration, API, database, CLI, ML pipeline, agent, end-to-end) at 79% coverage, 30 modules at 100%; 43 frontend |
+| **Tests** | 449 backend (unit, integration, API, database, CLI, ML pipeline, agent, end-to-end) at 79% coverage, 30 modules at 100%; 43 frontend |
 | **Quality gates** | ruff lint + format, mypy (strict, zero errors across 116 modules), eslint (zero warnings), `tsc --noEmit`, `alembic check` on both dialects, and the agent eval thresholds |
 | **CI** | 6 offline jobs: backend, backend-on-PostgreSQL, migrations round-trip, frontend, agent evals, container images |
 | **Deploy** | Multi-stage Docker images running as non-root, Compose for local and a fail-closed production overlay, health checks, structured logs, Prometheus metrics, optional OpenTelemetry |

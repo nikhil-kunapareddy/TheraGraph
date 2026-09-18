@@ -544,3 +544,105 @@ class TestJobEndpoints:
             "/api/v1/jobs/train", json={"endpoint": "solubility", "dataset_key": "nope"}
         )
         assert response.status_code == 422
+
+
+class TestSecurityEnforcement:
+    """The gates themselves, not just the helpers behind them.
+
+    Every other test in this file runs with ``auth_enabled=False`` and rate limiting
+    off, which is right for exercising the science. That leaves the two controls a
+    public deployment depends on untested, and an auth gate nobody has ever seen refuse
+    a request is how a deployment ends up open.
+    """
+
+    async def test_unauthenticated_request_is_refused_when_auth_is_enabled(
+        self, secured_client_factory: Any
+    ) -> None:
+        client = await secured_client_factory(auth_enabled=True, api_keys=["test-key-one"])
+
+        response = await client.get("/api/v1/search", params={"q": "alzheimer"})
+
+        assert response.status_code == 401
+        body = response.json()
+        # The message must say how to authenticate, not merely that you did not.
+        assert "X-API-Key" in body["error"]["message"]
+
+    async def test_a_valid_api_key_is_accepted(self, secured_client_factory: Any) -> None:
+        client = await secured_client_factory(auth_enabled=True, api_keys=["test-key-one"])
+
+        response = await client.get(
+            "/api/v1/search",
+            params={"q": "alzheimer"},
+            headers={"X-API-Key": "test-key-one"},
+        )
+
+        assert response.status_code == 200
+
+    async def test_a_wrong_api_key_is_refused(self, secured_client_factory: Any) -> None:
+        client = await secured_client_factory(auth_enabled=True, api_keys=["test-key-one"])
+
+        response = await client.get(
+            "/api/v1/search",
+            params={"q": "alzheimer"},
+            headers={"X-API-Key": "test-key-two"},
+        )
+
+        assert response.status_code == 401
+
+    async def test_a_valid_bearer_token_is_accepted(self, secured_client_factory: Any) -> None:
+        from theragraph.core.security import issue_token
+
+        secret = "test-secret-long-enough-to-be-plausible"
+        client = await secured_client_factory(auth_enabled=True, jwt_secret=secret)
+        token = issue_token("researcher@example.test", secret=secret)
+
+        response = await client.get(
+            "/api/v1/search",
+            params={"q": "alzheimer"},
+            headers={"Authorization": f"Bearer {token}"},
+        )
+
+        assert response.status_code == 200
+
+    async def test_a_token_signed_with_another_secret_is_refused(
+        self, secured_client_factory: Any
+    ) -> None:
+        from theragraph.core.security import issue_token
+
+        client = await secured_client_factory(auth_enabled=True, jwt_secret="the-real-secret-value")
+        forged = issue_token("attacker@example.test", secret="a-different-secret")
+
+        response = await client.get(
+            "/api/v1/search",
+            params={"q": "alzheimer"},
+            headers={"Authorization": f"Bearer {forged}"},
+        )
+
+        assert response.status_code == 401
+
+    async def test_liveness_stays_open_when_auth_is_enabled(
+        self, secured_client_factory: Any
+    ) -> None:
+        """A probe that needs a credential is a probe that reports the wrong thing."""
+        client = await secured_client_factory(auth_enabled=True, api_keys=["test-key-one"])
+
+        assert (await client.get("/healthz")).status_code == 200
+
+    async def test_rate_limit_throttles_and_says_when_to_retry(
+        self, secured_client_factory: Any
+    ) -> None:
+        client = await secured_client_factory(
+            rate_limit_enabled=True, rate_limit_requests=3, rate_limit_window_s=60
+        )
+
+        statuses = [
+            (await client.get("/api/v1/search", params={"q": "alzheimer"})).status_code
+            for _ in range(5)
+        ]
+
+        assert statuses[:3] == [200, 200, 200]
+        assert statuses[3:] == [429, 429]
+
+        throttled = await client.get("/api/v1/search", params={"q": "alzheimer"})
+        assert throttled.headers["Retry-After"]
+        assert throttled.headers["X-RateLimit-Remaining"] == "0"

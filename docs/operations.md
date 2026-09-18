@@ -91,10 +91,17 @@ JWT secret.
   bounds. SMILES and SMARTS strings are parsed by RDKit before use, and a parse failure
   is a 422 with the reason.
 * **Authentication** — off by default for local development; `AUTH_ENABLED=true` requires
-  a bearer JWT or an API key from `API_KEYS`. Any public deployment must set it.
+  a bearer JWT or an API key from `API_KEYS`. Any public deployment must set it. There is
+  no partial-credit path: a request either authenticates or is refused with a message
+  naming the two accepted headers. `/healthz` stays open, because a liveness probe that
+  needs a credential reports the wrong thing. The enforcement itself is tested — an
+  unauthenticated request, a wrong key, and a token signed with another secret each
+  produce 401.
 * **Rate limiting** — a global per-caller bucket in middleware (so it also covers
   unmatched routes and runs before any database work), plus a tighter bucket on the agent
-  endpoints. Responses carry `X-RateLimit-*` headers; `remaining` is clamped at zero.
+  endpoints. Responses carry `X-RateLimit-*` headers and a throttled one carries
+  `Retry-After`; `remaining` is clamped at zero. Also tested against a real limit rather
+  than assumed.
 * **Secrets** — only ever read from the environment. `theragraph info` prints the
   effective configuration with secrets redacted, and logs never contain a key.
 * **API keys for upstream services** — none are required. The public APIs TheraGraph uses

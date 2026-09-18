@@ -135,6 +135,46 @@ async def _noop_lifespan(app: Any) -> AsyncIterator[None]:  # pragma: no cover -
     yield
 
 
+@pytest_asyncio.fixture
+async def secured_client_factory(settings: Settings, engine: AsyncEngine) -> AsyncIterator[Any]:
+    """Build an API client for a *modified* Settings -- auth or rate limiting enabled.
+
+    The default ``api_client`` runs with both disabled, which is right for testing the
+    science but leaves the security gates unexercised. This factory exists so the
+    enforcement path itself can be asserted: an unauthenticated request must be refused,
+    and an over-quota one must be throttled.
+    """
+    from theragraph.core.ratelimit import RateLimiter
+    from theragraph.jobs.queue import InlineQueue
+    from theragraph.main import create_app
+    from theragraph.ml.inference import InferenceService
+
+    clients: list[AsyncClient] = []
+
+    async def build(**overrides: Any) -> AsyncClient:
+        secured = settings.model_copy(update=overrides)
+        app = create_app(secured)
+        cache = build_cache("memory://", enabled=False)
+        app.router.lifespan_context = _noop_lifespan  # type: ignore[assignment]
+        app.state.settings = secured
+        app.state.cache = cache
+        app.state.store = FilesystemObjectStore(secured.storage_root / "secured")
+        app.state.inference = InferenceService(secured, cache=cache, store=app.state.store)
+        app.state.rate_limiter = RateLimiter(cache.backend, enabled=secured.rate_limit_enabled)
+        app.state.queue = InlineQueue(secured, cache=cache, store=app.state.store)
+
+        session_module._engine = engine
+        session_module._session_factory = async_sessionmaker(engine, expire_on_commit=False)
+
+        client = AsyncClient(transport=ASGITransport(app=app), base_url="http://testserver")
+        clients.append(client)
+        return client
+
+    yield build
+    for client in clients:
+        await client.aclose()
+
+
 # --------------------------------------------------------------------- factories
 @pytest.fixture
 def now() -> datetime:
