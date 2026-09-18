@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Chart roles as CSS custom properties, from the validated reference palette (dark
+ * steps against the #1a1a19 surface). Charts reference these by role, never raw hex,
+ * so the whole visual system moves in one place.
+ */
+:root {
+  color-scheme: dark;
+
+  --surface-1: #1a1a19;
+  --surface-raised: #222221;
+  --surface-sunken: #0d0d0d;
+  --surface-border: #33332f;
+
+  --text-primary: #ffffff;
+  --text-secondary: #c3c2b7;
+  --text-muted: #8a897e;
+
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --series-4: #c98500;
+  --series-5: #d55181;
+  --series-6: #008300;
+  --series-7: #9085e9;
+  --series-8: #e66767;
+
+  --status-good: #0ca30c;
+  --status-warning: #fab219;
+  --status-serious: #ec835a;
+  --status-critical: #d03b3b;
+
+  /* Sequential blue ramp for magnitude encodings. */
+  --seq-100: #cde2fb;
+  --seq-250: #86b6ef;
+  --seq-400: #3987e5;
+  --seq-550: #1c5cab;
+  --seq-700: #0d366b;
+
+  /* Diverging: blue <-> red with a neutral gray midpoint. */
+  --diverge-low: #3987e5;
+  --diverge-mid: #383835;
+  --diverge-high: #e66767;
+
+  --grid: #2a2a27;
+}
+
+body {
+  margin: 0;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+/* Recessive grid and axes: the data should be the most prominent thing on screen. */
+.recharts-cartesian-grid line {
+  stroke: var(--grid);
+}
+.recharts-cartesian-axis-line,
+.recharts-cartesian-axis-tick-line {
+  stroke: var(--surface-border);
+}
+.recharts-text {
+  fill: var(--text-secondary);
+  font-size: 11px;
+}
+.recharts-tooltip-wrapper {
+  outline: none;
+}
+
+/* A 2px surface gap between adjacent fills keeps stacked segments legible. */
+.recharts-rectangle.recharts-bar-rectangle {
+  stroke: var(--surface-1);
+  stroke-width: 2;
+}
+
+::selection {
+  background: #3987e5;
+  color: #ffffff;
+}
+
+/* Scrollbars that do not fight the dark surface. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--surface-border) transparent;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--surface-border);
+  border-radius: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
