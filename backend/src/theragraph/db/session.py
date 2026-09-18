@@ -102,21 +102,35 @@ def create_engine(settings: Settings) -> AsyncEngine:
 
 
 def init_engine(settings: Settings) -> AsyncEngine:
-    """Create the process-wide engine and session factory."""
+    """Create the process-wide engine and session factory.
+
+    Idempotent for the same database, and *re-binds* when the URL changes rather than
+    ignoring the new settings. Silently keeping the first engine would mean a caller
+    that reconfigured the database quietly kept talking to the old one -- which surfaces
+    as "no such table" a long way from the cause.
+    """
     global _engine, _session_factory
-    if _engine is None:
-        _engine = create_engine(settings)
-        _session_factory = async_sessionmaker(
-            _engine,
-            expire_on_commit=False,
-            autoflush=False,
-            class_=AsyncSession,
-        )
-        log.info(
-            "db.engine_initialised",
-            dialect=_engine.dialect.name,
-            pool_size=getattr(_engine.pool, "size", lambda: None)(),
-        )
+    requested = str(settings.database_url)
+    if _engine is not None:
+        if str(_engine.url.render_as_string(hide_password=False)) == requested:
+            return _engine
+        log.info("db.engine_rebinding", dialect=_engine.dialect.name)
+        _engine.sync_engine.dispose()
+        _engine = None
+        _session_factory = None
+
+    _engine = create_engine(settings)
+    _session_factory = async_sessionmaker(
+        _engine,
+        expire_on_commit=False,
+        autoflush=False,
+        class_=AsyncSession,
+    )
+    log.info(
+        "db.engine_initialised",
+        dialect=_engine.dialect.name,
+        pool_size=getattr(_engine.pool, "size", lambda: None)(),
+    )
     return _engine
 
 

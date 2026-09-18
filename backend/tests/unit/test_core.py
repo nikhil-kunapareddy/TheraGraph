@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import asyncio
 from datetime import UTC, datetime
+from pathlib import Path
 
 import httpx
 import pytest
@@ -328,3 +329,31 @@ class TestObjectStore:
         store = FilesystemObjectStore(tmp_path)
         with pytest.raises(ValueError):
             await store.put_bytes(key, b"x")
+
+
+class TestEngineBinding:
+    """``init_engine`` is a singleton, but not at the cost of using the wrong database."""
+
+    def test_same_url_returns_the_same_engine(self, tmp_path: Path) -> None:
+        from theragraph.config import Settings
+        from theragraph.db.session import init_engine
+
+        settings = Settings(
+            environment="test", database_url=f"sqlite+aiosqlite:///{tmp_path}/one.sqlite3"
+        )
+        assert init_engine(settings) is init_engine(settings)
+
+    def test_a_changed_url_rebinds_rather_than_being_ignored(self, tmp_path: Path) -> None:
+        """Keeping the first engine would surface much later as "no such table"."""
+        from theragraph.config import Settings
+        from theragraph.db.session import init_engine
+
+        first = init_engine(
+            Settings(environment="test", database_url=f"sqlite+aiosqlite:///{tmp_path}/a.sqlite3")
+        )
+        second = init_engine(
+            Settings(environment="test", database_url=f"sqlite+aiosqlite:///{tmp_path}/b.sqlite3")
+        )
+
+        assert second is not first
+        assert str(second.url).endswith("b.sqlite3")
