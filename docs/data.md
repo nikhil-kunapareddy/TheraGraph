@@ -143,7 +143,7 @@ theragraph db demo-corpus    # 1 disease, 2 targets, 4 approved drugs, 3 evidenc
 ```bash
 theragraph ingest seed --plan demo          # three disease areas + all four benchmarks
 theragraph ingest disease MONDO_0004975     # one disease and its targets
-theragraph ingest bioactivity ENSG00000186868 --min-pchembl 6
+theragraph ingest bioactivity BACE1 --max-activities 300
 theragraph ingest moleculenet esol
 ```
 

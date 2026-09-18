@@ -184,7 +184,7 @@ curl "localhost:8000/api/v1/compounds/CHEMBL25"
 # 2. What is in its structural neighbourhood?
 curl -X POST localhost:8000/api/v1/compounds/similarity \
   -H 'Content-Type: application/json' \
-  -d '{"compound_id": "CHEMBL25", "threshold": 0.5, "limit": 25}'
+  -d '{"smiles": "CC(=O)Oc1ccccc1C(=O)O", "threshold": 0.5, "limit": 25}'
 
 # 3. Compute descriptors for the neighbourhood, with units and explanations
 curl -X POST localhost:8000/api/v1/compounds/properties \
