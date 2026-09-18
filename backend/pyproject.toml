@@ -73,8 +73,11 @@ dev = [
   "respx>=0.21",
   "fakeredis>=2.23",
   "freezegun>=1.5",
-  "ruff>=0.6",
-  "mypy>=1.11",
+  # ruff and mypy are pinned to a minor series, not just a floor. A formatter is a CI
+  # gate: an unpinned `ruff format --check` starts failing the day upstream changes its
+  # mind about a line break, on a commit that touched nothing.
+  "ruff>=0.16,<0.17",
+  "mypy>=2.3,<3.0",
   "types-requests",
 ]
 
