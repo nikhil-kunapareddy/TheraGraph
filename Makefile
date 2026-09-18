@@ -7,9 +7,11 @@
 # Targets run against the local virtualenv, not Docker, so they are fast to iterate on.
 
 SHELL := /bin/bash
-VENV := .venv
+# Absolute, because several recipes cd into backend/ or frontend/ first and a relative
+# path would then resolve against the wrong directory.
+VENV := $(CURDIR)/.venv
 PY := $(VENV)/bin/python
-PIP := uv pip install --python $(VENV)/bin/python
+PIP := uv pip install --python $(PY)
 BACKEND := backend
 FRONTEND := frontend
 
@@ -30,50 +32,60 @@ setup: setup-backend setup-frontend ## Install backend and frontend dependencies
 
 setup-backend: ## Create the virtualenv and install the backend
 	@command -v uv >/dev/null || (echo "install uv: https://docs.astral.sh/uv/" && exit 1)
-	uv venv --python 3.11 $(VENV)
+	@test -x $(PY) || uv venv --python 3.11 $(VENV)
 	cd $(BACKEND) && $(PIP) -e ".[dev,xgb]"
 
 setup-frontend: ## Install frontend dependencies
 	cd $(FRONTEND) && npm install --no-audit --no-fund
 
 # ------------------------------------------------------------------- quality
+# The paths here must match .github/workflows/ci.yml exactly. A local gate that checks
+# less than CI is a gate that passes and then fails on push.
+PY_SOURCES := $(BACKEND)/src $(BACKEND)/tests $(BACKEND)/alembic
+
 lint: ## Lint backend and frontend
-	$(VENV)/bin/ruff check $(BACKEND)/src $(BACKEND)/tests
-	$(VENV)/bin/ruff format --check $(BACKEND)/src $(BACKEND)/tests
+	$(VENV)/bin/ruff check $(PY_SOURCES)
+	$(VENV)/bin/ruff format --check $(PY_SOURCES)
 	cd $(FRONTEND) && npm run lint
+	cd $(FRONTEND) && npm run format:check
 
 format: ## Auto-format everything
-	$(VENV)/bin/ruff check --fix $(BACKEND)/src $(BACKEND)/tests
-	$(VENV)/bin/ruff format $(BACKEND)/src $(BACKEND)/tests
+	$(VENV)/bin/ruff check --fix $(PY_SOURCES)
+	$(VENV)/bin/ruff format $(PY_SOURCES)
 	cd $(FRONTEND) && npm run format
 
 typecheck: ## Type-check backend and frontend
-	cd $(BACKEND) && ../$(VENV)/bin/mypy
+	cd $(BACKEND) && $(VENV)/bin/mypy
 	cd $(FRONTEND) && npm run typecheck
 
 test: test-backend test-frontend ## Run every test
 
 test-backend: ## Run the backend test suite
-	cd $(BACKEND) && ../$(VENV)/bin/python -m pytest
+	cd $(BACKEND) && $(VENV)/bin/python -m pytest
 
 test-fast: ## Backend tests, skipping the slow training ones
-	cd $(BACKEND) && ../$(VENV)/bin/python -m pytest -m "not slow"
+	cd $(BACKEND) && $(VENV)/bin/python -m pytest -m "not slow"
 
 test-frontend: ## Run the frontend test suite
 	cd $(FRONTEND) && npm run test
 
 coverage: ## Backend coverage report
-	cd $(BACKEND) && ../$(VENV)/bin/python -m pytest --cov=theragraph --cov-report=term-missing --cov-report=html
+	cd $(BACKEND) && $(VENV)/bin/python -m pytest --cov=theragraph --cov-report=term-missing --cov-report=html
 
 check: lint typecheck test ## Everything CI runs
 	@echo "✓ all checks passed"
 
 # ------------------------------------------------------------------- database
+# Run from the repo root like every other target, not from backend/. A relative SQLite
+# URL resolves against the process cwd, so a target that cd'd first would migrate one
+# file while `seed` and `train` used another -- and the user would see "no such table".
+ALEMBIC := $(VENV)/bin/alembic -c $(BACKEND)/alembic.ini
+
 migrate: ## Apply migrations
-	cd $(BACKEND) && ../$(VENV)/bin/alembic upgrade head
+	$(ALEMBIC) upgrade head
 
 migration: ## Create a migration: make migration m="add x"
-	cd $(BACKEND) && ../$(VENV)/bin/alembic revision --autogenerate -m "$(m)"
+	$(ALEMBIC) revision --autogenerate -m "$(m)"
 
 bootstrap: ## Create the schema from the models (throwaway databases only)
 	$(VENV)/bin/theragraph db bootstrap
