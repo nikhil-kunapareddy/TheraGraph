@@ -1,0 +1,377 @@
+# TheraGraph CI.
+#
+# Five gates, each answering a different question:
+#
+#   backend        - does the Python code lint, type-check and pass its tests?
+#   postgres       - does it still pass against the database it actually deploys on?
+#   migrations     - do the migrations apply, roll back, and match the models?
+#   frontend       - does the UI lint, type-check, test and build?
+#   agent-evals    - does the research agent still meet its quality thresholds?
+#   images         - do the container images build and does compose validate?
+#
+# Everything runs offline. Ingestion replays committed fixtures, the agent runs its
+# deterministic planner, and no job needs an API key -- a CI run that depends on a
+# public API being up is a CI run that fails for reasons unrelated to the change.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PYTHON_VERSION: "3.11"
+  NODE_VERSION: "22"
+  # torch's CPU build is published by PyTorch, not PyPI. Without this the default
+  # Linux wheel pulls ~2.5 GB of CUDA runtime that nothing here uses.
+  PIP_EXTRA_INDEX_URL: "https://download.pytorch.org/whl/cpu"
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # --------------------------------------------------------------------- backend
+  backend:
+    name: Backend (lint, types, tests)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: backend/requirements.lock
+
+      # The lock pins the runtime exactly; the dev extra adds the tools on top. Every
+      # runtime requirement is already satisfied, so this second install only fetches
+      # pytest, ruff and mypy.
+      - name: Install backend
+        working-directory: backend
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.lock
+          pip install -e ".[dev]"
+
+      - name: Lint
+        working-directory: backend
+        run: ruff check src tests alembic
+
+      - name: Formatting
+        working-directory: backend
+        run: ruff format --check src tests alembic
+
+      - name: Type-check
+        working-directory: backend
+        run: mypy
+
+      - name: Tests
+        working-directory: backend
+        run: |
+          pytest --cov=theragraph --cov-report=term-missing \
+                 --cov-report=xml:coverage.xml --junitxml=junit.xml
+
+      - name: OpenAPI schema is current
+        working-directory: backend
+        env:
+          ENVIRONMENT: test
+          DATABASE_URL: "sqlite+aiosqlite:///:memory:"
+          REDIS_URL: "memory://"
+        run: |
+          theragraph openapi --output ../docs/openapi.json
+          git diff --exit-code -- ../docs/openapi.json \
+            || (echo "::error::docs/openapi.json is stale; run 'make openapi'" && exit 1)
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: backend-test-results
+          path: |
+            backend/coverage.xml
+            backend/junit.xml
+          if-no-files-found: ignore
+
+  # -------------------------------------------------------------------- postgres
+  postgres:
+    name: Backend on PostgreSQL
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: theragraph
+          POSTGRES_PASSWORD: theragraph
+          POSTGRES_DB: theragraph_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U theragraph"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+      redis:
+        image: redis:7-alpine
+        ports: ["6379:6379"]
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: backend/requirements.lock
+
+      - name: Install backend
+        working-directory: backend
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.lock
+          pip install -e ".[dev]"
+
+      # The dialect is not an implementation detail: upsert_many compiles a different
+      # ON CONFLICT per backend, JSON becomes JSONB, and timestamps come back aware
+      # rather than naive. This job is what stops a SQLite-only pass hiding a
+      # PostgreSQL-only failure.
+      - name: Tests against PostgreSQL
+        working-directory: backend
+        env:
+          TEST_DATABASE_URL: "postgresql+asyncpg://theragraph:theragraph@localhost:5432/theragraph_test"
+        run: pytest
+
+  # ------------------------------------------------------------------ migrations
+  migrations:
+    name: Migrations
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: theragraph
+          POSTGRES_PASSWORD: theragraph
+          POSTGRES_DB: theragraph_mig
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U theragraph"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      ENVIRONMENT: test
+      DATABASE_URL: "postgresql+asyncpg://theragraph:theragraph@localhost:5432/theragraph_mig"
+      REDIS_URL: "memory://"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: backend/requirements.lock
+
+      - name: Install backend
+        working-directory: backend
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.lock
+          pip install --no-deps -e .
+
+      - name: Upgrade to head
+        working-directory: backend
+        run: alembic upgrade head
+
+      - name: Schema matches the models
+        working-directory: backend
+        run: alembic check
+
+      # A migration that cannot be rolled back is a migration you cannot deploy
+      # safely. The second upgrade proves downgrade left the database re-migratable.
+      - name: Downgrade and re-upgrade
+        working-directory: backend
+        run: |
+          alembic downgrade base
+          alembic upgrade head
+          alembic check
+
+      - name: Same chain applies on SQLite
+        working-directory: backend
+        env:
+          DATABASE_URL: "sqlite+aiosqlite:///./ci-migrations.sqlite3"
+        run: |
+          alembic upgrade head
+          alembic check
+
+  # -------------------------------------------------------------------- frontend
+  frontend:
+    name: Frontend (lint, types, tests, build)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install
+        working-directory: frontend
+        run: npm ci --no-audit --no-fund
+
+      - name: Lint
+        working-directory: frontend
+        run: npm run lint
+
+      - name: Formatting
+        working-directory: frontend
+        run: npm run format:check
+
+      - name: Type-check
+        working-directory: frontend
+        run: npm run typecheck
+
+      - name: Tests
+        working-directory: frontend
+        run: npm test -- --reporter=default --reporter=junit --outputFile=junit.xml
+
+      - name: Build
+        working-directory: frontend
+        run: npm run build
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: frontend-test-results
+          path: frontend/junit.xml
+          if-no-files-found: ignore
+
+  # ----------------------------------------------------------------- agent evals
+  agent-evals:
+    name: Agent evaluation gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: theragraph
+          POSTGRES_PASSWORD: theragraph
+          POSTGRES_DB: theragraph_evals
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U theragraph"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      ENVIRONMENT: test
+      DATABASE_URL: "postgresql+asyncpg://theragraph:theragraph@localhost:5432/theragraph_evals"
+      REDIS_URL: "memory://"
+      CACHE_ENABLED: "false"
+      RATE_LIMIT_ENABLED: "false"
+      # No API key, so the agent runs its deterministic planner: the same tools, the
+      # same validation and the same report, without a model call. The thresholds this
+      # job enforces are therefore about the *workflow*, not about model sampling.
+      AGENT_LLM_BACKEND: deterministic
+      ALLOW_LIVE_INGESTION: "false"
+      DATA_DIR: ../data
+      SEED_DIR: ../data/seed
+      MODEL_REGISTRY_DIR: ../artifacts/models
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: backend/requirements.lock
+
+      - name: Install backend
+        working-directory: backend
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.lock
+          pip install --no-deps -e .
+
+      - name: Schema and data sources
+        working-directory: backend
+        run: |
+          alembic upgrade head
+          theragraph db sources
+
+      # Replays the committed upstream fixtures: the real Open Targets and ChEMBL
+      # payloads that built the shipped corpus, with zero network calls.
+      - name: Rebuild the corpus from fixtures
+        working-directory: backend
+        run: theragraph ingest seed --plan smoke --mode replay
+
+      - name: Train a model for the prediction-dependent cases
+        working-directory: backend
+        run: |
+          theragraph ml train --endpoint solubility --dataset esol \
+            --families random_forest --no-cv --no-random-split
+
+      # Fails the build when pass rate, tool selection, citation correctness,
+      # structured-output validity, honesty on unanswerable questions, or the
+      # zero-tolerance hallucination gate regress.
+      - name: Evaluate the agent
+        working-directory: backend
+        run: theragraph agent eval --output ../artifacts/eval/agent-eval.json
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: agent-eval-report
+          path: artifacts/eval/agent-eval.json
+          if-no-files-found: ignore
+
+  # ---------------------------------------------------------------------- images
+  images:
+    name: Container images
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Compose files are valid
+        run: |
+          docker compose -f docker-compose.yml config --quiet
+          echo "local compose: valid"
+
+      - name: Build backend image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: backend/Dockerfile
+          push: false
+          load: true
+          tags: theragraph-api:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Build frontend image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: frontend/Dockerfile
+          push: false
+          load: true
+          tags: theragraph-web:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      # A built image that cannot import its own package is a broken image; the CLI
+      # entry point exercises the installed console script, not the source tree.
+      - name: Smoke-test the backend image
+        run: |
+          docker run --rm -e ENVIRONMENT=test \
+            -e DATABASE_URL=sqlite+aiosqlite:///:memory: -e REDIS_URL=memory:// \
+            theragraph-api:ci theragraph version
