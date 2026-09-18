@@ -144,9 +144,18 @@ async def start_research(
             idempotency_key=f"research:{run.id}",
             priority=50,
         )
-        await runs_repo.update_run(context.session, run, job_id=job.id, status="queued")
+        # Record the job link, and *only* the job link. The run's status belongs to
+        # whoever executes it: the inline queue runs the workflow inside ``enqueue``
+        # above, so writing "queued" here would overwrite the terminal status it just
+        # set -- leaving a finished run that reports itself as still waiting.
+        await runs_repo.update_run(context.session, run, job_id=job.id)
         await context.session.commit()
-        return {"run_id": run.id, "status": "queued", "job_id": job.id, "inline": False}
+        return {
+            "run_id": run.id,
+            "status": run.status,
+            "job_id": job.id,
+            "inline": False,
+        }
 
     return {"run_id": run.id, "status": run.status, "inline": False}
 

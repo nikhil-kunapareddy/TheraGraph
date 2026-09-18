@@ -385,6 +385,33 @@ class TestAgentEndpoints:
         assert payload["run_id"].startswith("RUN-")
         assert payload["status"] == "succeeded"
 
+    async def test_queued_run_reports_the_status_it_actually_reached(
+        self, api_client: AsyncClient, seeded: dict[str, Any]
+    ) -> None:
+        """The default HTTP path enqueues, and the inline queue runs the job immediately.
+
+        The run's status is owned by whoever executes it. Writing "queued" after the
+        enqueue call -- which the inline queue has already run to completion -- leaves a
+        finished run that reports itself as still waiting, and a UI that polls forever.
+        """
+        response = await api_client.post(
+            "/api/v1/agent/research",
+            json={"query": "What targets are associated with Alzheimer disease?"},
+        )
+        payload = response.json()
+
+        assert response.status_code == 200
+        assert payload["inline"] is False
+        assert payload["job_id"]
+        assert payload["status"] == "succeeded"
+
+        # And the persisted row agrees with what the response claimed.
+        trace = await api_client.get(f"/api/v1/runs/{payload['run_id']}")
+        body = trace.json()
+        assert body["status"] == "succeeded"
+        assert body["runtime_ms"] > 0
+        assert body["tool_calls"]
+
     async def test_short_query_is_rejected(self, api_client: AsyncClient) -> None:
         response = await api_client.post("/api/v1/agent/research", json={"query": "hi"})
         assert response.status_code == 422
