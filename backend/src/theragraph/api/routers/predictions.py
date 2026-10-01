@@ -32,6 +32,8 @@ async def predict(context: ContextDep, payload: PredictRequest) -> dict[str, Any
     """
     if not payload.has_input():
         raise ValidationError("provide compound_ids and/or smiles")
+    if payload.persist:
+        context.principal.require_role("researcher")
 
     inference = context.require_inference()
     molecules: list[tuple[str | None, str]] = []

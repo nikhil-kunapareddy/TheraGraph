@@ -463,8 +463,10 @@ class GraphModel:
             {
                 "state_dict": self.network.state_dict(),
                 "hyperparameters": self.hyperparameters,
-                "label_mean": self.label_mean,
-                "label_std": self.label_std,
+                # Plain floats, not numpy scalars: ``load`` uses ``weights_only=True``,
+                # which refuses to unpickle anything but tensors and builtins.
+                "label_mean": float(self.label_mean),
+                "label_std": float(self.label_std),
                 "graph_feature_version": GRAPH_FEATURE_VERSION,
             },
             path,
@@ -488,7 +490,9 @@ class GraphModel:
         if not path.exists() or not metadata_path.exists():
             raise ModelNotAvailableError(f"graph model artifact missing at {path}")
         resolved_device = torch.device(device or "cpu")
-        checkpoint = torch.load(path, map_location=resolved_device, weights_only=False)
+        # weights_only: a checkpoint is a file on disk or in object storage, and a full
+        # unpickle of one is arbitrary code execution for whoever can write there.
+        checkpoint = torch.load(path, map_location=resolved_device, weights_only=True)
         metadata = json.loads(metadata_path.read_text())
 
         stored_version = checkpoint.get("graph_feature_version")

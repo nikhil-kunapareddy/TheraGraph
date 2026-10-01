@@ -29,6 +29,8 @@ from theragraph.core.ids import (
 from theragraph.core.ratelimit import RateLimiter
 from theragraph.core.security import (
     ANONYMOUS,
+    DEFAULT_INSECURE_SECRET,
+    assert_secrets_are_safe,
     hash_api_key,
     issue_token,
     redact,
@@ -221,6 +223,47 @@ class TestSecurity:
         assert cleaned["api_key"] == "[REDACTED]"
         assert cleaned["nested"]["token"] == "[REDACTED]"
         assert cleaned["nested"]["ok"] == 1
+
+
+class TestProductionBootGuard:
+    """The image defaults to production; a bare ``docker run`` must fail closed."""
+
+    strong = "x" * 32
+
+    def test_production_without_auth_refuses_to_boot(self) -> None:
+        with pytest.raises(RuntimeError, match="AUTH_ENABLED"):
+            assert_secrets_are_safe(
+                environment="production", auth_enabled=False, jwt_secret=self.strong
+            )
+
+    @pytest.mark.parametrize("secret", [DEFAULT_INSECURE_SECRET, "short-secret"])
+    def test_production_with_a_weak_secret_refuses_to_boot(self, secret: str) -> None:
+        with pytest.raises(RuntimeError, match="JWT_SECRET"):
+            assert_secrets_are_safe(environment="production", auth_enabled=True, jwt_secret=secret)
+
+    def test_production_with_auth_and_a_strong_secret_boots(self) -> None:
+        assert_secrets_are_safe(environment="production", auth_enabled=True, jwt_secret=self.strong)
+
+    @pytest.mark.parametrize("environment", ["local", "test", "staging"])
+    def test_non_production_environments_are_not_gated(self, environment: str) -> None:
+        assert_secrets_are_safe(
+            environment=environment, auth_enabled=False, jwt_secret=DEFAULT_INSECURE_SECRET
+        )
+
+
+class TestModelRegistryPaths:
+    def test_model_dir_stays_under_the_root(self, tmp_path: Path) -> None:
+        from theragraph.ml.registry import local_model_dir
+
+        directory = local_model_dir(tmp_path, "solubility", "gin", "2026.01.01.abcd1234")
+        assert directory.resolve().is_relative_to(tmp_path.resolve())
+
+    @pytest.mark.parametrize("endpoint", ["../escape", "../../tmp/x", "/etc"])
+    def test_traversal_is_refused(self, tmp_path: Path, endpoint: str) -> None:
+        from theragraph.ml.registry import local_model_dir
+
+        with pytest.raises(ValueError, match="escapes"):
+            local_model_dir(tmp_path, endpoint, "gin", "v1")
 
 
 class TestCircuitBreaker:

@@ -136,7 +136,8 @@ ContextDep = Annotated[ServiceContext, Depends(service_context)]
 async def agent_rate_limit(
     request: Request, settings: SettingsDep, principal: PrincipalDep
 ) -> None:
-    """Tighter limit for endpoints that spend LLM tokens."""
+    """Role gate and tighter limit for endpoints that spend LLM tokens."""
+    principal.require_role("researcher")
     if not settings.rate_limit_enabled:
         return
     limiter: RateLimiter = request.app.state.rate_limiter
@@ -156,7 +157,6 @@ async def agent_rate_limit(
 
 
 def _client_ip(request: Request) -> str:
-    forwarded = request.headers.get("x-forwarded-for")
-    if forwarded:
-        return forwarded.split(",")[0].strip()
+    # Not X-Forwarded-For: its leftmost entry is whatever the client chose to send.
+    # uvicorn's --proxy-headers already rewrites client.host for trusted proxies.
     return request.client.host if request.client else "unknown"

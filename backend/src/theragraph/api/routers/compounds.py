@@ -6,7 +6,7 @@ from typing import Annotated, Any
 
 from fastapi import APIRouter, Path, Query
 
-from theragraph.api.deps import ContextDep
+from theragraph.api.deps import ContextDep, PrincipalDep
 from theragraph.chem.descriptors import descriptor_dictionary
 from theragraph.chem.fingerprints import FINGERPRINT_KINDS
 from theragraph.schemas.requests import (
@@ -32,8 +32,12 @@ async def descriptors() -> dict[str, Any]:
 
 
 @router.post("/properties", summary="Compute descriptors for a structure")
-async def compute_properties(payload: PropertiesRequest) -> dict[str, Any]:
-    """Ad-hoc computation for a pasted SMILES. Nothing is persisted."""
+async def compute_properties(_: PrincipalDep, payload: PropertiesRequest) -> dict[str, Any]:
+    """Ad-hoc computation for a pasted SMILES. Nothing is persisted.
+
+    Takes no context, but still requires the caller to authenticate when auth is on:
+    RDKit parsing is CPU work an anonymous caller should not get for free.
+    """
     return await compounds_service.compute_properties_for_smiles(payload.smiles)
 
 

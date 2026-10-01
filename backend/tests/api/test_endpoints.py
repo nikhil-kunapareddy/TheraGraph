@@ -572,6 +572,29 @@ class TestJobEndpoints:
         )
         assert response.status_code == 422
 
+    @pytest.mark.parametrize("endpoint", ["../../tmp/x", "solubility/../../x", "Sol.ubility"])
+    async def test_training_rejects_an_endpoint_that_is_not_a_slug(
+        self, api_client: AsyncClient, endpoint: str
+    ) -> None:
+        """The endpoint name becomes a directory; anything but a slug could escape it."""
+        response = await api_client.post(
+            "/api/v1/jobs/train", json={"endpoint": endpoint, "dataset_key": "esol"}
+        )
+        assert response.status_code == 422
+
+    async def test_training_rejects_unbounded_hyperparameters(
+        self, api_client: AsyncClient
+    ) -> None:
+        response = await api_client.post(
+            "/api/v1/jobs/train",
+            json={
+                "endpoint": "solubility",
+                "dataset_key": "esol",
+                "baseline_hyperparameters": {"n_estimators": 10**8},
+            },
+        )
+        assert response.status_code == 422
+
 
 class TestSecurityEnforcement:
     """The gates themselves, not just the helpers behind them.
@@ -673,3 +696,27 @@ class TestSecurityEnforcement:
         throttled = await client.get("/api/v1/search", params={"q": "alzheimer"})
         assert throttled.headers["Retry-After"]
         assert throttled.headers["X-RateLimit-Remaining"] == "0"
+
+    async def test_rotating_headers_does_not_reset_the_rate_limit(
+        self, secured_client_factory: Any
+    ) -> None:
+        """The limit runs before auth, so no unverified header may pick the bucket."""
+        client = await secured_client_factory(
+            rate_limit_enabled=True, rate_limit_requests=3, rate_limit_window_s=60
+        )
+
+        statuses = [
+            (
+                await client.get(
+                    "/api/v1/search",
+                    params={"q": "alzheimer"},
+                    headers={
+                        "X-API-Key": f"made-up-key-{attempt}",
+                        "X-Forwarded-For": f"203.0.113.{attempt}",
+                    },
+                )
+            ).status_code
+            for attempt in range(5)
+        ]
+
+        assert statuses[3:] == [429, 429]

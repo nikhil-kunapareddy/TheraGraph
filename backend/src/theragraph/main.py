@@ -161,7 +161,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         docs_url="/docs",
         redoc_url="/redoc",
         openapi_url="/openapi.json",
-        contact={"name": "TheraGraph", "url": "https://github.com/theragraph"},
+        contact={"name": "TheraGraph", "url": "https://github.com/nikhil-kunapareddy/TheraGraph"},
         license_info={"name": "Apache-2.0"},
     )
     app.state.settings = resolved

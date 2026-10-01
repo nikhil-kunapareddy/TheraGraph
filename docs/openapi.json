@@ -684,17 +684,51 @@
           "compounds"
         ],
         "summary": "Compute descriptors for a structure",
-        "description": "Ad-hoc computation for a pasted SMILES. Nothing is persisted.",
+        "description": "Ad-hoc computation for a pasted SMILES. Nothing is persisted.\n\nTakes no context, but still requires the caller to authenticate when auth is on:\nRDKit parsing is CPU work an anonymous caller should not get for free.",
         "operationId": "compute_properties_api_v1_compounds_properties_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Api-Key"
+            }
+          }
+        ],
         "requestBody": {
+          "required": true,
           "content": {
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/PropertiesRequest"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -702,8 +736,8 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": true,
                   "type": "object",
+                  "additionalProperties": true,
                   "title": "Response Compute Properties Api V1 Compounds Properties Post"
                 }
               }
@@ -4427,8 +4461,7 @@
         "properties": {
           "endpoint": {
             "type": "string",
-            "maxLength": 64,
-            "minLength": 2,
+            "pattern": "^[a-z][a-z0-9_]{1,63}$",
             "title": "Endpoint"
           },
           "dataset_key": {

@@ -9,11 +9,12 @@ tests.
 from __future__ import annotations
 
 import functools
+import json
 from pathlib import Path
 from typing import Annotated, Literal
 
 from pydantic import AnyHttpUrl, Field, field_validator
-from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 
@@ -36,7 +37,11 @@ class Settings(BaseSettings):
     version: str = "0.1.0"
     debug: bool = False
     api_prefix: str = "/api/v1"
-    cors_origins: list[str] = Field(default_factory=lambda: ["http://localhost:5173"])
+    # NoDecode: pydantic-settings would otherwise JSON-decode list fields before
+    # ``_split_csv`` runs, so ``CORS_ORIGINS=http://localhost:5173`` failed at boot.
+    cors_origins: Annotated[list[str], NoDecode] = Field(
+        default_factory=lambda: ["http://localhost:5173"]
+    )
 
     # ------------------------------------------------------------- datastores
     database_url: str = "postgresql+asyncpg://theragraph:theragraph@localhost:5432/theragraph"
@@ -77,7 +82,9 @@ class Settings(BaseSettings):
     http_timeout_s: float = 30.0
     http_max_retries: int = 4
     http_backoff_base_s: float = 0.5
-    http_user_agent: str = "TheraGraph/0.1 (research workbench; +https://github.com/theragraph)"
+    http_user_agent: str = (
+        "TheraGraph/0.1 (research workbench; +https://github.com/nikhil-kunapareddy/TheraGraph)"
+    )
     allow_live_ingestion: bool = True
     """When False, ingestion connectors refuse network egress and only replay fixtures."""
 
@@ -99,7 +106,7 @@ class Settings(BaseSettings):
     jwt_secret: str = "dev-only-insecure-secret-change-me"
     jwt_algorithm: str = "HS256"
     jwt_ttl_s: int = 86_400
-    api_keys: list[str] = Field(default_factory=list)
+    api_keys: Annotated[list[str], NoDecode] = Field(default_factory=list)
     rate_limit_enabled: bool = True
     rate_limit_requests: int = 120
     rate_limit_window_s: int = 60
@@ -125,13 +132,13 @@ class Settings(BaseSettings):
     @field_validator("cors_origins", "api_keys", mode="before")
     @classmethod
     def _split_csv(cls, value: object) -> object:
-        """Allow comma-separated lists in env vars (``A,B`` -> ``["A", "B"]``)."""
+        """Accept ``A,B`` or a JSON list in env vars; both become ``["A", "B"]``."""
         if isinstance(value, str):
             stripped = value.strip()
             if not stripped:
                 return []
             if stripped.startswith("["):
-                return value
+                return json.loads(stripped)
             return [item.strip() for item in stripped.split(",") if item.strip()]
         return value
 

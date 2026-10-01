@@ -140,6 +140,24 @@ class TestToolExecution:
         assert execution.status == "failed"
         assert execution.error_code == "tool_not_permitted"
 
+    async def test_write_tools_stay_offline_when_live_ingestion_is_disabled(
+        self, context: ServiceContext
+    ) -> None:
+        """ALLOW_LIVE_INGESTION=false binds the agent exactly as it binds the REST API.
+
+        The test settings disable live ingestion and the seed directory has no fixtures,
+        so the only way this call can succeed is by reaching the network.
+        """
+        from theragraph.ingestion.pipelines import ensure_data_sources
+
+        assert context.settings.allow_live_ingestion is False
+        await ensure_data_sources(context.session)
+        execution = await execute_tool(
+            context, "ingest_disease", {"efo_id": "MONDO_0004975"}, allow_mutating=True
+        )
+        assert execution.status == "failed"
+        assert execution.error_code == "live_ingestion_disabled"
+
     async def test_domain_errors_become_structured_failures(
         self, context: ServiceContext, seeded: dict[str, Any]
     ) -> None:

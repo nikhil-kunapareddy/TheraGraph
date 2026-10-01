@@ -188,6 +188,8 @@ async def execute_run(
             await context.session.commit()
 
             brief = await corpus_brief(context)
+            # The ingestion tools themselves fall back to fixture replay when the
+            # deployment disables live ingestion, so this flag cannot reach the network.
             allow_ingestion = bool((run.parameters or {}).get("allow_ingestion", False))
 
             # ------------------------------------------------------------- plan

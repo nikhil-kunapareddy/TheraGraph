@@ -6,8 +6,8 @@ TheraGraph supports two credential types:
 * **JWT bearer tokens** for the web UI.
 
 Auth is *off* by default for local development and *required* when
-``AUTH_ENABLED=true`` (the deployed demo). A production boot with auth enabled and a
-default secret refuses to start -- failing closed is the only safe default.
+``AUTH_ENABLED=true`` (the deployed demo). A production boot with auth disabled, or with
+a default or short secret, refuses to start -- failing closed is the only safe default.
 """
 
 from __future__ import annotations
@@ -115,14 +115,28 @@ def verify_token(token: str, *, secret: str, algorithms: list[str] | None = None
     return Principal(subject=str(payload["sub"]), role=role, auth_method="jwt")
 
 
+#: HS256 keys shorter than the hash output are brute-forceable offline from one token.
+MIN_JWT_SECRET_LENGTH = 32
+
+
 def assert_secrets_are_safe(*, environment: str, auth_enabled: bool, jwt_secret: str) -> None:
-    """Refuse to serve production traffic with development secrets."""
+    """Refuse to serve production traffic without auth or with development secrets.
+
+    The container image defaults to ``ENVIRONMENT=production``, so a bare ``docker run``
+    lands here: it must fail closed rather than serve training, ingestion and agent runs
+    to anonymous callers.
+    """
     if environment != "production":
         return
-    if auth_enabled and jwt_secret == DEFAULT_INSECURE_SECRET:
+    if not auth_enabled:
         raise RuntimeError(
-            "JWT_SECRET is still the development default; set a strong secret before "
-            "running in production."
+            "AUTH_ENABLED must be true in production. Set ENVIRONMENT=local to run "
+            "without authentication on a trusted machine."
+        )
+    if jwt_secret == DEFAULT_INSECURE_SECRET or len(jwt_secret) < MIN_JWT_SECRET_LENGTH:
+        raise RuntimeError(
+            f"JWT_SECRET must be a non-default secret of at least {MIN_JWT_SECRET_LENGTH} "
+            "characters in production (e.g. `openssl rand -hex 32`)."
         )
 
 

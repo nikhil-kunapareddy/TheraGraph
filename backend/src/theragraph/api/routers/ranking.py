@@ -29,6 +29,8 @@ async def presets() -> dict[str, Any]:
 
 @router.post("", summary="Prioritise candidate compounds for a target")
 async def prioritize(context: ContextDep, payload: PrioritizeRequest) -> dict[str, Any]:
+    if payload.persist:
+        context.principal.require_role("researcher")
     return await prioritization.prioritize(
         context,
         target_identifier=payload.target,

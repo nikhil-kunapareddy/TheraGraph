@@ -138,9 +138,11 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
         if limiter is None:
             return await call_next(request)
 
-        identity = request.headers.get("x-api-key") or (
-            request.client.host if request.client else "unknown"
-        )
+        # The client address, never a request header: this runs before authentication,
+        # so a header value is unverified and a caller could rotate it to get a fresh
+        # bucket on every request. Behind a proxy, uvicorn resolves the real address
+        # from X-Forwarded-For only for peers listed in FORWARDED_ALLOW_IPS.
+        identity = request.client.host if request.client else "unknown"
         decision = await limiter.check(
             identity,
             bucket="global",
@@ -174,7 +176,9 @@ def install_middleware(app: FastAPI, settings: Settings) -> None:
     app.add_middleware(
         CORSMiddleware,
         allow_origins=settings.cors_origins,
-        allow_credentials=True,
+        # Credentials travel in headers (X-API-Key, Authorization), never cookies, so
+        # there is nothing for a cross-origin page to ride on.
+        allow_credentials=False,
         allow_methods=["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
         allow_headers=["*"],
         expose_headers=["X-Request-ID", "X-RateLimit-Remaining", "Retry-After"],

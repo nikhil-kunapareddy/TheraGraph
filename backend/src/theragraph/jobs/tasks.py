@@ -68,12 +68,17 @@ async def ingest_evidence(context: JobContext, payload: dict[str, Any]) -> dict[
 
 @task("ingest_bioactivity")
 async def ingest_bioactivity(context: JobContext, payload: dict[str, Any]) -> dict[str, Any]:
-    _require(payload, "target_key")
+    # The REST request names the field ``target``; older payloads used ``target_key``.
+    target_key = payload.get("target_key") or payload.get("target")
+    if not target_key:
+        raise ValidationError(
+            "job payload is missing required fields", details={"missing": ["target"]}
+        )
     service = _ingestion_service(context, payload.get("mode"))
     try:
         outcome = await service.ingest_target_bioactivity(
             context.session,
-            target_key=payload["target_key"],
+            target_key=target_key,
             max_activities=int(payload.get("max_activities", 300)),
             activity_types=payload.get("activity_types"),
         )

@@ -160,7 +160,11 @@ def artifact_key(endpoint: str, family: str, version: str, filename: str) -> str
 
 
 def local_model_dir(root: Path, endpoint: str, family: str, version: str) -> Path:
-    return Path(root) / endpoint / family / version
+    """Model directory under ``root``; refuses any component that would escape it."""
+    directory = Path(root) / endpoint / family / version
+    if not directory.resolve().is_relative_to(Path(root).resolve()):
+        raise ValueError(f"model path escapes the registry root: {endpoint}/{family}/{version}")
+    return directory
 
 
 async def save_artifacts(

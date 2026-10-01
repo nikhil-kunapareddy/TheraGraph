@@ -719,12 +719,23 @@ async def _corpus(context: ServiceContext, args: CorpusInput) -> ToolResult:
     )
 
 
-async def _ingest_disease(context: ServiceContext, args: IngestDiseaseInput) -> ToolResult:
+def _agent_ingestion_mode(context: ServiceContext) -> Any:
+    """AUTO when the deployment allows live ingestion, otherwise fixture replay only.
+
+    The REST ingestion endpoints refuse live ingestion when ``ALLOW_LIVE_INGESTION`` is
+    false; a run parameter must not turn the agent into the way around that.
+    """
     from theragraph.ingestion.base import IngestionMode
+
+    return IngestionMode.AUTO if context.settings.allow_live_ingestion else IngestionMode.REPLAY
+
+
+async def _ingest_disease(context: ServiceContext, args: IngestDiseaseInput) -> ToolResult:
     from theragraph.ingestion.pipelines import IngestionService, build_connectors
 
-    connectors = build_connectors(context.settings, mode=IngestionMode.AUTO)
-    service = IngestionService(context.settings, connectors, mode=IngestionMode.AUTO)
+    mode = _agent_ingestion_mode(context)
+    connectors = build_connectors(context.settings, mode=mode)
+    service = IngestionService(context.settings, connectors, mode=mode)
     try:
         outcome = await service.ingest_disease(
             context.session, args.efo_id, n_targets=args.n_targets
@@ -741,11 +752,11 @@ async def _ingest_disease(context: ServiceContext, args: IngestDiseaseInput) -> 
 
 
 async def _ingest_bioactivity(context: ServiceContext, args: IngestBioactivityInput) -> ToolResult:
-    from theragraph.ingestion.base import IngestionMode
     from theragraph.ingestion.pipelines import IngestionService, build_connectors
 
-    connectors = build_connectors(context.settings, mode=IngestionMode.AUTO)
-    service = IngestionService(context.settings, connectors, mode=IngestionMode.AUTO)
+    mode = _agent_ingestion_mode(context)
+    connectors = build_connectors(context.settings, mode=mode)
+    service = IngestionService(context.settings, connectors, mode=mode)
     try:
         outcome = await service.ingest_target_bioactivity(
             context.session, target_key=args.target, max_activities=args.max_activities

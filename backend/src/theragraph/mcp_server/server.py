@@ -216,6 +216,15 @@ def main() -> None:
     init_engine(settings)
     server = build_server(settings)
     transport = os.environ.get("THERAGRAPH_MCP_TRANSPORT", "stdio")
+    # The MCP server has no authentication of its own. Over stdio that is fine -- only
+    # the parent process can talk to it -- but an HTTP transport would expose every tool
+    # to anything that can reach the port, so it must be asked for explicitly.
+    if transport != "stdio" and os.environ.get("THERAGRAPH_MCP_ALLOW_NETWORK") != "true":
+        raise SystemExit(
+            f"refusing MCP transport {transport!r}: it is unauthenticated. Bind it to "
+            "localhost or put it behind an authenticating proxy, then set "
+            "THERAGRAPH_MCP_ALLOW_NETWORK=true."
+        )
     log.info("mcp.starting", transport=transport)
     server.run(transport=transport)  # type: ignore[arg-type]
 

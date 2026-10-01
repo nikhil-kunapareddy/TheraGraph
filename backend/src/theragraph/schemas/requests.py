@@ -165,8 +165,38 @@ ModelFamily = Literal["random_forest", "xgboost", "gin"]
 DEFAULT_FAMILIES: tuple[ModelFamily, ...] = ("random_forest", "gin")
 
 
+#: Upper bounds on the hyperparameters that set a training job's cost. A request is
+#: user input; without these one call could pin a worker for days or exhaust its memory.
+HYPERPARAMETER_LIMITS: dict[str, float] = {
+    "n_estimators": 2000,
+    "max_depth": 64,
+    "max_epochs": 500,
+    "epochs": 500,
+    "hidden_dim": 1024,
+    "n_layers": 12,
+    "batch_size": 4096,
+    "patience": 200,
+    "ensemble_size": 10,
+    "mc_samples": 200,
+}
+
+
+def _bounded_hyperparameters(value: dict[str, Any]) -> dict[str, Any]:
+    if len(value) > 32:
+        raise ValueError("at most 32 hyperparameters may be overridden")
+    for key, item in value.items():
+        if not isinstance(item, (bool, int, float, str, type(None))):
+            raise ValueError(f"hyperparameter {key!r} must be a scalar")
+        limit = HYPERPARAMETER_LIMITS.get(key)
+        if limit is not None and isinstance(item, (int, float)) and item > limit:
+            raise ValueError(f"hyperparameter {key!r} must be <= {limit:g}")
+    return value
+
+
 class TrainRequest(StrictModel):
-    endpoint: Annotated[str, Field(min_length=2, max_length=64)]
+    # The endpoint name becomes a directory under the model registry, so it is
+    # restricted to a safe slug: no separators, no dots, no traversal.
+    endpoint: Annotated[str, Field(pattern=r"^[a-z][a-z0-9_]{1,63}$")]
     dataset_key: Literal["esol", "bbbp", "lipophilicity", "clintox"]
     families: list[ModelFamily] = Field(
         default_factory=lambda: list(DEFAULT_FAMILIES), max_length=3
@@ -178,6 +208,11 @@ class TrainRequest(StrictModel):
     experiment_name: str | None = Field(default=None, max_length=255)
     baseline_hyperparameters: dict[str, Any] = Field(default_factory=dict)
     graph_hyperparameters: dict[str, Any] = Field(default_factory=dict)
+
+    @field_validator("baseline_hyperparameters", "graph_hyperparameters")
+    @classmethod
+    def _bounded(cls, value: dict[str, Any]) -> dict[str, Any]:
+        return _bounded_hyperparameters(value)
 
 
 class SeedRequest(StrictModel):
