@@ -6,6 +6,9 @@
 #
 # Ports are deliberately non-default on the host (55432, 63790, 9000) so the stack does
 # not collide with a locally installed Postgres or Redis.
+#
+# Every port binds to 127.0.0.1. The credentials below are development defaults and
+# Redis has no password, so none of these services may be reachable from the network.
 
 name: theragraph
 
@@ -28,6 +31,9 @@ x-backend-env: &backend-env
   ALLOW_LIVE_INGESTION: ${ALLOW_LIVE_INGESTION:-true}
   OTEL_ENABLED: ${OTEL_ENABLED:-false}
   OTEL_EXPORTER_ENDPOINT: ${OTEL_EXPORTER_ENDPOINT:-}
+  # Trust X-Forwarded-For from any peer. Safe only because the API is reachable solely
+  # through the frontend's nginx proxy on the compose network (and 127.0.0.1 locally).
+  FORWARDED_ALLOW_IPS: "*"
 
 services:
   postgres:
@@ -38,7 +44,7 @@ services:
       POSTGRES_DB: theragraph
       # Deterministic collation so index ordering matches between machines.
       POSTGRES_INITDB_ARGS: "--locale=C --encoding=UTF8"
-    ports: ["55432:5432"]
+    ports: ["127.0.0.1:55432:5432"]
     volumes:
       - postgres-data:/var/lib/postgresql/data
     healthcheck:
@@ -52,7 +58,7 @@ services:
     image: redis:7-alpine
     # appendonly keeps queued jobs across a restart; the database is still the truth.
     command: ["redis-server", "--appendonly", "yes", "--maxmemory-policy", "noeviction"]
-    ports: ["63790:6379"]
+    ports: ["127.0.0.1:63790:6379"]
     volumes:
       - redis-data:/data
     healthcheck:
@@ -69,8 +75,8 @@ services:
       MINIO_ROOT_USER: theragraph
       MINIO_ROOT_PASSWORD: theragraph-secret
     ports:
-      - "9000:9000"
-      - "9001:9001"
+      - "127.0.0.1:9000:9000"
+      - "127.0.0.1:9001:9001"
     volumes:
       - minio-data:/data
     healthcheck:
@@ -109,7 +115,7 @@ services:
       context: .
       dockerfile: backend/Dockerfile
     environment: *backend-env
-    ports: ["8000:8000"]
+    ports: ["127.0.0.1:8000:8000"]
     depends_on:
       postgres: { condition: service_healthy }
       redis: { condition: service_healthy }
@@ -151,7 +157,7 @@ services:
       dockerfile: frontend/Dockerfile
       args:
         VITE_API_BASE: /api/v1
-    ports: ["5173:8080"]
+    ports: ["127.0.0.1:5173:8080"]
     depends_on:
       api: { condition: service_started }
     restart: unless-stopped

@@ -53,6 +53,10 @@ ENV PYTHONUNBUFFERED=1 \
     ENVIRONMENT=production \
     LOG_FORMAT=json
 
+# Peers whose X-Forwarded-For uvicorn trusts (read by --proxy-headers). Loopback only by
+# default; compose widens it for the API container, which only the nginx proxy can reach.
+ENV FORWARDED_ALLOW_IPS=127.0.0.1
+
 # RDKit needs these shared libraries at runtime; libpq for psycopg where used.
 RUN apt-get update && apt-get install --no-install-recommends -y \
         libxrender1 \
@@ -91,5 +95,4 @@ CMD ["uvicorn", "theragraph.main:app", \
      "--host", "0.0.0.0", \
      "--port", "8000", \
      "--no-access-log", \
-     "--proxy-headers", \
-     "--forwarded-allow-ips", "*"]
+     "--proxy-headers"]

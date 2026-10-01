@@ -17,9 +17,11 @@ x-prod-env: &prod-env
   S3_ACCESS_KEY_ID: ${S3_ACCESS_KEY_ID:?}
   S3_SECRET_ACCESS_KEY: ${S3_SECRET_ACCESS_KEY:?}
   S3_REGION: ${S3_REGION:-us-east-1}
-  # Auth is on, and the application refuses to boot with the development JWT secret.
+  # Auth is on, and the application refuses to boot without it, or with a JWT secret
+  # that is the development default or shorter than 32 characters.
   AUTH_ENABLED: "true"
-  JWT_SECRET: ${JWT_SECRET:?JWT_SECRET is required in production}
+  JWT_SECRET: ${JWT_SECRET:?JWT_SECRET is required in production (openssl rand -hex 32)}
+  FORWARDED_ALLOW_IPS: "*"
   API_KEYS: ${API_KEYS:-}
   RATE_LIMIT_ENABLED: "true"
   RATE_LIMIT_REQUESTS: ${RATE_LIMIT_REQUESTS:-120}
@@ -48,13 +50,18 @@ services:
 
   migrate:
     environment: *prod-env
-    depends_on: []
+    # !reset/!override: a plain value would merge with the base file's dependencies on
+    # the local postgres/redis containers, which this overlay disables.
+    depends_on: !reset []
 
   api:
     environment: *prod-env
-    depends_on:
+    depends_on: !override
       migrate: { condition: service_completed_successfully }
-    ports: ["${API_PORT:-8000}:8000"]
+    # Not published to the host. nginx in the frontend container reaches the API over
+    # the compose network, so /metrics stays internal and FORWARDED_ALLOW_IPS="*" cannot
+    # be abused by a client connecting directly. (`!reset` needs Compose >= 2.24.)
+    ports: !reset []
     deploy:
       replicas: ${API_REPLICAS:-2}
       resources:
@@ -67,7 +74,7 @@ services:
 
   worker:
     environment: *prod-env
-    depends_on:
+    depends_on: !override
       migrate: { condition: service_completed_successfully }
     deploy:
       replicas: ${WORKER_REPLICAS:-2}
@@ -84,7 +91,8 @@ services:
     build:
       args:
         VITE_API_BASE: ${VITE_API_BASE:-/api/v1}
-    ports: ["${FRONTEND_PORT:-8080}:8080"]
+    # The public entry point; terminate TLS in front of it.
+    ports: !override ["${FRONTEND_PORT:-8080}:8080"]
     deploy:
       replicas: ${FRONTEND_REPLICAS:-2}
       resources:
