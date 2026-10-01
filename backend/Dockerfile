@@ -5,7 +5,7 @@
 # non-root user with no build toolchain present.
 
 # ---------------------------------------------------------------- builder stage
-FROM python:3.11-slim-bookworm AS builder
+FROM python:3.14-slim-bookworm AS builder
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
@@ -44,7 +44,7 @@ COPY backend/src ./src
 RUN VIRTUAL_ENV=/opt/venv uv pip install --no-cache --no-deps .
 
 # ---------------------------------------------------------------- runtime stage
-FROM python:3.11-slim-bookworm AS runtime
+FROM python:3.14-slim-bookworm AS runtime
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
