@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/nikhil-kunapareddy/TheraGraph/security/advisories/new
+    about: Privately, through GitHub security advisories. Never as a public issue.

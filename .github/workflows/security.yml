@@ -1,0 +1,96 @@
+# TheraGraph security checks.
+#
+# Separate from ci.yml because these need the network (advisory databases, CodeQL packs)
+# and ci.yml is offline by design. They also run weekly, because a dependency that was
+# clean when it merged can have an advisory published against it later.
+#
+#   codeql        - static analysis of the Python, TypeScript and workflow code
+#   secrets       - gitleaks over the full git history, not just the diff
+#   dependencies  - known vulnerabilities in the locked backend and frontend dependencies
+
+name: Security
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "23 6 * * 1"   # Mondays, 06:23 UTC
+  workflow_dispatch:
+
+concurrency:
+  group: security-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  codeql:
+    name: CodeQL (${{ matrix.language }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      security-events: write
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [python, javascript-typescript, actions]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: github/codeql-action/init@v3
+        with:
+          languages: ${{ matrix.language }}
+          build-mode: none
+          queries: security-extended
+
+      - uses: github/codeql-action/analyze@v3
+        with:
+          category: /language:${{ matrix.language }}
+
+  secrets:
+    name: Secret scan (gitleaks)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # the whole history: a secret deleted in a later commit is still leaked
+
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  dependencies:
+    name: Dependency audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # --no-deps --disable-pip: audit the exact pins in the lock without installing them
+      # (torch alone is gigabytes). torch's '+cpu' local build is not on PyPI, so it is
+      # reported as skipped; its upstream version is covered by Dependabot.
+      - name: Backend (pip-audit)
+        run: |
+          python -m pip install --upgrade pip pip-audit
+          pip-audit --requirement backend/requirements.lock --no-deps --disable-pip \
+            --progress-spinner off
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # Runtime dependencies gate the build; dev-only tooling is reported by Dependabot.
+      - name: Frontend (npm audit)
+        working-directory: frontend
+        run: npm audit --omit=dev --audit-level=high

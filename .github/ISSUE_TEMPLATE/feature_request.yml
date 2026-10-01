@@ -1,0 +1,29 @@
+name: Feature request
+description: Propose a change or a new capability.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What you are trying to do, and what gets in the way today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: What you would like to happen. Sketch the API, CLI or UI if it helps.
+    validations:
+      required: true
+  - type: textarea
+    id: science
+    attributes:
+      label: Scientific grounding
+      description: |
+        If this touches evidence, predictions or ranking: which public source or method
+        it relies on, and how its output would be labelled (retrieved fact vs. prediction).
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

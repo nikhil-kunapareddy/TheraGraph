@@ -1,0 +1,19 @@
+# gitleaks configuration: the default rules, plus an allowlist for the development
+# placeholders this repository documents on purpose. Each entry is a value that appears
+# in .env.example, compose files, CI or tests precisely so that nobody mistakes it for a
+# real credential -- and production refuses to boot with any of them.
+title = "TheraGraph"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Documented development and test placeholders"
+regexes = [
+  '''dev-only-insecure-secret-change-me''',
+  '''theragraph-secret''',
+  '''ci-placeholder-secret-not-used-anywhere-0+''',
+  '''test-secret-long-enough-to-be-plausible''',
+  '''the-real-secret-value''',
+  '''a-different-secret''',
+]

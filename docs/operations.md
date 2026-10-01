@@ -45,6 +45,9 @@ make docker-down      # stop, keep volumes
 | redis | `63790` | non-default for the same reason |
 | minio | `9000` / `9001` | S3 API and console |
 
+Every port is bound to `127.0.0.1`. The compose credentials are development defaults and
+Redis has no password, so none of these services may be reachable from another machine.
+
 `migrate` is a one-shot service: it runs `alembic upgrade head` and exits, and `api` and
 `worker` wait for it to complete successfully. Schema migration is never a race between
 two starting containers.
@@ -87,8 +90,14 @@ traffic against EBI), `LOG_FORMAT=json`, and marks postgres/redis/minio with
 `profiles: ["never"]` — in production those are managed services, and leaving the local
 containers reachable would be a way to accidentally deploy a database with no backups.
 
-The application itself refuses to boot in `ENVIRONMENT=production` with the development
-JWT secret.
+The application itself refuses to boot in `ENVIRONMENT=production` unless
+`AUTH_ENABLED=true` and `JWT_SECRET` is a non-default secret of at least 32 characters
+(`openssl rand -hex 32`). The image defaults to `ENVIRONMENT=production`, so a bare
+`docker run` of it fails closed instead of serving an unauthenticated API.
+
+The overlay does not publish the API port: nginx in the frontend container is the only
+public entry point and reaches the API over the compose network, which keeps `/metrics`
+internal.
 
 ## Security
 
@@ -102,22 +111,49 @@ JWT secret.
   needs a credential reports the wrong thing. The enforcement itself is tested — an
   unauthenticated request, a wrong key, and a token signed with another secret each
   produce 401.
-* **Rate limiting** — a global per-caller bucket in middleware (so it also covers
+* **Authorisation** — roles are `viewer` < `researcher` < `admin`. Anything that spends
+  model tokens, starts a job, or writes to the corpus (research runs, replays, training,
+  ingestion, persisted predictions and rankings) needs `researcher`; seeding in production
+  needs `admin`.
+* **Rate limiting** — a global per-client-address bucket in middleware (so it also covers
   unmatched routes and runs before any database work), plus a tighter bucket on the agent
-  endpoints. Responses carry `X-RateLimit-*` headers and a throttled one carries
-  `Retry-After`; `remaining` is clamped at zero. Also tested against a real limit rather
-  than assumed.
+  endpoints. The bucket is never chosen from a request header: the middleware runs before
+  authentication, so a header is unverified and rotating it would buy a fresh quota.
+  Behind a proxy, uvicorn's `--proxy-headers` resolves the real client address from
+  `X-Forwarded-For` only for peers in `FORWARDED_ALLOW_IPS` (loopback by default; the
+  compose files widen it because the API is reachable only through nginx). Responses carry
+  `X-RateLimit-*` headers and a throttled one carries `Retry-After`; `remaining` is
+  clamped at zero. Also tested against a real limit rather than assumed.
+* **CORS** — `allow_credentials` is off: credentials travel in headers, never cookies.
 * **Secrets** — only ever read from the environment. `theragraph info` prints the
   effective configuration with secrets redacted, and logs never contain a key.
 * **API keys for upstream services** — none are required. The public APIs TheraGraph uses
   are open; the only optional key is `ANTHROPIC_API_KEY`.
 * **Request size** — `MAX_REQUEST_BYTES` (2 MB) is enforced before the body is buffered.
-* **Egress** — `ALLOW_LIVE_INGESTION=false` blocks outbound calls to the data sources.
-* **Containers** — non-root (UID 10001), no build toolchain in the runtime stage, and a
-  `HEALTHCHECK` on `/healthz`.
+* **Egress** — `ALLOW_LIVE_INGESTION=false` blocks outbound calls to the data sources,
+  from the REST endpoints and from the agent's ingestion tools alike (they fall back to
+  fixture replay).
+* **Training cost** — the hyperparameters that set a job's cost (`n_estimators`,
+  `max_epochs`, `hidden_dim`, ...) have upper bounds, and overrides must be scalars.
+* **Model artifacts** — GNN checkpoints load with `torch.load(weights_only=True)`. The
+  tree models are joblib files, which are pickle: treat the model registry and the S3
+  bucket as trusted storage, writable only by the training workers.
+* **MCP** — the MCP server has no authentication of its own. stdio is the default; an
+  HTTP transport is refused unless `THERAGRAPH_MCP_ALLOW_NETWORK=true`, which you should
+  only set behind an authenticating proxy or on localhost.
+* **Containers** — the API image runs as UID 10001 and the frontend as nginx's
+  unprivileged UID 101; no build toolchain in either runtime stage, and a `HEALTHCHECK`
+  on each.
+* **Response headers** — nginx sends a Content-Security-Policy, `X-Frame-Options: DENY`,
+  `nosniff`, `Referrer-Policy` and `Permissions-Policy` on every response, from one
+  snippet (`deploy/security-headers.conf`) included in each location.
 * **`/metrics`** — served on the API port for the scrape target, and returned as 404 by
   nginx at the edge. Queue depths and error counts are operational data, not public.
 * **Traversal** — object-store keys are validated; `../` cannot escape the storage root.
+  Training endpoint names must be slugs, and the model registry refuses any path that
+  resolves outside its root.
+
+To report a vulnerability, see [SECURITY.md](../SECURITY.md).
 
 ## Reliability
 
@@ -208,7 +244,7 @@ Minimum production configuration:
 ENVIRONMENT=production
 DATABASE_URL=postgresql+asyncpg://…      # managed PostgreSQL 16
 REDIS_URL=redis://…                      # managed Redis
-JWT_SECRET=…                             # not the development default
+JWT_SECRET=…                             # >= 32 chars: openssl rand -hex 32
 AUTH_ENABLED=true
 ALLOW_LIVE_INGESTION=false
 LOG_FORMAT=json
@@ -232,6 +268,12 @@ first visitor is not waiting on ingestion.
 | `frontend` | eslint (zero warnings), prettier check, `tsc --noEmit`, vitest, production build |
 | `agent-evals` | rebuild the corpus from fixtures, train a model, run the eval suite against its thresholds |
 | `images` | build both images, validate compose, smoke-test the backend image's CLI |
+
+`.github/workflows/security.yml` runs separately, on every push and pull request and
+weekly: CodeQL for Python and TypeScript, gitleaks over the full git history, and
+`pip-audit` / `npm audit` against the locked dependencies. It needs the network, which is
+why it is not part of the offline CI gates. Dependabot keeps pip, npm, Docker base images
+and GitHub Actions current (`.github/dependabot.yml`).
 
 The `postgres` job exists because the dialect is not an implementation detail: bulk
 upserts compile different SQL per backend, JSON becomes JSONB, and timestamps come back

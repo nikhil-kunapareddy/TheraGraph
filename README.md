@@ -1,5 +1,9 @@
 # TheraGraph
 
+[![CI](https://github.com/nikhil-kunapareddy/TheraGraph/actions/workflows/ci.yml/badge.svg)](https://github.com/nikhil-kunapareddy/TheraGraph/actions/workflows/ci.yml)
+[![Security](https://github.com/nikhil-kunapareddy/TheraGraph/actions/workflows/security.yml/badge.svg)](https://github.com/nikhil-kunapareddy/TheraGraph/actions/workflows/security.yml)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+
 **An evidence-grounded computational drug-discovery workbench.**
 
 TheraGraph takes a disease, retrieves the public evidence linking it to therapeutic
@@ -208,7 +212,7 @@ backend/
     jobs/          durable queue + worker
     mcp_server/    the same tools over MCP
     tests_support/ the in-process demo corpus (shipped: CI and the CLI use it)
-  tests/           unit · integration · api · ml · agent · e2e   (449 tests)
+  tests/           unit · integration · api · ml · agent · e2e   (467 tests)
   alembic/         migrations, dialect-agnostic
 frontend/
   src/{pages,components,lib,types}                                (43 tests)
@@ -225,7 +229,7 @@ deploy/            nginx configuration for the SPA + API proxy
 ```bash
 make help              # every target, described
 make check             # lint + typecheck + tests, everything CI runs
-make test              # 449 backend + 43 frontend tests
+make test              # 467 backend + 43 frontend tests
 make coverage          # backend coverage report
 make evals             # the agent evaluation suite, with its CI thresholds
 make demo              # bootstrap → seed → train → evals, from scratch, offline
@@ -239,7 +243,7 @@ make docker-up         # the full stack
 |---|---|
 | **Backend** | Python 3.11, FastAPI, SQLAlchemy 2.0 async, PostgreSQL 16, Redis, Alembic, PyTorch, scikit-learn, RDKit, S3/MinIO |
 | **Frontend** | React 18, TypeScript, Vite, Tailwind, TanStack Query, Recharts, smiles-drawer |
-| **Tests** | 449 backend (unit, integration, API, database, CLI, ML pipeline, agent, end-to-end) at 79% coverage, 30 modules at 100%; 43 frontend |
+| **Tests** | 467 backend (unit, integration, API, database, CLI, ML pipeline, agent, end-to-end) at 79% coverage, 30 modules at 100%; 43 frontend |
 | **Quality gates** | ruff lint + format, mypy (strict, zero errors across 116 modules), eslint (zero warnings), `tsc --noEmit`, `alembic check` on both dialects, and the agent eval thresholds |
 | **CI** | 6 offline jobs: backend, backend-on-PostgreSQL, migrations round-trip, frontend, agent evals, container images |
 | **Deploy** | Multi-stage Docker images running as non-root, Compose for local and a fail-closed production overlay, health checks, structured logs, Prometheus metrics, optional OpenTelemetry |
@@ -273,6 +277,17 @@ out-of-domain predictions are extrapolations and are flagged as such, evidence s
 Open Targets' judgement rather than TheraGraph's, the corpus covers three disease areas,
 and **nothing here is a claim about clinical efficacy**.
 
+## Contributing and security
+
+Contributions are welcome — [CONTRIBUTING.md](CONTRIBUTING.md) has the setup, the ground
+rules every change follows, and the CI gates a pull request must pass. Participation is
+governed by the [Code of Conduct](CODE_OF_CONDUCT.md).
+
+Found a vulnerability? Please report it privately as described in
+[SECURITY.md](SECURITY.md), not as an issue. The deployment security model is in
+[docs/operations.md](docs/operations.md#security).
+
 ## Licence
 
-Apache-2.0. The public datasets carry their own licences, listed above.
+[Apache-2.0](LICENSE). The public datasets carry their own licences, listed above and in
+[NOTICE](NOTICE).

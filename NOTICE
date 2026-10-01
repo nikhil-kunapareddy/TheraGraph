@@ -1,0 +1,15 @@
+TheraGraph
+Copyright 2026 Sai Nikhil Kunapareddy
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The datasets under data/ are redistributed under their own licences, not Apache-2.0:
+
+  * Open Targets Platform responses (data/seed/fixtures/open_targets) - CC0 1.0
+  * ChEMBL responses (data/seed/fixtures/chembl) - CC BY-SA 3.0
+    https://www.ebi.ac.uk/chembl/
+  * Europe PMC metadata (data/seed/fixtures/europepmc) - see https://europepmc.org/
+  * MoleculeNet benchmark datasets (data/raw/moleculenet) - see https://moleculenet.org/
+
+Full citations are recorded in the data_source table and returned by
+GET /api/v1/ingestion/sources.

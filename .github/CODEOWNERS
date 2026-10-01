@@ -1,0 +1,9 @@
+# Every path is owned by the maintainer until the project has more of them.
+# Security-sensitive paths are listed explicitly so they stay owned if the default changes.
+*                                         @nikhil-kunapareddy
+
+/backend/src/theragraph/core/security.py  @nikhil-kunapareddy
+/backend/src/theragraph/api/              @nikhil-kunapareddy
+/deploy/                                  @nikhil-kunapareddy
+/.github/                                 @nikhil-kunapareddy
+/SECURITY.md                              @nikhil-kunapareddy

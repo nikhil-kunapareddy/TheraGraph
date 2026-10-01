@@ -1,0 +1,55 @@
+name: Bug report
+description: Something does not work as documented.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Security problems do not belong here.** Report them privately: see SECURITY.md.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: The command or request you ran, and the output or response you got.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: From a fresh `make setup`, if you can.
+      placeholder: |
+        1. make seed-smoke
+        2. curl ...
+    validations:
+      required: true
+  - type: input
+    id: request-id
+    attributes:
+      label: X-Request-ID
+      description: From the response headers, if the bug came from the API.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: "theragraph version, or git rev-parse --short HEAD"
+    validations:
+      required: true
+  - type: dropdown
+    id: setup
+    attributes:
+      label: How you run it
+      options:
+        - make targets (local virtualenv)
+        - docker compose (local)
+        - docker compose (production overlay)
+        - other
+    validations:
+      required: true

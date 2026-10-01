@@ -192,7 +192,7 @@ is worse than no interval.
 
 ### Testing
 
-* **449 backend tests, 79% line coverage.** The gaps are concentrated in error paths of
+* **467 backend tests, 79% line coverage.** The gaps are concentrated in error paths of
   the external connectors — the code that handles an upstream API returning malformed
   data at a particular stage. Those paths are exercised by fixtures where the fixture
   exists.
