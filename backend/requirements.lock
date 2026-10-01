@@ -232,7 +232,7 @@ pydantic-settings==2.15.0
     # via theragraph (pyproject.toml)
 pygments==2.21.0
     # via rich
-pyjwt==2.14.0
+pyjwt==2.15.0
     # via
     #   theragraph (pyproject.toml)
     #   mcp
